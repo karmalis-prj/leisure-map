@@ -20,6 +20,7 @@ const DIVE_SITES = [
     shops: [
       {
         name: "그랑블루 다이브 리조트",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1919509836",
         reviewCount: 8,
         priceSource: "naver-place 2026-07",
@@ -138,6 +139,7 @@ const DIVE_SITES = [
       },
       {
         name: "팍스 스쿠버 하우스",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         lastVerified: "2026-07",
         placeId: "37361929",
         reviewCount: 70,
@@ -364,6 +366,7 @@ const DIVE_SITES = [
       },
       {
         name: "Badadive (바다다이브)",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1908434305",
         reviewCount: 498,
         priceSource: "naver-place 2026-07",
@@ -572,6 +575,7 @@ const DIVE_SITES = [
     shops: [
       {
         name: "Marine Fun Dive (마린펀다이브)",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1224838359",
         reviewCount: 2,
         priceSource: "naver-place 2026-07",
@@ -662,6 +666,7 @@ const DIVE_SITES = [
     shops: [
       {
         name: "백상어 다이빙리조트",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "13100613",
         reviewCount: 65,
         priceSource: "naver-place 2026-07",
@@ -722,6 +727,7 @@ const DIVE_SITES = [
       },
       {
         name: "아야진다이브리조트",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "35451987",
         reviewCount: 98,
         priceSource: "naver-place 2026-07",
@@ -740,6 +746,7 @@ const DIVE_SITES = [
       },
       {
         name: "로맨틱다이브센터&리조트",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "37546703",
         reviewCount: 65,
         priceSource: "naver-place 2026-07",
@@ -819,6 +826,7 @@ const DIVE_SITES = [
     shops: [
       {
         name: "다이브11 (Dive11)",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "33351929",
         reviewCount: 56,
         priceSource: "naver-place 2026-07",
@@ -931,6 +939,8 @@ const DIVE_SITES = [
       },
       {
         name: "통영스쿠바캠프",
+        pricing: ["안내 복사 가격표 내만다이빙투어(2회기준) 120,000원", "근거리 다이빙투어(2회기준중식써비스) 150,000원", "중식 써비) 170,000원", "수영복세면도구지참) 130,000원", "수영장2회포함) 700,000원"],
+        priceSource: "naver-place-deep 2026-07 (home탭)",
         placeId: "1078392909",
         reviewCount: 61,
         priceSource: "naver-place 2026-07",
@@ -949,6 +959,7 @@ const DIVE_SITES = [
       },
       {
         name: "갈매기 리조트",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1549936549",
         reviewCount: 9,
         priceSource: "naver-place 2026-07",
@@ -967,6 +978,7 @@ const DIVE_SITES = [
       },
       {
         name: "TJ DIVE 리조트/민박",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "2047926541",
         priceSource: "naver-place 2026-07",
         lat: 34.747843, lng: 128.407298,
@@ -983,6 +995,7 @@ const DIVE_SITES = [
       },
       {
         name: "사량도다이빙센타",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1246232122",
         reviewCount: 6,
         priceSource: "naver-place 2026-07",
@@ -1019,6 +1032,7 @@ const DIVE_SITES = [
       },
       {
         name: "에니멀파이브호",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "32862862",
         priceSource: "naver-place 2026-07",
         phone: null,
@@ -1111,6 +1125,7 @@ const DIVE_SITES = [
       },
       {
         name: "주문진스쿠버",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1400420924",
         reviewCount: 14,
         priceSource: "naver-place 2026-07",
@@ -1168,6 +1183,7 @@ const DIVE_SITES = [
       },
       {
         name: "인투더씨",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "36813028",
         reviewCount: 29,
         priceSource: "naver-place 2026-07",
@@ -1186,6 +1202,7 @@ const DIVE_SITES = [
       },
       {
         name: "샤라웃 리조트&스쿠버",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1300427524",
         reviewCount: 33,
         priceSource: "naver-place 2026-07",
@@ -1224,6 +1241,7 @@ const DIVE_SITES = [
       },
       {
         name: "안인다이빙리조트",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1454951245",
         reviewCount: 12,
         priceSource: "naver-place 2026-07",
@@ -1242,6 +1260,7 @@ const DIVE_SITES = [
       },
       {
         name: "영진아쿠아존",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         lastVerified: "2026-07",
         placeId: "21074790",
         reviewCount: 17,
@@ -1360,6 +1379,7 @@ const DIVE_SITES = [
       },
       {
         name: "파아란 스쿠버 다이빙",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         lastVerified: "2026-07",
         placeId: "1488420395",
         reviewCount: 1,
@@ -1413,6 +1433,7 @@ const DIVE_SITES = [
     shops: [
       {
         name: "거제덕포스쿠버리조트",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "36915230",
         reviewCount: 6,
         priceSource: "naver-place 2026-07",
@@ -1430,6 +1451,7 @@ const DIVE_SITES = [
       },
       {
         name: "다이빙스토리 소풍",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1740113052",
         reviewCount: 3,
         priceSource: "naver-place 2026-07",
@@ -1468,6 +1490,7 @@ const DIVE_SITES = [
       },
       {
         name: "다이브이모션",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1217493683",
         reviewCount: 3,
         priceSource: "naver-place 2026-07",
@@ -1524,6 +1547,7 @@ const DIVE_SITES = [
       },
       {
         name: "G다이버스 스킨스쿠버",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "2081598562",
         priceSource: "naver-place 2026-07",
         lat: 34.910034, lng: 128.531019,
@@ -1540,6 +1564,7 @@ const DIVE_SITES = [
       },
       {
         name: "은하수3호",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         lastVerified: "2026-07",
         placeId: "1911699557",
         reviewCount: 19,
@@ -1611,6 +1636,7 @@ const DIVE_SITES = [
       },
       {
         name: "거문도다이브리조트",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1031338992",
         priceSource: "naver-place 2026-07",
         lat: 34.027566, lng: 127.309381,
@@ -1646,6 +1672,7 @@ const DIVE_SITES = [
       },
       {
         name: "씨월드 (스킨스쿠버)",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1455825155",
         reviewCount: 3,
         priceSource: "naver-place 2026-07",
@@ -1663,6 +1690,7 @@ const DIVE_SITES = [
       },
       {
         name: "거문도스킨스쿠바",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         lastVerified: "2026-07",
         placeId: "1078915113",
         reviewCount: 3,
@@ -1816,6 +1844,7 @@ const DIVE_SITES = [
       },
       {
         name: "다이브온",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "2001320962",
         reviewCount: 21,
         priceSource: "naver-place 2026-07",
@@ -1857,6 +1886,7 @@ const DIVE_SITES = [
       },
       {
         name: "이지다이빙 (종합도소매)",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "37162860",
         reviewCount: 22,
         priceSource: "naver-place 2026-07",
@@ -1875,6 +1905,7 @@ const DIVE_SITES = [
       },
       {
         name: "오션어스다이브",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "37641713",
         priceSource: "naver-place 2026-07",
         phone: "070-7361-6149",
@@ -1911,6 +1942,7 @@ const DIVE_SITES = [
       },
       {
         name: "마루스쿠버",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1618587651",
         reviewCount: 2,
         priceSource: "naver-place 2026-07",
@@ -1929,6 +1961,7 @@ const DIVE_SITES = [
       },
       {
         name: "킴스마린",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "11724004",
         reviewCount: 6,
         priceSource: "naver-place 2026-07",
@@ -1968,6 +2001,7 @@ const DIVE_SITES = [
       },
       {
         name: "다이브스토리",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1550133812",
         reviewCount: 1,
         priceSource: "naver-place 2026-07",
@@ -1986,6 +2020,7 @@ const DIVE_SITES = [
       },
       {
         name: "단디스쿠버샾",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1351872067",
         priceSource: "naver-place 2026-07",
         lat: 35.17163, lng: 129.057454,
@@ -2003,6 +2038,7 @@ const DIVE_SITES = [
       },
       {
         name: "부산스킨스쿠버교육아카데미",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1255382084",
         reviewCount: 4,
         priceSource: "naver-place 2026-07",
@@ -2021,6 +2057,7 @@ const DIVE_SITES = [
       },
       {
         name: "헬로우다이빙 (스쿠버장비)",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         lastVerified: "2026-07",
         placeId: "19585224",
         reviewCount: 50,
@@ -2229,6 +2266,7 @@ const DIVE_SITES = [
       },
       {
         name: "킹스톤스쿠버",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "2063867649",
         reviewCount: 2,
         priceSource: "naver-place 2026-07",
@@ -2284,6 +2322,7 @@ const DIVE_SITES = [
       },
       {
         name: "씨스타 스쿠버 캠프",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1181152159",
         reviewCount: 16,
         priceSource: "naver-place 2026-07",
@@ -2302,6 +2341,7 @@ const DIVE_SITES = [
       },
       {
         name: "왕돌초스쿠버",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "2040447054",
         reviewCount: 11,
         priceSource: "naver-place 2026-07",
@@ -2339,6 +2379,7 @@ const DIVE_SITES = [
       },
       {
         name: "넥톤스쿠버",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1892725325",
         priceSource: "naver-place 2026-07",
         lat: 36.969726, lng: 129.397644,
@@ -2356,6 +2397,7 @@ const DIVE_SITES = [
       },
       {
         name: "갈라파고스프리다이빙 울진",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1528061825",
         reviewCount: 1,
         priceSource: "naver-place 2026-07",
@@ -2374,6 +2416,7 @@ const DIVE_SITES = [
       },
       {
         name: "SAS마린",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1851465216",
         reviewCount: 2,
         priceSource: "naver-place 2026-07",
@@ -2390,6 +2433,7 @@ const DIVE_SITES = [
       },
       {
         name: "워터월드다이빙리조트",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         lastVerified: "2026-07",
         placeId: "15656333",
         reviewCount: 9,
@@ -2438,6 +2482,7 @@ const DIVE_SITES = [
     shops: [
       {
         name: "목포잠수기술스킨스쿠버",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "21769854",
         priceSource: "naver-place 2026-07",
         lat: 34.781302, lng: 126.382481,
@@ -2454,6 +2499,7 @@ const DIVE_SITES = [
       },
       {
         name: "화이트샤크 (목포 화이트샤크 스킨스쿠버)",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         lastVerified: "2026-07",
         placeId: "1806622025",
         reviewCount: 1,
@@ -2511,6 +2557,7 @@ const DIVE_SITES = [
     shops: [
       {
         name: "남해미조잠수",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1611975448",
         reviewCount: 22,
         priceSource: "naver-place 2026-07",
@@ -2569,6 +2616,7 @@ const DIVE_SITES = [
       },
       {
         name: "남해다이브센터",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1222498068",
         reviewCount: 1,
         priceSource: "naver-place 2026-07",
@@ -2845,6 +2893,7 @@ const DIVE_SITES = [
       },
       {
         name: "마린버블다이브 (Marine Bubble Dive)",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         lastVerified: "2026-07",
         placeId: "1066718587",
         reviewCount: 1092,
@@ -3046,6 +3095,7 @@ const DIVE_SITES = [
       },
       {
         name: "경주스쿠버센터",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         lastVerified: "2026-07",
         placeId: "1839933166",
         priceSource: "naver-place 2026-07",
@@ -3097,6 +3147,7 @@ const DIVE_SITES = [
     shops: [
       {
         name: "리라스킨스쿠버",
+        priceNote: "네이버 가격 미게시 (2026-07 확인)",
         lastVerified: "2026-07",
         placeId: "1697854452",
         reviewCount: 1,
