@@ -392,17 +392,24 @@ function openDetail(id){
       <div style="font-size:11px;color:var(--ink-soft);margin-top:8px">
         ${s.underwater._confidence==="해역일반" ? "ℹ 해역(" + (s.underwater._sea||"") + ") 일반 특성 — 개별 포인트는 샵에 확인" : "✓ 일부 현장 확인 + 해역 일반 특성"}
       </div>
-      ${(()=>{ const sn=seasonNow(s.season); if(!sn) return "";
-        const bg = sn.cls==="ok"?"var(--level-beginner)":sn.cls==="warn"?"var(--level-mid)":"var(--level-advanced)";
-        return `<div style="margin-top:11px;padding:11px 13px;border-radius:10px;background:color-mix(in srgb,${bg} 12%,transparent);border:1px solid color-mix(in srgb,${bg} 35%,transparent)">
+    </div>` : ""}
+
+    ${(()=>{ const sn=seasonNow(s.season); if(!sn) return "";
+      const isSurf = (s.activity||"diving")==="surfing";
+      const label = isSurf ? (sn.cls==="ok"?"파도 성수기":sn.cls==="warn"?"서핑 가능":"비수기(플랫 많음)") : sn.label;
+      const bg = sn.cls==="ok"?"var(--level-beginner)":sn.cls==="warn"?"var(--level-mid)":"var(--level-advanced)";
+      return `<div class="detail-section">
+        <h3>${isSurf?"🌊 서핑 시즌":"📅 계절 적합도"}</h3>
+        <div style="padding:11px 13px;border-radius:10px;background:color-mix(in srgb,${bg} 12%,transparent);border:1px solid color-mix(in srgb,${bg} 35%,transparent)">
           <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
             <span style="font-weight:700;font-size:13px">지금(${sn.season}) </span>
-            <span style="font-size:12px;font-weight:700;color:${bg};background:color-mix(in srgb,${bg} 18%,transparent);padding:2px 10px;border-radius:12px">${sn.label}</span>
+            <span style="font-size:12px;font-weight:700;color:${bg};background:color-mix(in srgb,${bg} 18%,transparent);padding:2px 10px;border-radius:12px">${label}</span>
           </div>
           <div style="font-size:12px;color:var(--ink-soft);margin-top:5px">${sn.note}</div>
           ${sn.best?`<div style="font-size:11.5px;color:var(--ink-soft);margin-top:4px">🏆 베스트 시즌: <b style="color:var(--ink)">${sn.best}</b></div>`:""}
-        </div>`; })()}
-    </div>` : ""}
+          ${s.season&&s.season.note?`<div style="font-size:11.5px;color:var(--ink-soft);margin-top:6px;line-height:1.4">${s.season.note}</div>`:""}
+        </div>
+      </div>`; })()}
 
     <div class="detail-section">
       <h3>연계 다이빙샵</h3>
