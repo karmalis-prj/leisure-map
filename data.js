@@ -154,6 +154,7 @@ const DIVE_SITES = [
         note: "다이빙 교육·펀다이빙·테크니컬 다이빙 전문. [2026-07 네이버 지도 실측 — 영업 확인, 손양면 선사유적로 주소 확보. 카카오 미등재는 매칭 오류]",
         links: [{ label: "Instagram", url: "https://www.instagram.com/PAXSCUBAHOUSE" }],
         verified: "확인 (2026-07 네이버 지도 실측)",
+        hours: "매일 00:00~24:00",
         source: null,
         traits: { serviceType: ["교육", "펀다이빙"], tech: true, _src: "note" },
       }
@@ -544,6 +545,7 @@ const DIVE_SITES = [
         reviewTraits: { tags: ["강습우수", "시설우수", "가성비", "주차편리"], topKeywords: ["선생님이 열정적이에요", "맞춤 지도를 잘해줘요", "학생과 소통을 잘해요"], _src: "naver-review-agg" },
         naverBooking: true,
         verified: "확인 (플레이스 실측 2026-07 — 상호 변경 감지: 다이브카페→율랜드다이브센터, 동일 placeId)",
+        hours: "매일 08:00~19:00",
         source: "https://m.place.naver.com/place/1828754477/home",
         traits: { serviceType: ["체험", "펀다이빙"], _src: "pricing" },
       }
@@ -1768,6 +1770,7 @@ const DIVE_SITES = [
         note: "주차·단체이용 가능, 리뷰 3건",
         links: [{ label: "홈페이지", url: "https://place.naver.co.kr/event/rsv-list4" }],
         verified: "확인",
+        hours: "매일 00:00~24:00",
         source: "https://map.naver.com/p/entry/place/1078915113",
         traits: { serviceType: ["미상"], _src: "note" },
       }
@@ -2152,6 +2155,7 @@ const DIVE_SITES = [
         note: "장비 전문점, 매주 토요일 휴무",
         links: [{ label: "Instagram", url: "https://www.instagram.com/kim_hyun_mo_" }],
         verified: "확인",
+        hours: "수·목·금·월·화 10:00~18:00",
         source: "https://map.naver.com",
         traits: { serviceType: ["장비점"], _src: "note" },
       }
@@ -2269,6 +2273,7 @@ const DIVE_SITES = [
         note: "상호에 '동해삼척점' 포함이나 실주소는 동해시 구미동",
         links: [{ label: "Instagram", url: "https://www.instagram.com/would_u_donghae" }],
         verified: "확인",
+        hours: "매일 08:00~18:00",
         source: "https://map.naver.com/p/search/삼척스쿠버다이빙/place/2086323125",
         amenities: ["예약", "주차"],
         traits: { serviceType: ["프리다이빙"], freedive: true, _src: "note" },
@@ -2613,6 +2618,7 @@ const DIVE_SITES = [
         links: [{ label: "블로그", url: "https://blog.naver.com/harimao904" }],
         naverBooking: true,
         verified: "확인",
+        hours: "매일 09:00~23:00",
         source: "https://m.place.naver.com/place/1806622025/home",
         amenities: ["예약", "무선 인터넷"],
         traits: { serviceType: ["미상"], _src: "note" },
@@ -2930,6 +2936,7 @@ const DIVE_SITES = [
         reviewTraits: { tags: ["강습우수", "시설우수", "초보친화"], topKeywords: ["선생님이 열정적이에요", "맞춤 지도를 잘해줘요", "선생님 실력이 좋아요"], _src: "naver-review-agg" },
         naverBooking: true,
         verified: "확인",
+        hours: "매일 09:00~18:00",
         source: "https://www.ulleung.go.kr/tour/page.do?mnu_uid=1656",
         amenities: ["예약", "무선 인터넷", "주차"],
         traits: { serviceType: ["프리다이빙"], freedive: true, _src: "note" },
@@ -3022,6 +3029,7 @@ const DIVE_SITES = [
         ],
         reviewTraits: { tags: ["강습우수", "프로그램다양", "초보친화"], topKeywords: ["맞춤 지도를 잘해줘요", "선생님이 열정적이에요", "수업이 체계적이에요"], _src: "naver-review-agg" },
         verified: "확인 (카카오 재검증 — 등재·카테고리 일치)",
+        hours: "매일 00:00~24:00",
         source: "PADI/인스타 노출 정보 및 검색 결과(주소는 의창구로 확인, 진해 소재 여부는 미검증)",
         amenities: ["예약", "무선 인터넷", "주차"],
         traits: { serviceType: ["교육", "프리다이빙"], agency: ["PADI"], freedive: true, _src: "note" },
@@ -3211,6 +3219,7 @@ const DIVE_SITES = [
         links: [{ label: "홈페이지", url: "https://place.naver.co.kr/event/rsv-list4" }, { label: "Facebook", url: "https://www.facebook.com/share/17LjxVLxtS/" }],
         lastVerified: "2026-07",
         verified: "확인 (네이버 플레이스 실측 2026-07)",
+        hours: "매일 00:00~24:00",
         source: "https://m.place.naver.com/place/1418874054/home",
         amenities: ["주차"],
         traits: { serviceType: ["미상"], _src: "미상" },
@@ -3226,6 +3235,7 @@ const DIVE_SITES = [
         links: [{ label: "홈페이지", url: "https://monkeysdive.com/" }, { label: "Instagram", url: "https://www.instagram.com/monkeydive_official/" }],
         lastVerified: "2026-07",
         verified: "확인 (네이버 플레이스 실측 2026-07)",
+        hours: "수·목·금·토·일·월·화 10:00~22:00",
         source: "https://m.place.naver.com/place/1434691077/home",
         pricing: ["PADI 마스터 프리다이버 800,000원", "PADI 어드밴스드 프리다이버 600,000원", "PADI 프리다이버 500,000원", "PADI 베이직 프리다이버 200,000원", "EFR 800,000원", "PADI 어드밴스드 500,000원", "PADI 오픈워터 450,000원"],
         amenities: ["주차", "예약", "무선 인터넷"],
@@ -3275,6 +3285,7 @@ const DIVE_SITES = [
         links: [{ label: "홈페이지", url: "https://place.naver.co.kr/event/rsv-list4" }, { label: "Instagram", url: "https://www.instagram.com/freediver_hon" }],
         lastVerified: "2026-07",
         verified: "확인 (네이버 플레이스 실측 2026-07)",
+        hours: "수·목·금·토·일·월·화 08:00~22:00",
         source: "https://m.place.naver.com/place/1958708941/home",
         amenities: ["예약", "주차"],
         traits: { serviceType: ["프리다이빙"], _src: "상호" },
@@ -3290,6 +3301,7 @@ const DIVE_SITES = [
         links: [{ label: "홈페이지", url: "https://place.naver.co.kr/event/rsv-list4" }, { label: "Instagram", url: "https://www.instagram.com/waterfullifeboto" }],
         lastVerified: "2026-07",
         verified: "확인 (네이버 플레이스 실측 2026-07)",
+        hours: "매일 10:00~22:00",
         source: "https://m.place.naver.com/place/2055403725/home",
         amenities: ["주차"],
         traits: { serviceType: ["프리다이빙"], _src: "상호" },
@@ -3363,6 +3375,7 @@ const DIVE_SITES = [
         note: "밴드(band.us/@gyeongjuscuba, 멤버 227명) 커뮤니티 운영, '합리적 투어가격' 강조. 운영자 이경우. 카톡ID skyking76",
         links: [{ label: "Band", url: "https://www.band.us/@gyeongjuscuba" }],
         verified: "확인 (밴드 운영중 — 227명, 운영자·연락처 게재 확인)",
+        hours: "매일 00:00~24:00",
         source: "네이버 밴드 소개글 (운영자 직접 게재 연락처)",
         amenities: ["주차"],
         traits: { serviceType: ["펀다이빙"], _src: "note" },
@@ -3418,6 +3431,7 @@ const DIVE_SITES = [
         note: "스킨스쿠버 교육·특수잠수·인명구조·자격증 발급, 장비 판매/수리. 다이버 전용 풀(수심 3m) 보유",
         links: [{ label: "Instagram", url: "https://www.instagram.com/lilaskinscuba/" }],
         verified: "확인",
+        hours: "수 18:00~23:00, 목 18:00~23:00, 금 18:00~23:00, 토 09:00~23:00, 일 09:00~23:00, 월 18:00~23:00, 화 18:00~23:00",
         source: "https://www.instagram.com/lilaskinscuba/",
         amenities: ["주차"],
         traits: { serviceType: ["교육"], pool: true, _src: "note" },
@@ -3465,6 +3479,7 @@ const DIVE_SITES = [
         links: [{ label: "홈페이지", url: "https://place.naver.co.kr/event/rsv-list4" }],
         lastVerified: "2026-07",
         verified: "확인 (네이버 플레이스 실측 2026-07)",
+        hours: "매일 00:00~24:00",
         source: "https://m.place.naver.com/place/1023227581/home",
         amenities: ["예약", "주차"],
         traits: { serviceType: ["미상"], _src: "미상" },
@@ -3481,6 +3496,7 @@ const DIVE_SITES = [
         links: [{ label: "홈페이지", url: "https://www.sunfreediving.com/" }],
         lastVerified: "2026-07",
         verified: "확인 (네이버 플레이스 실측 2026-07)",
+        hours: "수 10:00~22:00, 목 10:00~22:00, 금 10:00~22:00, 토 08:00~23:00, 일 08:00~23:00, 월 10:00~22:00, 화 10:00~22:00",
         source: "https://m.place.naver.com/place/1232529729/home",
         pricing: ["프리다이빙체험 100,000원", "아쿠아리움체험다이빙 150,000원"],
         amenities: ["예약"],
@@ -3498,6 +3514,7 @@ const DIVE_SITES = [
         links: [{ label: "Instagram", url: "https://www.instagram.com/bubble_dugong/" }],
         lastVerified: "2026-07",
         verified: "확인 (네이버 플레이스 실측 2026-07)",
+        hours: "매일 10:00~18:00",
         source: "https://m.place.naver.com/place/1599909268/home",
         pricing: ["체험다이빙 120,000원", "오픈워터 라이센스 500,000원", "어드밴스드 오픈워터 라이센스 500,000원", "예약 120,000원", "예약 100,000원", "예약 200,000원"],
         amenities: ["예약"],
@@ -3514,6 +3531,7 @@ const DIVE_SITES = [
         links: [],
         lastVerified: "2026-07",
         verified: "확인 (네이버 플레이스 실측 2026-07)",
+        hours: "매일 10:00~22:00",
         source: "https://m.place.naver.com/place/1086778689/home",
         traits: { serviceType: ["미상"], _src: "미상" },
       }
@@ -3531,6 +3549,7 @@ const DIVE_SITES = [
       { name: "나리민박", lat: 37.3887596493606, lng: 126.426402340202, mapUrl: "http://place.map.kakao.com/25794298", category: "민박", verified: "카카오 좌표확정", note: "샵 기준 0.3km" },
       { name: "해변의꿈펜션", lat: 37.3939378862053, lng: 126.426986248738, mapUrl: "http://place.map.kakao.com/11829460", category: "펜션", phone: "032-751-9939", verified: "카카오 좌표확정", note: "샵 기준 0.4km" }
     ],
+    travelNote: "서울 기준 공항철도·인천공항고속도로로 영종 약 1시간, 무의도는 무의대교 연결(차량 진입 가능). 수도권 당일 다이빙 거점(추정)",
     verified: "샵: 네이버 플레이스 실측 2026-07 (지도검색→pid→상호·주소 교차확인). 음식·숙박·볼거리 미조사.",
     attraction: [
       { name: "무의도", lat: 37.3868071480195, lng: 126.418467797483, mapUrl: "http://place.map.kakao.com/18376755", category: "섬", verified: "카카오 관광명소", note: "다이빙 포인트 1km 반경" },
@@ -3581,6 +3600,7 @@ const DIVE_SITES = [
         links: [],
         lastVerified: "2026-07",
         verified: "확인 (네이버 플레이스 실측 2026-07)",
+        hours: "매일 00:00~24:00",
         source: "https://m.place.naver.com/place/1698446648/home",
         traits: { serviceType: ["미상"], _src: "미상" },
       }
@@ -3598,6 +3618,7 @@ const DIVE_SITES = [
       { name: "호텔마리스테이 태안", lat: 36.7483807902198, lng: 126.302337206476, mapUrl: "http://place.map.kakao.com/1901664400", category: "호텔", verified: "카카오 좌표확정", note: "샵 기준 0.3km" },
       { name: "태서모텔", lat: 36.7470972632313, lng: 126.303506623874, mapUrl: "http://place.map.kakao.com/9496080", category: "여관,모텔", phone: "041-675-1867", verified: "카카오 좌표확정", note: "샵 기준 0.4km" }
     ],
+    travelNote: "서울 기준 서해안고속도로 약 2시간 30분(추정). 태안해안국립공원 권역",
     verified: "샵: 네이버 플레이스 실측 2026-07 (지도검색→pid→상호·주소 교차확인). 음식·숙박·볼거리 미조사."
   },
   {
@@ -3642,6 +3663,7 @@ const DIVE_SITES = [
       { name: "해비치모텔", lat: 34.3209347089797, lng: 126.747807405079, mapUrl: "http://place.map.kakao.com/27004116", category: "여관,모텔", phone: "061-555-3380", verified: "카카오 좌표확정", note: "샵 기준 0.1km" },
       { name: "코너레지던스호텔 완도", lat: 34.3204614133616, lng: 126.747361173483, mapUrl: "http://place.map.kakao.com/65699977", category: "호텔", phone: "061-555-0179", verified: "카카오 좌표확정", note: "샵 기준 0.1km" }
     ],
+    travelNote: "광주 기준 약 1시간 40분, 서울 기준 KTX 광주송정+차량 약 4시간(추정). 완도항에서 청산도·보길도 배편",
     verified: "샵: 네이버 플레이스 실측 2026-07 (지도검색→pid→상호·주소 교차확인). 음식·숙박·볼거리 미조사. 기존 '완도 확정 샵 없음' 결론을 뒤집는 실측(2026-07).",
     attraction: [
       { name: "완도음식문화거리", lat: 34.3245672715161, lng: 126.748487600442, mapUrl: "http://place.map.kakao.com/1048908791", category: "먹자골목", verified: "카카오 관광명소", note: "다이빙 포인트 0.4km 반경" },
