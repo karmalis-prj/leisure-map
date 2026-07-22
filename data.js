@@ -170,7 +170,11 @@ const DIVE_SITES = [
       { name: "나루해변", lat: 37.972174634516, lng: 128.762293126487, mapUrl: "http://place.map.kakao.com/369028075", category: "해수욕장,해변", verified: "카카오 관광명소", note: "다이빙 포인트 0.6km 반경" },
       { name: "동산해변", lat: 37.981842366302, lng: 128.756872477172, mapUrl: "http://place.map.kakao.com/8266857", category: "해수욕장,해변", verified: "카카오 관광명소", note: "다이빙 포인트 0.6km 반경" },
       { name: "죽도정", lat: 37.9715804171252, lng: 128.763833369904, mapUrl: "http://place.map.kakao.com/8069442", category: "전망대", verified: "카카오 관광명소", note: "다이빙 포인트 0.7km 반경" },
-      { name: "동산리전망대", lat: 37.9825271283933, lng: 128.760958760535, mapUrl: "http://place.map.kakao.com/2051897389", category: "전망대", verified: "카카오 관광명소", note: "다이빙 포인트 0.7km 반경" }
+      { name: "동산리전망대", lat: 37.9825271283933, lng: 128.760958760535, mapUrl: "http://place.map.kakao.com/2051897389", category: "전망대", verified: "카카오 관광명소", note: "다이빙 포인트 0.7km 반경" },
+      { name: "소돌해안일주 산책로", lat: 37.9056033043574, lng: 128.830136509351, mapUrl: "http://place.map.kakao.com/47857332", category: "도보여행", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 10.1km" },
+      { name: "죽도산책로", lat: 37.9715027977327, lng: 128.762761830887, mapUrl: "http://place.map.kakao.com/1621890936", category: "둘레길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 0.7km" },
+      { name: "해파랑길 42코스", lat: 38.00313613883454, lng: 128.73399566158233, mapUrl: "http://place.map.kakao.com/26564220", category: "해파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 3.7km" },
+      { name: "해파랑길 41코스", lat: 37.93862635200217, lng: 128.78710005469995, mapUrl: "http://place.map.kakao.com/26564219", category: "해파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 4.9km" }
     ],
     lodging: [
       { name: "설레임펜션", lat: 37.94359, lng: 128.785089, mapUrl: "http://place.map.kakao.com/92421504", phone: "033-673-3616", roadAddr: "강원특별자치도 양양군 현남면 안남애길 63", verified: "카카오 좌표확정", note: "별점 4.43, 리뷰 312개, 6만원~. 남애3리해수욕장 인근 추정, 바다뷰" },
@@ -564,7 +568,10 @@ const DIVE_SITES = [
       { name: "하효쇠소깍해변", lat: 33.2513337590218, lng: 126.622988556204, mapUrl: "http://place.map.kakao.com/22924455", category: "해수욕장,해변", verified: "카카오 관광명소", note: "다이빙 포인트 1.7km 반경" },
       { name: "하례감귤체험농장", lat: 33.27952209806065, lng: 126.61994766370627, mapUrl: "http://place.map.kakao.com/1228554077", category: "관광농원", phone: "0507-1408-4755", verified: "카카오 관광명소", note: "다이빙 포인트 2.8km 반경" },
       { name: "올레길 5코스(남원-쇠소깍 올레)", lat: 33.27078076230098, lng: 126.66743988738492, mapUrl: "http://place.map.kakao.com/11828668", category: "제주올레길", verified: "카카오 관광명소", note: "다이빙 포인트 2.7km 반경" },
-      { name: "서걸세", lat: 33.2807582337716, lng: 126.617889856311, mapUrl: "http://place.map.kakao.com/17781640", category: "오름", verified: "카카오 관광명소", note: "다이빙 포인트 3km 반경" }
+      { name: "서걸세", lat: 33.2807582337716, lng: 126.617889856311, mapUrl: "http://place.map.kakao.com/17781640", category: "오름", verified: "카카오 관광명소", note: "다이빙 포인트 3km 반경" },
+      { name: "한라산둘레길 수악길", lat: 33.329140097195065, lng: 126.60769442958528, mapUrl: "http://place.map.kakao.com/1684273537", category: "둘레길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 8.2km" },
+      { name: "남원큰엉해변", lat: 33.2733501754907, lng: 126.703710044663, mapUrl: "http://place.map.kakao.com/2083466041", category: "해수욕장,해변", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 5.8km" },
+      { name: "자구리담수욕장", lat: 33.2434632815111, lng: 126.56909443533, mapUrl: "http://place.map.kakao.com/749525982", category: "해수욕장,해변", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 6.5km" }
     ],
     lodging: [
       { name: "서귀포르투", lat: 33.239772, lng: 126.563858, mapUrl: "http://place.map.kakao.com/530657857", phone: "064-762-8223", roadAddr: "제주특별자치도 서귀포시 칠십리로 73", verified: "카카오 좌표확정", note: "서귀동, 네이버페이·톡톡 예약 가능" },
@@ -662,7 +669,11 @@ const DIVE_SITES = [
       { name: "양궁장전망대", lat: 35.5355712768798, lng: 129.273804299261, mapUrl: "http://place.map.kakao.com/19237094", category: "전망대", verified: "카카오 관광명소", note: "다이빙 포인트 0.7km 반경" },
       { name: "옥현전망대", lat: 35.5373526243128, lng: 129.271274965646, mapUrl: "http://place.map.kakao.com/19237095", category: "전망대", verified: "카카오 관광명소", note: "다이빙 포인트 0.9km 반경" },
       { name: "고래전망대", lat: 35.5442980116784, lng: 129.288048064845, mapUrl: "http://place.map.kakao.com/19237116", category: "전망대", verified: "카카오 관광명소", note: "다이빙 포인트 1km 반경" },
-      { name: "울산어울길 7코스", lat: 35.52788007480844, lng: 129.29054015819216, mapUrl: "http://place.map.kakao.com/26564334", category: "도보여행", verified: "카카오 관광명소", note: "다이빙 포인트 1.2km 반경" }
+      { name: "울산어울길 7코스", lat: 35.52788007480844, lng: 129.29054015819216, mapUrl: "http://place.map.kakao.com/26564334", category: "도보여행", verified: "카카오 관광명소", note: "다이빙 포인트 1.2km 반경" },
+      { name: "해파랑길 6코스", lat: 35.524546801053184, lng: 129.3033678654162, mapUrl: "http://place.map.kakao.com/26564185", category: "해파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 2.3km" },
+      { name: "해파랑길 7코스", lat: 35.551258662303624, lng: 129.330329470055, mapUrl: "http://place.map.kakao.com/26564186", category: "해파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 4.6km" },
+      { name: "걷고싶은중구둘레길 1코스", lat: 35.576644589659985, lng: 129.25910475212618, mapUrl: "http://place.map.kakao.com/26564341", category: "도보여행", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 4.9km" },
+      { name: "해파랑길 5코스", lat: 35.434279265752544, lng: 129.30345732044026, mapUrl: "http://place.map.kakao.com/26564184", category: "해파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 11.5km" }
     ],
     lodging: [
       { name: "고늘스테이 (대왕암 인근)", lat: 35.500736, lng: 129.432107, mapUrl: "https://map.naver.com/p/search/%EC%9A%B8%EC%82%B0%20%EB%8C%80%EC%99%95%EC%95%94%20%EA%B3%A0%EB%8A%98%EC%8A%A4%ED%85%8C%EC%9D%B4", note: "옥상 개별 바베큐(18:00~22:00)" },
@@ -827,7 +838,11 @@ const DIVE_SITES = [
       { name: "해파랑길 47코스", lat: 38.34488539255191, lng: 128.5033425521744, mapUrl: "http://place.map.kakao.com/26564225", category: "해파랑길", verified: "카카오 관광명소", note: "다이빙 포인트 1.7km 반경" },
       { name: "송지호둘레길", lat: 38.33905933619927, lng: 128.50752481641194, mapUrl: "http://place.map.kakao.com/26563781", category: "도보여행", verified: "카카오 관광명소", note: "다이빙 포인트 2.4km 반경" },
       { name: "소죽도", lat: 38.3350279745457, lng: 128.531387229256, mapUrl: "http://place.map.kakao.com/1477098888", category: "섬", verified: "카카오 관광명소", note: "다이빙 포인트 3.6km 반경" },
-      { name: "죽도", lat: 38.3354354327991, lng: 128.533845538503, mapUrl: "http://place.map.kakao.com/20181678", category: "섬", verified: "카카오 관광명소", note: "다이빙 포인트 3.7km 반경" }
+      { name: "죽도", lat: 38.3354354327991, lng: 128.533845538503, mapUrl: "http://place.map.kakao.com/20181678", category: "섬", verified: "카카오 관광명소", note: "다이빙 포인트 3.7km 반경" },
+      { name: "해파랑길 48코스", lat: 38.402628769387626, lng: 128.47145423729205, mapUrl: "http://place.map.kakao.com/26564226", category: "해파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 5.6km" },
+      { name: "해파랑길 46코스", lat: 38.27179416717711, lng: 128.55581373700622, mapUrl: "http://place.map.kakao.com/26564224", category: "해파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 10.7km" },
+      { name: "송지호쉼터", lat: 38.3364224430757, lng: 128.516971885313, mapUrl: "http://place.map.kakao.com/11130739", category: "도시근린공원", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 2.8km" },
+      { name: "공현진1리해변", lat: 38.351817765302634, lng: 128.51050731807015, mapUrl: "http://place.map.kakao.com/8661609", category: "해수욕장,해변", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 1km" }
     ],
     lodging: [
       { name: "스테이가진 펜션", lat: 38.36459, lng: 128.506883, mapUrl: "http://place.map.kakao.com/1026670596", phone: "033-631-5455", roadAddr: "강원특별자치도 고성군 죽왕면 가진해변길 168", verified: "카카오 좌표확정", note: "별점 4.77, 리뷰 746, 15만원~. 오션뷰" },
@@ -924,7 +939,11 @@ const DIVE_SITES = [
     ],
     attraction: [
       { name: "이가리간이해변", lat: 36.186257768099, lng: 129.381148676182, mapUrl: "http://place.map.kakao.com/27302284", category: "해수욕장,해변", verified: "카카오 관광명소", note: "다이빙 포인트 1.5km 반경" },
-      { name: "오도2리해수욕장", lat: 36.1613459944639, lng: 129.397482866592, mapUrl: "http://place.map.kakao.com/474454463", category: "해수욕장,해변", verified: "카카오 관광명소", note: "다이빙 포인트 1.8km 반경" }
+      { name: "오도2리해수욕장", lat: 36.1613459944639, lng: 129.397482866592, mapUrl: "http://place.map.kakao.com/474454463", category: "해수욕장,해변", verified: "카카오 관광명소", note: "다이빙 포인트 1.8km 반경" },
+      { name: "해파랑길 18코스", lat: 36.19196703683496, lng: 129.37413018939623, mapUrl: "http://place.map.kakao.com/26564197", category: "해파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 2.4km" },
+      { name: "감사나눔둘레길", lat: 36.1918331513737, lng: 129.37261339184, mapUrl: "http://place.map.kakao.com/1537198356", category: "둘레길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 2.5km" },
+      { name: "천마지둘레길", lat: 36.0978913127025, lng: 129.398794378509, mapUrl: "http://place.map.kakao.com/1458706462", category: "도보여행", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 8.8km" },
+      { name: "해파랑길 17코스", lat: 36.081222902116316, lng: 129.41642727342665, mapUrl: "http://place.map.kakao.com/26564196", category: "해파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 10.8km" }
     ],
     lodging: [
       { name: "구룡포 호텔701", lat: 36.000025, lng: 129.568062, mapUrl: "http://place.map.kakao.com/558644847", roadAddr: "경북 포항시 남구 구룡포읍 일출로 21", verified: "카카오 좌표확정(상호상이: 호텔701 수정 — 재확인)", note: "구룡포항 인근 신축 호텔. 동해 바다뷰·객실 자쿠지, 1박 약 8만원대(아고다·여기어때 확인). 후기 평가 우수" },
@@ -1116,7 +1135,11 @@ const DIVE_SITES = [
       { name: "산양일주도로", lat: 34.8031571361723, lng: 128.431578915979, mapUrl: "http://place.map.kakao.com/7912555", category: "드라이브코스", verified: "카카오 관광명소", note: "다이빙 포인트 0.5km 반경" },
       { name: "나폴리농원", lat: 34.802026110057426, lng: 128.42381001871175, mapUrl: "http://place.map.kakao.com/8251322", category: "관광농원", phone: "055-641-7005", verified: "카카오 관광명소", note: "다이빙 포인트 0.8km 반경" },
       { name: "이순신승전길 한산도해전(한산도해전,내륙구간)", lat: 34.8041321381659, lng: 128.4191333548277, mapUrl: "http://place.map.kakao.com/1847577991", category: "도보여행", verified: "카카오 관광명소", note: "다이빙 포인트 1.3km 반경" },
-      { name: "수륙해안산책로", lat: 34.812201259043064, lng: 128.43934137899245, mapUrl: "http://place.map.kakao.com/26564401", category: "도보여행", verified: "카카오 관광명소", note: "다이빙 포인트 1.6km 반경" }
+      { name: "수륙해안산책로", lat: 34.812201259043064, lng: 128.43934137899245, mapUrl: "http://place.map.kakao.com/26564401", category: "도보여행", verified: "카카오 관광명소", note: "다이빙 포인트 1.6km 반경" },
+      { name: "남파랑길 29코스", lat: 34.8447803425035, lng: 128.38014127235, mapUrl: "http://place.map.kakao.com/1148122339", category: "남파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 6.8km" },
+      { name: "남파랑길 28코스", lat: 34.8670934320154, lng: 128.440268947261, mapUrl: "http://place.map.kakao.com/1155098945", category: "남파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 7.6km" },
+      { name: "남파랑길 27코스", lat: 34.8660255898015, lng: 128.493953454198, mapUrl: "http://place.map.kakao.com/1155302843", category: "남파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 9.2km" },
+      { name: "남파랑길 15코스", lat: 34.8898503232355, lng: 128.471352764524, mapUrl: "http://place.map.kakao.com/1287541717", category: "남파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 10.7km" }
     ],
     lodging: [
       { name: "통영 미륵펜션", mapUrl: "https://map.naver.com/p/search/%ED%86%B5%EC%98%81%20%EB%AF%B8%EB%A5%B5%ED%8E%9C%EC%85%98", note: "바다전망 풀빌라형, 발코니서 미륵산 경관" },
@@ -1341,7 +1364,11 @@ const DIVE_SITES = [
       { name: "뒷섬", lat: 37.8423949905869, lng: 128.866990987767, mapUrl: "http://place.map.kakao.com/8323417", category: "섬(내륙)", verified: "카카오 관광명소", note: "다이빙 포인트 0.9km 반경" },
       { name: "하평해변", lat: 37.8458397958664, lng: 128.870395001942, mapUrl: "http://place.map.kakao.com/8135278", category: "해수욕장,해변", phone: "033-660-3657", verified: "카카오 관광명소", note: "다이빙 포인트 1km 반경" },
       { name: "경포대허브농원", lat: 37.8437830155926, lng: 128.866489811083, mapUrl: "http://place.map.kakao.com/1591428284", category: "관광농원", verified: "카카오 관광명소", note: "다이빙 포인트 1km 반경" },
-      { name: "호린파크", lat: 37.8444306650221, lng: 128.865640519221, mapUrl: "http://place.map.kakao.com/1423406480", category: "테마파크", phone: "033-644-1818", verified: "카카오 관광명소", note: "다이빙 포인트 1.1km 반경" }
+      { name: "호린파크", lat: 37.8444306650221, lng: 128.865640519221, mapUrl: "http://place.map.kakao.com/1423406480", category: "테마파크", phone: "033-644-1818", verified: "카카오 관광명소", note: "다이빙 포인트 1.1km 반경" },
+      { name: "소돌해안일주 산책로", lat: 37.9056033043574, lng: 128.830136509351, mapUrl: "http://place.map.kakao.com/47857332", category: "도보여행", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 8.5km" },
+      { name: "해파랑길 40코스(바우길12구간)", lat: 37.87264831412327, lng: 128.8404667375235, mapUrl: "http://place.map.kakao.com/26558667", category: "해파랑길", phone: "033-640-5913", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 4.9km" },
+      { name: "해파랑길 39코스(바우길05구간)", lat: 37.79860794660872, lng: 128.90985959739746, mapUrl: "http://place.map.kakao.com/26558665", category: "해파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 5.3km" },
+      { name: "해파랑길 38코스(바우길06구간)", lat: 37.74909273389514, lng: 128.89500339995038, mapUrl: "http://place.map.kakao.com/26558664", category: "해파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 10km" }
     ],
     lodging: [
       { name: "더원", lat: 37.902104, lng: 128.8295, mapUrl: "http://place.map.kakao.com/561373750", phone: "010-6811-0770", roadAddr: "강원특별자치도 강릉시 주문진읍 해안로 1933-1", verified: "카카오 좌표확정", note: "리뷰 2,616건(최다), 5.9만원~" },
@@ -1463,7 +1490,11 @@ const DIVE_SITES = [
       { name: "동명항포장마차촌", lat: 38.21515238133, lng: 128.597023571915, mapUrl: "http://place.map.kakao.com/27436437", category: "먹자골목", verified: "카카오 관광명소", note: "다이빙 포인트 1km 반경" },
       { name: "영금정길", lat: 38.215463706697186, lng: 128.58255265718537, mapUrl: "http://place.map.kakao.com/26564422", category: "도보여행", verified: "카카오 관광명소", note: "다이빙 포인트 1km 반경" },
       { name: "속초포장마차거리", lat: 38.214798928794, lng: 128.597577593436, mapUrl: "http://place.map.kakao.com/27550338", category: "먹자골목", verified: "카카오 관광명소", note: "다이빙 포인트 1km 반경" },
-      { name: "등대해수욕장", lat: 38.2145901787535, lng: 128.598353993235, mapUrl: "http://place.map.kakao.com/7851701", category: "해수욕장,해변", phone: "033-639-2027", verified: "카카오 관광명소", note: "다이빙 포인트 1.1km 반경" }
+      { name: "등대해수욕장", lat: 38.2145901787535, lng: 128.598353993235, mapUrl: "http://place.map.kakao.com/7851701", category: "해수욕장,해변", phone: "033-639-2027", verified: "카카오 관광명소", note: "다이빙 포인트 1.1km 반경" },
+      { name: "해파랑길 45코스", lat: 38.20425102502839, lng: 128.59236048139675, mapUrl: "http://place.map.kakao.com/26564223", category: "해파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 2km" },
+      { name: "해파랑길 46코스", lat: 38.27179416717711, lng: 128.55581373700622, mapUrl: "http://place.map.kakao.com/26564224", category: "해파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 6.3km" },
+      { name: "명상길", lat: 38.1710619223252, lng: 128.49020428336, mapUrl: "http://place.map.kakao.com/1132349381", category: "둘레길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 10.5km" },
+      { name: "해파랑길 44코스", lat: 38.11965748754108, lng: 128.63194294125256, mapUrl: "http://place.map.kakao.com/26564222", category: "해파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 11.9km" }
     ],
     lodging: [
       { name: "롯데리조트 속초", lat: 38.180682, lng: 128.612148, mapUrl: "http://place.map.kakao.com/1276807434", phone: "033-634-1281", roadAddr: "강원특별자치도 속초시 대포항길 186", verified: "카카오 좌표확정", note: "전 객실 동해 오션뷰, 설악산 조망·워터파크 시설" },
@@ -1650,7 +1681,11 @@ const DIVE_SITES = [
     ],
     attraction: [
       { name: "덕포해수욕장", lat: 34.9107895691336, lng: 128.71051559059, mapUrl: "http://place.map.kakao.com/10302038", category: "해수욕장,해변", phone: "055-639-4244", verified: "카카오 관광명소", note: "다이빙 포인트 0.3km 반경" },
-      { name: "섬&섬길 11코스(충무공이순신만나러가는길)", lat: 34.908594316009015, lng: 128.71152470926404, mapUrl: "http://place.map.kakao.com/26558653", category: "도보여행", verified: "카카오 관광명소", note: "다이빙 포인트 0.5km 반경" }
+      { name: "섬&섬길 11코스(충무공이순신만나러가는길)", lat: 34.908594316009015, lng: 128.71152470926404, mapUrl: "http://place.map.kakao.com/26558653", category: "도보여행", verified: "카카오 관광명소", note: "다이빙 포인트 0.5km 반경" },
+      { name: "옥포해안산책로", lat: 34.8906975476656, lng: 128.699292096284, mapUrl: "http://place.map.kakao.com/26538349", category: "도보여행", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 2.7km" },
+      { name: "남파랑길 19코스", lat: 34.8913859459578, lng: 128.697691794488, mapUrl: "http://place.map.kakao.com/1286724255", category: "남파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 2.7km" },
+      { name: "남파랑길 20코스", lat: 34.8654215056507, lng: 128.723881298381, mapUrl: "http://place.map.kakao.com/1286670280", category: "남파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 5.4km" },
+      { name: "남파랑길 18코스", lat: 34.9698726896463, lng: 128.699565023381, mapUrl: "http://place.map.kakao.com/1286985867", category: "남파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 6.4km" }
     ],
     lodging: [
       { name: "바람의언덕 리조트", lat: 34.739786, lng: 128.663445, mapUrl: "http://place.map.kakao.com/16250030", phone: "055-632-6377", roadAddr: "경남 거제시 남부면 해금강로 132", verified: "카카오 좌표확정", note: "신선대 전망 감성 숙소, 오션뷰·정원·카페" },
@@ -1787,7 +1822,11 @@ const DIVE_SITES = [
       { name: "장군산둘레길", lat: 34.75080821777651, lng: 127.72229413430351, mapUrl: "http://place.map.kakao.com/27598206", category: "장군산둘레길", verified: "카카오 관광명소", note: "다이빙 포인트 1.2km 반경" },
       { name: "구봉산둘레길", lat: 34.736486389065696, lng: 127.71134207699014, mapUrl: "http://place.map.kakao.com/26563729", category: "도보여행", verified: "카카오 관광명소", note: "다이빙 포인트 1.8km 반경" },
       { name: "고락산둘레길", lat: 34.76308568896647, lng: 127.6886064109177, mapUrl: "http://place.map.kakao.com/26563728", category: "도보여행", verified: "카카오 관광명소", note: "다이빙 포인트 2.1km 반경" },
-      { name: "고궁온천", lat: 34.768419117222365, lng: 127.69323523875481, mapUrl: "http://place.map.kakao.com/10162613", category: "온천", verified: "카카오 관광명소", note: "다이빙 포인트 2.2km 반경" }
+      { name: "고궁온천", lat: 34.768419117222365, lng: 127.69323523875481, mapUrl: "http://place.map.kakao.com/10162613", category: "온천", verified: "카카오 관광명소", note: "다이빙 포인트 2.2km 반경" },
+      { name: "남파랑길 55코스", lat: 34.7292534649284, lng: 127.692430939334, mapUrl: "http://place.map.kakao.com/1150818271", category: "남파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 3km" },
+      { name: "남파랑길 54코스", lat: 34.7497635834482, lng: 127.748697140791, mapUrl: "http://place.map.kakao.com/1151203344", category: "남파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 3.5km" },
+      { name: "남파랑길 53코스", lat: 34.7666414796588, lng: 127.667769484059, mapUrl: "http://place.map.kakao.com/1151293710", category: "남파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 4km" },
+      { name: "호랑산둘레길", lat: 34.795283655493684, lng: 127.69806570656203, mapUrl: "http://place.map.kakao.com/26563714", category: "도보여행", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 4.8km" }
     ],
     lodging: [
       { name: "해미리온 풀빌라&리조트", lat: 34.697684, lng: 127.754511, mapUrl: "http://place.map.kakao.com/886301512", phone: "061-807-3157", roadAddr: "전남광주통합특별시 여수시 돌산읍 몰둠벙길 72", verified: "카카오 좌표확정", note: "돌산읍 몰둠벙길 72, 돌산 초입. 전 객실 오션뷰+개별 미온수풀. 무슬목해변 차 5분·해상케이블카 8분. 청결·재방문 후기 다수" },
@@ -2171,7 +2210,11 @@ const DIVE_SITES = [
       { name: "명지철새탐조대", lat: 35.0840837759168, lng: 128.911805767472, mapUrl: "http://place.map.kakao.com/27041823", category: "전망대", verified: "카카오 관광명소", note: "다이빙 포인트 1km 반경" },
       { name: "금샘해수온천", lat: 35.09848454667595, lng: 128.91890107231166, mapUrl: "http://place.map.kakao.com/2125242092", category: "온천", phone: "0507-1361-8867", verified: "카카오 관광명소", note: "다이빙 포인트 1km 반경" },
       { name: "남파랑길 5코스", lat: 35.0889704451289, lng: 128.896925289182, mapUrl: "http://place.map.kakao.com/1309471663", category: "남파랑길", verified: "카카오 관광명소", note: "다이빙 포인트 1.3km 반경" },
-      { name: "명지선창회타운", lat: 35.1013462758906, lng: 128.929148757968, mapUrl: "http://place.map.kakao.com/22711635", category: "먹자골목", verified: "카카오 관광명소", note: "다이빙 포인트 1.9km 반경" }
+      { name: "명지선창회타운", lat: 35.1013462758906, lng: 128.929148757968, mapUrl: "http://place.map.kakao.com/22711635", category: "먹자골목", verified: "카카오 관광명소", note: "다이빙 포인트 1.9km 반경" },
+      { name: "천가동해안산책로", lat: 35.0545994585369, lng: 128.848131164522, mapUrl: "http://place.map.kakao.com/13055401", category: "도보여행", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 6.9km" },
+      { name: "암남공원 해안산책로", lat: 35.0623853971864, lng: 129.020145492869, mapUrl: "http://place.map.kakao.com/11839749", category: "도보여행", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 10.2km" },
+      { name: "절영해안산책로", lat: 35.0813686266753, lng: 129.041188583626, mapUrl: "http://place.map.kakao.com/11841600", category: "도보여행", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 11.6km" },
+      { name: "남파랑길 4코스", lat: 35.0409449268143, lng: 128.967766471415, mapUrl: "http://place.map.kakao.com/1309615886", category: "남파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 7.6km" }
     ],
     lodging: [
       { name: "아난티 앳 부산 코브", lat: 35.19793, lng: 129.228281, mapUrl: "http://place.map.kakao.com/27224037", phone: "051-509-1111", roadAddr: "부산 기장군 기장읍 기장해안로 268-32", verified: "카카오 좌표확정", note: "기장 해안 절벽 5성급 리조트형 호텔, 오션뷰·인피니티풀" },
@@ -2290,7 +2333,11 @@ const DIVE_SITES = [
       { name: "장호해변", lat: 37.2858874693311, lng: 129.314177242896, mapUrl: "http://place.map.kakao.com/8540118", category: "해수욕장,해변", phone: "033-572-3011", verified: "카카오 관광명소", note: "다이빙 포인트 1km 반경" },
       { name: "장호항전망대", lat: 37.2897479277801, lng: 129.317941515577, mapUrl: "http://place.map.kakao.com/748327736", category: "전망대", verified: "카카오 관광명소", note: "다이빙 포인트 1.3km 반경" },
       { name: "명도", lat: 37.2887338477135, lng: 129.32090531239, mapUrl: "http://place.map.kakao.com/1190950854", category: "섬", verified: "카카오 관광명소", note: "다이빙 포인트 1.5km 반경" },
-      { name: "갈남해수욕장", lat: 37.2811156327188, lng: 129.323419749765, mapUrl: "http://place.map.kakao.com/25609334", category: "해수욕장,해변", verified: "카카오 관광명소", note: "다이빙 포인트 1.9km 반경" }
+      { name: "갈남해수욕장", lat: 37.2811156327188, lng: 129.323419749765, mapUrl: "http://place.map.kakao.com/25609334", category: "해수욕장,해변", verified: "카카오 관광명소", note: "다이빙 포인트 1.9km 반경" },
+      { name: "해파랑길 30코스", lat: 37.30884412808064, lng: 129.2888247156447, mapUrl: "http://place.map.kakao.com/26564209", category: "해파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 2.6km" },
+      { name: "해파랑길 29코스", lat: 37.237265116529606, lng: 129.3291572689245, mapUrl: "http://place.map.kakao.com/26564208", category: "해파랑길", phone: "02-6013-6611", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 6.2km" },
+      { name: "해파랑길 31코스", lat: 37.354221532225125, lng: 129.23970116932054, mapUrl: "http://place.map.kakao.com/26564210", category: "해파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 9.2km" },
+      { name: "문암해변", lat: 37.3091284833549, lng: 129.289771661267, mapUrl: "http://place.map.kakao.com/10422703", category: "해수욕장,해변", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 2.6km" }
     ],
     lodging: [
       { name: "작은행복펜션", lat: 37.283067, lng: 129.31268, mapUrl: "http://place.map.kakao.com/2079236793", phone: "010-9097-3071", roadAddr: "강원특별자치도 삼척시 근덕면 장호안2길 8", verified: "카카오 좌표확정", note: "장호해변 바로 옆, 모래사장 접근 편리" },
@@ -2560,7 +2607,11 @@ const DIVE_SITES = [
       { name: "동심식당", lat: 36.679793, lng: 129.46434, mapUrl: "http://place.map.kakao.com/23858596", phone: "054-788-2557", roadAddr: "경북 울진군 후포면 후포로 244", verified: "카카오 좌표확정", note: "전복죽이 압도적 인기인 현지 추천 식당" }
     ],
     attraction: [
-      { name: "해파랑길 25코스", lat: 36.886612140598125, lng: 129.41553451198945, mapUrl: "http://place.map.kakao.com/26564204", category: "해파랑길", verified: "카카오 관광명소", note: "다이빙 포인트 0.4km 반경" }
+      { name: "해파랑길 25코스", lat: 36.886612140598125, lng: 129.41553451198945, mapUrl: "http://place.map.kakao.com/26564204", category: "해파랑길", verified: "카카오 관광명소", note: "다이빙 포인트 0.4km 반경" },
+      { name: "왕피천은어길", lat: 36.92918723969137, lng: 129.355827072645, mapUrl: "http://place.map.kakao.com/26564111", category: "도보여행", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 6.7km" },
+      { name: "망양정해맞이공원", lat: 36.96548852062514, lng: 129.41075531525047, mapUrl: "http://place.map.kakao.com/27575763", category: "공원", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 8.4km" },
+      { name: "망양정해수욕장", lat: 36.9690157139718, lng: 129.412734804516, mapUrl: "http://place.map.kakao.com/10343240", category: "해수욕장,해변", phone: "054-789-4411", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 8.8km" },
+      { name: "기성망양해수욕장", lat: 36.8423167736898, lng: 129.435005583737, mapUrl: "http://place.map.kakao.com/13553327", category: "해수욕장,해변", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 5.6km" }
     ],
     lodging: [
       { name: "후포항·죽변항 주변 펜션", mapUrl: "https://map.naver.com/p/search/%EC%9A%B8%EC%A7%84%20%ED%9B%84%ED%8F%AC%ED%95%AD%20%ED%8E%9C%EC%85%98", note: "항구 인근 숙박 밀집. 개별 상호 미검증(지도 검색 링크)" }
@@ -2635,7 +2686,11 @@ const DIVE_SITES = [
       { name: "서산동 시화골목", lat: 34.7826234147573, lng: 126.376804646075, mapUrl: "http://place.map.kakao.com/480887558", category: "테마거리", verified: "카카오 관광명소", note: "다이빙 포인트 0.5km 반경" },
       { name: "목포항구포차", lat: 34.7810851080547, lng: 126.388431761224, mapUrl: "http://place.map.kakao.com/1736551913", category: "먹자골목", verified: "카카오 관광명소", note: "다이빙 포인트 0.5km 반경" },
       { name: "목포민어골목", lat: 34.7865252933798, lng: 126.384012545905, mapUrl: "http://place.map.kakao.com/25738054", category: "먹자골목", verified: "카카오 관광명소", note: "다이빙 포인트 0.6km 반경" },
-      { name: "곳곳산책길 목포", lat: 34.787147772784, lng: 126.381447983913, mapUrl: "http://place.map.kakao.com/1966108717", category: "도보여행", verified: "카카오 관광명소", note: "다이빙 포인트 0.7km 반경" }
+      { name: "곳곳산책길 목포", lat: 34.787147772784, lng: 126.381447983913, mapUrl: "http://place.map.kakao.com/1966108717", category: "도보여행", verified: "카카오 관광명소", note: "다이빙 포인트 0.7km 반경" },
+      { name: "유달산갓길", lat: 34.7887558576657, lng: 126.380914802864, mapUrl: "http://place.map.kakao.com/1004249935", category: "둘레길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 0.8km" },
+      { name: "서해랑길 17코스", lat: 34.7881863146891, lng: 126.391488890914, mapUrl: "http://place.map.kakao.com/1869006852", category: "서해랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 1.1km" },
+      { name: "유달산일주도로 및 둘레숲길 유달산등산", lat: 34.79270325143713, lng: 126.37372618685458, mapUrl: "http://place.map.kakao.com/26563697", category: "도보여행", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 1.5km" },
+      { name: "서해랑길 16코스(임시노선)", lat: 34.7738775788961, lng: 126.421643006745, mapUrl: "http://place.map.kakao.com/1848992488", category: "서해랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 3.5km" }
     ],
     lodging: [
       { name: "폰타나비치호텔", lat: 34.796539, lng: 126.432339, mapUrl: "http://place.map.kakao.com/27503169", phone: "061-288-7000", roadAddr: "전남광주통합특별시 목포시 평화로 69", verified: "카카오 좌표확정", note: "3성급 관광호텔. 조식 레스토랑·카페 보유, 신도시 번화가 위치" },
@@ -2776,7 +2831,11 @@ const DIVE_SITES = [
       { name: "미조도", lat: 34.7202976733483, lng: 128.052869882588, mapUrl: "http://place.map.kakao.com/14864528", category: "섬", verified: "카카오 관광명소", note: "다이빙 포인트 1.4km 반경" },
       { name: "죽암도", lat: 34.6989942886405, lng: 128.062256519847, mapUrl: "http://place.map.kakao.com/17445429", category: "섬", verified: "카카오 관광명소", note: "다이빙 포인트 1.4km 반경" },
       { name: "도장게 전망대", lat: 34.69416443041, lng: 128.052108810662, mapUrl: "http://place.map.kakao.com/1159991610", category: "전망대", verified: "카카오 관광명소", note: "다이빙 포인트 1.5km 반경" },
-      { name: "남해바래길 8코스(섬노래길)", lat: 34.71328560756318, lng: 128.03512806925917, mapUrl: "http://place.map.kakao.com/26558488", category: "도보여행", verified: "카카오 관광명소", note: "다이빙 포인트 1.5km 반경" }
+      { name: "남해바래길 8코스(섬노래길)", lat: 34.71328560756318, lng: 128.03512806925917, mapUrl: "http://place.map.kakao.com/26558488", category: "도보여행", verified: "카카오 관광명소", note: "다이빙 포인트 1.5km 반경" },
+      { name: "남파랑길 40코스", lat: 34.7553283374701, lng: 128.014663948818, mapUrl: "http://place.map.kakao.com/1138930212", category: "남파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 6.2km" },
+      { name: "남파랑길 41코스", lat: 34.7166842357805, lng: 127.95896959576, mapUrl: "http://place.map.kakao.com/1138763769", category: "남파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 8.1km" },
+      { name: "미조 해상 산책로", lat: 34.7058132915247, lng: 128.043151194659, mapUrl: "http://place.map.kakao.com/218720942", category: "관광,명소", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 0.7km" },
+      { name: "설리해수욕장", lat: 34.7065664318327, lng: 128.026002478021, mapUrl: "http://place.map.kakao.com/7948603", category: "해수욕장,해변", phone: "055-862-9405", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 2.2km" }
     ],
     lodging: [
       { name: "썬앤문 펜션 (Sun & Moon)", lat: 34.721109, lng: 127.990484, mapUrl: "http://place.map.kakao.com/1099067178", phone: "010-5634-0112", roadAddr: "경남 남해군 상주면 남해대로675번길 27", verified: "카카오 좌표확정", note: "상주은모래비치 바로 앞, 파도소리 들리는 입지" },
@@ -2955,7 +3014,11 @@ const DIVE_SITES = [
       { name: "행남해안산책로", lat: 37.491316402883406, lng: 130.9131908038533, mapUrl: "http://place.map.kakao.com/10909319", category: "둘레길", verified: "카카오 관광명소", note: "다이빙 포인트 1.3km 반경" },
       { name: "저동 해안산책로", lat: 37.4899998615604, lng: 130.913600029705, mapUrl: "http://place.map.kakao.com/442398646", category: "도보여행", verified: "카카오 관광명소", note: "다이빙 포인트 1.4km 반경" },
       { name: "저동항 전망대", lat: 37.4854305317882, lng: 130.916894761973, mapUrl: "http://place.map.kakao.com/1721294197", category: "전망대", verified: "카카오 관광명소", note: "다이빙 포인트 1.9km 반경" },
-      { name: "도동 해안산책로", lat: 37.4818193523127, lng: 130.910336517093, mapUrl: "http://place.map.kakao.com/1849893931", category: "도보여행", verified: "카카오 관광명소", note: "다이빙 포인트 2.3km 반경" }
+      { name: "도동 해안산책로", lat: 37.4818193523127, lng: 130.910336517093, mapUrl: "http://place.map.kakao.com/1849893931", category: "도보여행", verified: "카카오 관광명소", note: "다이빙 포인트 2.3km 반경" },
+      { name: "태하 해안산책로 및 대풍감", lat: 37.5174269531798, lng: 130.79268873716, mapUrl: "http://place.map.kakao.com/1359644693", category: "관광,명소", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 10.8km" },
+      { name: "내수전일출전망대", lat: 37.5122939198645, lng: 130.909756845702, mapUrl: "http://place.map.kakao.com/12411036", category: "전망대", phone: "054-790-6394", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 1.1km" },
+      { name: "사동해수욕장", lat: 37.4756319776669, lng: 130.896002429053, mapUrl: "http://place.map.kakao.com/1300440859", category: "해수욕장,해변", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 3.4km" },
+      { name: "죽암몽돌해수욕장", lat: 37.541125385362, lng: 130.888991237008, mapUrl: "http://place.map.kakao.com/13546376", category: "해수욕장,해변", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 4.8km" }
     ],
     lodging: [
       { name: "대아울릉리조트", lat: 36.064806, lng: 129.385374, mapUrl: "http://place.map.kakao.com/26033697", phone: "054-791-8800", roadAddr: "경북 포항시 북구 해안로 203", verified: "카카오 좌표확정", note: "울릉도 대표 리조트, 야놀자·익스피디아 등 OTA 판매 중. 외관은 낡았으나 바다뷰·수압 호평 후기" },
@@ -3046,7 +3109,11 @@ const DIVE_SITES = [
       { name: "석동식물원", lat: 35.1588541885033, lng: 128.705654962783, mapUrl: "http://place.map.kakao.com/23826170", category: "수목원,식물원", verified: "카카오 관광명소", note: "다이빙 포인트 1.3km 반경" },
       { name: "안민고개 만남전망대", lat: 35.16842591455559, lng: 128.70060432558938, mapUrl: "http://place.map.kakao.com/489447191", category: "전망대", verified: "카카오 관광명소", note: "다이빙 포인트 2km 반경" },
       { name: "대죽도", lat: 35.1322863625493, lng: 128.682168111153, mapUrl: "http://place.map.kakao.com/20175064", category: "섬", verified: "카카오 관광명소", note: "다이빙 포인트 2.4km 반경" },
-      { name: "남파랑길 8코스", lat: 35.1573828199486, lng: 128.722824433637, mapUrl: "http://place.map.kakao.com/1308996357", category: "남파랑길", verified: "카카오 관광명소", note: "다이빙 포인트 2.6km 반경" }
+      { name: "남파랑길 8코스", lat: 35.1573828199486, lng: 128.722824433637, mapUrl: "http://place.map.kakao.com/1308996357", category: "남파랑길", verified: "카카오 관광명소", note: "다이빙 포인트 2.6km 반경" },
+      { name: "진해근대문화역사길", lat: 35.14942800085397, lng: 128.65914899909282, mapUrl: "http://place.map.kakao.com/205450798", category: "둘레길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 3.1km" },
+      { name: "남파랑길 7코스", lat: 35.1114031701689, lng: 128.715841266268, mapUrl: "http://place.map.kakao.com/1309170865", category: "남파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 4.8km" },
+      { name: "남파랑길 6코스", lat: 35.1150783552139, lng: 128.783750760597, mapUrl: "http://place.map.kakao.com/1309211824", category: "남파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 8.8km" },
+      { name: "남파랑길 9코스", lat: 35.2111263357934, lng: 128.609809300296, mapUrl: "http://place.map.kakao.com/1308789955", category: "남파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 10km" }
     ],
     lodging: [
       { name: "진해 속천항 인근 호텔/모텔", lat: 35.143898, lng: 128.672014, mapUrl: "http://place.map.kakao.com/1722530059", phone: "055-552-4888", roadAddr: "경남 창원시 진해구 진희로23번길 4", verified: "카카오 좌표확정(상호상이: 아몬드호텔 — 재확인)", note: "항구 접근성 좋은 숙박 밀집. 개별 상호 미검증(지도 검색 링크)" },
@@ -3115,7 +3182,10 @@ const DIVE_SITES = [
       { name: "대천해수욕장", lat: 36.3102317300706, lng: 126.513481592784, mapUrl: "http://place.map.kakao.com/24925403", category: "해수욕장,해변", phone: "041-933-7051", verified: "카카오 관광명소", note: "다이빙 포인트 0.3km 반경" },
       { name: "호텔마스타대천 워터파크", lat: 36.3070688663067, lng: 126.518444801437, mapUrl: "http://place.map.kakao.com/8274926", category: "워터테마파크", phone: "041-930-2000", verified: "카카오 관광명소", note: "다이빙 포인트 0.5km 반경" },
       { name: "대천타워전망대", lat: 36.3208388951136, lng: 126.506088121845, mapUrl: "http://place.map.kakao.com/1446885108", category: "전망대", verified: "카카오 관광명소", note: "다이빙 포인트 1.4km 반경" },
-      { name: "숲속애빛의정원", lat: 36.32887330146167, lng: 126.53011168963313, mapUrl: "http://place.map.kakao.com/1863861731", category: "관광농원", phone: "010-2515-4430", verified: "카카오 관광명소", note: "다이빙 포인트 2.3km 반경" }
+      { name: "숲속애빛의정원", lat: 36.32887330146167, lng: 126.53011168963313, mapUrl: "http://place.map.kakao.com/1863861731", category: "관광농원", phone: "010-2515-4430", verified: "카카오 관광명소", note: "다이빙 포인트 2.3km 반경" },
+      { name: "서해랑길 60코스", lat: 36.3534411915863, lng: 126.559472607393, mapUrl: "http://place.map.kakao.com/1686697850", category: "서해랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 6km" },
+      { name: "서해랑길 59코스", lat: 36.2214528882081, lng: 126.533493227314, mapUrl: "http://place.map.kakao.com/1686654333", category: "서해랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 10.1km" },
+      { name: "서해랑길 61코스", lat: 36.411334692427474, lng: 126.50838225032068, mapUrl: "http://place.map.kakao.com/1686473263", category: "서해랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 11.1km" }
     ],
     lodging: [
       { name: "대천해수욕장 주변 호텔/펜션", lat: 36.316025, lng: 126.509966, mapUrl: "http://place.map.kakao.com/1337699952", phone: "02-899-7475", roadAddr: "충남 보령시 해수욕장10길 18", verified: "카카오 좌표확정(상호상이: 대천 아이오션호텔&풀빌라 — 재확인)", note: "해수욕장 인근 숙박 밀집. 개별 상호 미검증(지도 검색 링크)" }
@@ -3317,7 +3387,11 @@ const DIVE_SITES = [
       { name: "앞삼섬", lat: 35.804068869275, lng: 126.412422355473, mapUrl: "http://place.map.kakao.com/20245810", category: "섬", verified: "카카오 관광명소", note: "다이빙 포인트 1.3km 반경" },
       { name: "하트섬", lat: 35.8096911102874, lng: 126.421019896376, mapUrl: "http://place.map.kakao.com/744928855", category: "섬", verified: "카카오 관광명소", note: "다이빙 포인트 1.4km 반경" },
       { name: "무능도", lat: 35.8098899759263, lng: 126.430958591146, mapUrl: "http://place.map.kakao.com/20176979", category: "섬", verified: "카카오 관광명소", note: "다이빙 포인트 1.5km 반경" },
-      { name: "주삼섬", lat: 35.8013384027637, lng: 126.409176644988, mapUrl: "http://place.map.kakao.com/20245809", category: "섬", verified: "카카오 관광명소", note: "다이빙 포인트 1.5km 반경" }
+      { name: "주삼섬", lat: 35.8013384027637, lng: 126.409176644988, mapUrl: "http://place.map.kakao.com/20245809", category: "섬", verified: "카카오 관광명소", note: "다이빙 포인트 1.5km 반경" },
+      { name: "옥돌해변 데크 산책로", lat: 35.8059922414995, lng: 126.409318092828, mapUrl: "http://place.map.kakao.com/1670924306", category: "관광,명소", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 1.7km" },
+      { name: "옥돌해변", lat: 35.8075611992589, lng: 126.410028950091, mapUrl: "http://place.map.kakao.com/252285214", category: "해수욕장,해변", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 1.7km" },
+      { name: "선유도해수욕장", lat: 35.822983410697546, lng: 126.41299121404951, mapUrl: "http://place.map.kakao.com/10493031", category: "해수욕장,해변", phone: "063-465-5186", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 3km" },
+      { name: "몽돌해변", lat: 35.82865735140797, lng: 126.40196225136076, mapUrl: "http://place.map.kakao.com/19239097", category: "해수욕장,해변", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 4km" }
     ],
     lodging: [
       { name: "선유도 펜션/숙소", lat: 35.807763, lng: 126.414365, mapUrl: "http://place.map.kakao.com/94117530", phone: "063-465-2865", roadAddr: "전북특별자치도 군산시 옥도면 선유남길 19-9", verified: "카카오 좌표확정", note: "고군산군도 내 숙박. 개별 상호 미검증(지도 검색 링크)" }
@@ -3387,7 +3461,11 @@ const DIVE_SITES = [
     ],
     attraction: [
       { name: "오류고아라해변", lat: 35.8213166189963, lng: 129.509520717781, mapUrl: "http://place.map.kakao.com/11256465", category: "해수욕장,해변", phone: "054-745-6701", verified: "카카오 관광명소", note: "다이빙 포인트 0.5km 반경" },
-      { name: "감포깍지길 4코스(고샅으로접어드는길)", lat: 35.81020902566432, lng: 129.49725150648462, mapUrl: "http://place.map.kakao.com/26558571", category: "도보여행", verified: "카카오 관광명소", note: "다이빙 포인트 1.5km 반경" }
+      { name: "감포깍지길 4코스(고샅으로접어드는길)", lat: 35.81020902566432, lng: 129.49725150648462, mapUrl: "http://place.map.kakao.com/26558571", category: "도보여행", verified: "카카오 관광명소", note: "다이빙 포인트 1.5km 반경" },
+      { name: "해파랑길 12코스", lat: 35.84336447632096, lng: 129.5173196789926, mapUrl: "http://place.map.kakao.com/26564191", category: "해파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 2.9km" },
+      { name: "해파랑길 11코스", lat: 35.745676475185775, lng: 129.48602215904378, mapUrl: "http://place.map.kakao.com/26564190", category: "해파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 8.3km" },
+      { name: "전촌솔밭해변", lat: 35.78607384176433, lng: 129.49131969868978, mapUrl: "http://place.map.kakao.com/10714629", category: "해수욕장,해변", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 3.9km" },
+      { name: "나정고운모래해변", lat: 35.7822895513597, lng: 129.491498984723, mapUrl: "http://place.map.kakao.com/8223627", category: "해수욕장,해변", phone: "054-779-6324", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 4.3km" }
     ],
     lodging: [
       { name: "감포항 주변 펜션/모텔", mapUrl: "https://map.naver.com/p/search/%EA%B0%90%ED%8F%AC%20%ED%8E%9C%EC%85%98", note: "감포항 인근 숙박. 바다수 펜션 겸업. 개별 상호 미검증(지도 검색 링크)" }
@@ -3442,7 +3520,12 @@ const DIVE_SITES = [
       { name: "삼천포항 회센터", lat: 34.927081, lng: 128.072485, mapUrl: "http://place.map.kakao.com/1237874950", phone: "055-835-1367", note: "삼천포항 활어회 상가(지도 검색 링크)" }
     ],
     attraction: [
-      { name: "새고개식물원", lat: 34.9551912479957, lng: 128.074611953401, mapUrl: "http://place.map.kakao.com/9081022", category: "수목원,식물원", verified: "카카오 관광명소", note: "다이빙 포인트 0.1km 반경" }
+      { name: "새고개식물원", lat: 34.9551912479957, lng: 128.074611953401, mapUrl: "http://place.map.kakao.com/9081022", category: "수목원,식물원", verified: "카카오 관광명소", note: "다이빙 포인트 0.1km 반경" },
+      { name: "남파랑길 35코스", lat: 34.9592034304617, lng: 128.051403705005, mapUrl: "http://place.map.kakao.com/1147204051", category: "남파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 2.1km" },
+      { name: "남파랑길 34코스", lat: 34.9240396570186, lng: 128.090445845465, mapUrl: "http://place.map.kakao.com/1147342072", category: "남파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 3.8km" },
+      { name: "남파랑길 36코스", lat: 34.8958493838465, lng: 128.015101361042, mapUrl: "http://place.map.kakao.com/1147092317", category: "남파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 8.5km" },
+      { name: "남파랑길 37코스", lat: 34.883874276750035, lng: 128.0387601410967, mapUrl: "http://place.map.kakao.com/1146335880", category: "남파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 8.6km" },
+      { name: "사천케이블카자연휴양림", lat: 34.9501704293749, lng: 128.057609174335, mapUrl: "http://place.map.kakao.com/225867771", category: "자연휴양림", phone: "055-835-9524", verified: "카카오 관광명소", note: "샵 기준 1.6km" }
     ],
     lodging: [
       { name: "삼천포대교 인근 호텔/펜션", mapUrl: "https://map.naver.com/p/search/%EC%82%BC%EC%B2%9C%ED%8F%AC%EB%8C%80%EA%B5%90%20%ED%98%B8%ED%85%94", note: "대교·바다뷰 숙박 밀집. 개별 상호 미검증(지도 검색 링크)" }
@@ -3557,7 +3640,11 @@ const DIVE_SITES = [
       { name: "하나개해수욕장", lat: 37.3848326961993, lng: 126.409851834803, mapUrl: "http://place.map.kakao.com/8127855", category: "해수욕장,해변", phone: "032-751-8833", verified: "카카오 관광명소", note: "다이빙 포인트 1.8km 반경" },
       { name: "무의바다누리길", lat: 37.37334798983633, lng: 126.44206799230838, mapUrl: "http://place.map.kakao.com/26563803", category: "도보여행", verified: "카카오 관광명소", note: "다이빙 포인트 2.3km 반경" },
       { name: "소무의도", lat: 37.3719950743652, lng: 126.443301802566, mapUrl: "http://place.map.kakao.com/7959279", category: "섬", verified: "카카오 관광명소", note: "다이빙 포인트 2.5km 반경" },
-      { name: "몽여해변", lat: 37.3731689663352, lng: 126.445575915502, mapUrl: "http://place.map.kakao.com/1408301206", category: "해수욕장,해변", verified: "카카오 관광명소", note: "다이빙 포인트 2.5km 반경" }
+      { name: "몽여해변", lat: 37.3731689663352, lng: 126.445575915502, mapUrl: "http://place.map.kakao.com/1408301206", category: "해수욕장,해변", verified: "카카오 관광명소", note: "다이빙 포인트 2.5km 반경" },
+      { name: "국립무의도자연휴양림 산책로", lat: 37.390275275411824, lng: 126.41048896888898, mapUrl: "http://place.map.kakao.com/1153484871", category: "관광지부속시설", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 1.6km" },
+      { name: "무의도 해상관광탐방로", lat: 37.3849549578209, lng: 126.411966904176, mapUrl: "http://place.map.kakao.com/1130112412", category: "도보여행", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 1.6km" },
+      { name: "명사의해변", lat: 37.37103268468185, lng: 126.44462074641878, mapUrl: "http://place.map.kakao.com/1527186795", category: "해수욕장,해변", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 2.6km" },
+      { name: "실미도 자연발생유원지", lat: 37.403409288792, lng: 126.402947681544, mapUrl: "http://place.map.kakao.com/8102396", category: "해수욕장,해변", phone: "032-752-4466", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 2.7km" }
     ],
   },
   {
@@ -3604,6 +3691,13 @@ const DIVE_SITES = [
         source: "https://m.place.naver.com/place/1698446648/home",
         traits: { serviceType: ["미상"], _src: "미상" },
       }
+    ],
+    attraction: [
+      { name: "서해랑길 66코스", lat: 36.7286535996407, lng: 126.279904902282, mapUrl: "http://place.map.kakao.com/1686002631", category: "서해랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 2.6km" },
+      { name: "서해랑길 75코스", lat: 36.796157193924, lng: 126.291849326605, mapUrl: "http://place.map.kakao.com/1685735142", category: "서해랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 5.6km" },
+      { name: "서해랑길 67코스", lat: 36.7220996758206, lng: 126.223404824228, mapUrl: "http://place.map.kakao.com/1685910423", category: "서해랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 7.2km" },
+      { name: "서해랑길 64-1코스(지선1코스)", lat: 36.6694340768658, lng: 126.369945220335, mapUrl: "http://place.map.kakao.com/1982962388", category: "서해랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 10.6km" },
+      { name: "사점산", lat: 36.7320426286874, lng: 126.308622206691, mapUrl: "http://place.map.kakao.com/25263565", category: "산", verified: "카카오 관광명소", note: "샵 기준 1.8km" }
     ],
     food: [
       { name: "닭장수후라이드 태안점", lat: 36.746479376807, lng: 126.299714125545, mapUrl: "http://place.map.kakao.com/1179379221", category: "치킨", phone: "041-674-0504", verified: "카카오 좌표확정", note: "샵 기준 0km" },
@@ -3669,7 +3763,11 @@ const DIVE_SITES = [
       { name: "완도음식문화거리", lat: 34.3245672715161, lng: 126.748487600442, mapUrl: "http://place.map.kakao.com/1048908791", category: "먹자골목", verified: "카카오 관광명소", note: "다이빙 포인트 0.4km 반경" },
       { name: "주도", lat: 34.316629294355, lng: 126.75629803333374, mapUrl: "http://place.map.kakao.com/8073841", category: "섬", verified: "카카오 관광명소", note: "다이빙 포인트 1km 반경" },
       { name: "완도타워", lat: 34.310767119525266, lng: 126.76656513850533, mapUrl: "http://place.map.kakao.com/9942743", category: "전망대", phone: "061-550-7640", verified: "카카오 관광명소", note: "다이빙 포인트 2.1km 반경" },
-      { name: "작은개머리 전망데크", lat: 34.3117575519298, lng: 126.771668529228, mapUrl: "http://place.map.kakao.com/1645465328", category: "전망대", verified: "카카오 관광명소", note: "다이빙 포인트 2.4km 반경" }
+      { name: "작은개머리 전망데크", lat: 34.3117575519298, lng: 126.771668529228, mapUrl: "http://place.map.kakao.com/1645465328", category: "전망대", verified: "카카오 관광명소", note: "다이빙 포인트 2.4km 반경" },
+      { name: "남파랑길 87코스", lat: 34.293595483408, lng: 126.728834336065, mapUrl: "http://place.map.kakao.com/836909996", category: "남파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 3.5km" },
+      { name: "남파랑길 88코스", lat: 34.3576633854747, lng: 126.681907773975, mapUrl: "http://place.map.kakao.com/864707685", category: "남파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 7km" },
+      { name: "남파랑길 86코스", lat: 34.3914354450687, lng: 126.71184771135, mapUrl: "http://place.map.kakao.com/836979884", category: "남파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 8.4km" },
+      { name: "장보고어린이공원", lat: 34.3435363020685, lng: 126.732380823341, mapUrl: "http://place.map.kakao.com/680006662", category: "공원", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 2.8km" }
     ],
   },
   {
@@ -4006,7 +4104,11 @@ const DIVE_SITES = [
       { name: "레인보우비치", lat: 38.0059010167062, lng: 128.730678326052, mapUrl: "http://place.map.kakao.com/138414485", category: "해수욕장,해변", verified: "카카오 관광명소", note: "다이빙 포인트 0.4km 반경" },
       { name: "기사문해수욕장", lat: 38.005701960633196, lng: 128.73091038004108, mapUrl: "http://place.map.kakao.com/25022897", category: "해수욕장,해변", verified: "카카오 관광명소", note: "다이빙 포인트 0.4km 반경" },
       { name: "해파랑길 42코스", lat: 38.00313613883454, lng: 128.73399566158233, mapUrl: "http://place.map.kakao.com/26564220", category: "해파랑길", verified: "카카오 관광명소", note: "다이빙 포인트 0.7km 반경" },
-      { name: "조도", lat: 38.0070022988734, lng: 128.742963716854, mapUrl: "http://place.map.kakao.com/20181669", category: "섬", verified: "카카오 관광명소", note: "다이빙 포인트 1.1km 반경" }
+      { name: "조도", lat: 38.0070022988734, lng: 128.742963716854, mapUrl: "http://place.map.kakao.com/20181669", category: "섬", verified: "카카오 관광명소", note: "다이빙 포인트 1.1km 반경" },
+      { name: "죽도산책로", lat: 37.9715027977327, lng: 128.762761830887, mapUrl: "http://place.map.kakao.com/1621890936", category: "둘레길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 5km" },
+      { name: "해파랑길 43코스", lat: 38.04282487318394, lng: 128.68876155214127, mapUrl: "http://place.map.kakao.com/26564221", category: "해파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 5.3km" },
+      { name: "해파랑길 41코스", lat: 37.93862635200217, lng: 128.78710005469995, mapUrl: "http://place.map.kakao.com/26564219", category: "해파랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 9.3km" },
+      { name: "잔교해변", lat: 37.9933159385881, lng: 128.742544098279, mapUrl: "http://place.map.kakao.com/8057940", category: "해수욕장,해변", phone: "033-670-2641", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 2km" }
     ],
   },
   {
@@ -4345,7 +4447,11 @@ const DIVE_SITES = [
       { name: "해파랑길 2코스", lat: 35.18160779413814, lng: 129.20637561464787, mapUrl: "http://place.map.kakao.com/26564181", category: "해파랑길", verified: "카카오 관광명소", note: "다이빙 포인트 0.4km 반경" },
       { name: "송정해수욕장", lat: 35.17859143461757, lng: 129.1997054846296, mapUrl: "http://place.map.kakao.com/20541735", category: "해수욕장,해변", phone: "051-749-7612", verified: "카카오 관광명소", note: "다이빙 포인트 0.4km 반경" },
       { name: "송정옛길", lat: 35.1765726170491, lng: 129.186288729717, mapUrl: "http://place.map.kakao.com/1377434291", category: "테마거리", verified: "카카오 관광명소", note: "다이빙 포인트 1.5km 반경" },
-      { name: "롯데프리미엄아울렛 동부산점 등대전망대", lat: 35.19365064272191, lng: 129.21248866019985, mapUrl: "http://place.map.kakao.com/1012792105", category: "전망대", verified: "카카오 관광명소", note: "다이빙 포인트 1.7km 반경" }
+      { name: "롯데프리미엄아울렛 동부산점 등대전망대", lat: 35.19365064272191, lng: 129.21248866019985, mapUrl: "http://place.map.kakao.com/1012792105", category: "전망대", verified: "카카오 관광명소", note: "다이빙 포인트 1.7km 반경" },
+      { name: "오시리아해안산책로", lat: 35.198407559809596, lng: 129.2298785786467, mapUrl: "http://place.map.kakao.com/2072859197", category: "관광,명소", phone: "051-709-4000", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 3.1km" },
+      { name: "기장해안산책로", lat: 35.21515936276433, lng: 129.22483896125718, mapUrl: "http://place.map.kakao.com/26564406", category: "도보여행", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 4.3km" },
+      { name: "동백공원 해안산책로", lat: 35.1544084334923, lng: 129.153285352622, mapUrl: "http://place.map.kakao.com/17807211", category: "숲", phone: "051-749-4971", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 5.2km" },
+      { name: "이기대해안산책로", lat: 35.11577835670782, lng: 129.1271487816168, mapUrl: "http://place.map.kakao.com/13050992", category: "도보여행", phone: "051-607-6398", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 9.8km" }
     ],
   },
   {
@@ -4482,7 +4588,11 @@ const DIVE_SITES = [
       { name: "베릿내오름", lat: 33.2473319412382, lng: 126.421505455742, mapUrl: "http://place.map.kakao.com/17809089", category: "오름", verified: "카카오 관광명소", note: "다이빙 포인트 0.5km 반경" },
       { name: "중문관광단지 별내린전망대", lat: 33.2474832993539, lng: 126.416847474623, mapUrl: "http://place.map.kakao.com/17808879", category: "전망대", verified: "카카오 관광명소", note: "다이빙 포인트 0.5km 반경" },
       { name: "한라산전망대", lat: 33.2484124561233, lng: 126.415798300191, mapUrl: "http://place.map.kakao.com/11211892", category: "전망대", verified: "카카오 관광명소", note: "다이빙 포인트 0.6km 반경" },
-      { name: "중문색달해수욕장", lat: 33.2450381505136, lng: 126.411498674889, mapUrl: "http://place.map.kakao.com/8069764", category: "해수욕장,해변", phone: "064-738-4843", verified: "카카오 관광명소", note: "다이빙 포인트 0.7km 반경" }
+      { name: "중문색달해수욕장", lat: 33.2450381505136, lng: 126.411498674889, mapUrl: "http://place.map.kakao.com/8069764", category: "해수욕장,해변", phone: "064-738-4843", verified: "카카오 관광명소", note: "다이빙 포인트 0.7km 반경" },
+      { name: "열리해안산책로", lat: 33.2401258811609, lng: 126.395656271732, mapUrl: "http://place.map.kakao.com/13723657", category: "올레길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 2.1km" },
+      { name: "한라산둘레길 돌오름길 입구", lat: 33.3107835967865, lng: 126.456514043387, mapUrl: "http://place.map.kakao.com/630155857", category: "입출구", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 8.2km" },
+      { name: "조른모살해변", lat: 33.24416871096, lng: 126.402740267242, mapUrl: "http://place.map.kakao.com/1566381808", category: "해수욕장,해변", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 1.4km" },
+      { name: "논짓물담수욕장", lat: 33.23720781085267, lng: 126.38929360609994, mapUrl: "http://place.map.kakao.com/8232047", category: "해수욕장,해변", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 2.7km" }
     ],
   },
   {
@@ -4635,7 +4745,9 @@ const DIVE_SITES = [
       { name: "당처물동굴 뒷길", lat: 33.5579440370781, lng: 126.789133544766, mapUrl: "http://place.map.kakao.com/2076178877", category: "도보여행", verified: "카카오 관광명소", note: "다이빙 포인트 0.7km 반경" },
       { name: "올레길 20코스(김녕-하도 올레)", lat: 33.55608189604472, lng: 126.81008402371101, mapUrl: "http://place.map.kakao.com/17605888", category: "제주올레길", verified: "카카오 관광명소", note: "다이빙 포인트 1.2km 반경" },
       { name: "코난해변", lat: 33.5574549144201, lng: 126.811191276835, mapUrl: "http://place.map.kakao.com/994758455", category: "해수욕장,해변", phone: "064-783-5889", verified: "카카오 관광명소", note: "다이빙 포인트 1.3km 반경" },
-      { name: "행원해변", lat: 33.5574549309136, lng: 126.811202045546, mapUrl: "http://place.map.kakao.com/399094716", category: "해수욕장,해변", verified: "카카오 관광명소", note: "다이빙 포인트 1.3km 반경" }
+      { name: "행원해변", lat: 33.5574549309136, lng: 126.811202045546, mapUrl: "http://place.map.kakao.com/399094716", category: "해수욕장,해변", verified: "카카오 관광명소", note: "다이빙 포인트 1.3km 반경" },
+      { name: "월정리해수욕장", lat: 33.556469394054, lng: 126.795805057888, mapUrl: "http://place.map.kakao.com/17600274", category: "해수욕장,해변", phone: "064-728-3394", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 0.1km" },
+      { name: "김녕해수욕장", lat: 33.5574388587079, lng: 126.759313988844, mapUrl: "http://place.map.kakao.com/25023085", category: "해수욕장,해변", phone: "064-728-3988", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 3.3km" }
     ],
   },
   {
@@ -4736,7 +4848,11 @@ const DIVE_SITES = [
     attraction: [
       { name: "만리포해수욕장 전망대", lat: 36.7904626227791, lng: 126.146538368023, mapUrl: "http://place.map.kakao.com/353991942", category: "전망대", verified: "카카오 관광명소", note: "다이빙 포인트 0.3km 반경" },
       { name: "뭍닭섬", lat: 36.7954630669545, lng: 126.143699774316, mapUrl: "http://place.map.kakao.com/662013158", category: "섬", verified: "카카오 관광명소", note: "다이빙 포인트 0.8km 반경" },
-      { name: "천리포수목원 어린이정원", lat: 36.7971875701735, lng: 126.148444704329, mapUrl: "http://place.map.kakao.com/17580272", category: "수목원,식물원", verified: "카카오 관광명소", note: "다이빙 포인트 1km 반경" }
+      { name: "천리포수목원 어린이정원", lat: 36.7971875701735, lng: 126.148444704329, mapUrl: "http://place.map.kakao.com/17580272", category: "수목원,식물원", verified: "카카오 관광명소", note: "다이빙 포인트 1km 반경" },
+      { name: "서해랑길 69코스", lat: 36.8179880224888, lng: 126.160844022393, mapUrl: "http://place.map.kakao.com/1684115233", category: "서해랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 3.6km" },
+      { name: "서해랑길 68코스", lat: 36.7275630905836, lng: 126.127794963322, mapUrl: "http://place.map.kakao.com/1684253311", category: "서해랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 6.9km" },
+      { name: "서해랑길 70코스", lat: 36.83960993007032, lng: 126.18961539264588, mapUrl: "http://place.map.kakao.com/1684022824", category: "서해랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 6.9km" },
+      { name: "서해랑길 67코스", lat: 36.7220996758206, lng: 126.223404824228, mapUrl: "http://place.map.kakao.com/1685910423", category: "서해랑길", walk: true, verified: "카카오 키워드검증", note: "걷기 좋음 · 샵 기준 10.1km" }
     ],
   }
 ];

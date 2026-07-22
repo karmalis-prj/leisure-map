@@ -472,7 +472,7 @@ function openDetail(id){
           return spots.length ? spots.map(n=>`
           <div class="sub-item" style="flex-direction:column;align-items:stretch;gap:4px">
             <div style="display:flex;justify-content:space-between;align-items:center;gap:10px">
-              <span style="font-weight:600">${n.name}${n.category ? ` <span style="font-size:11px;font-weight:500;color:var(--accent);background:var(--accent-soft,rgba(56,182,168,.12));padding:1px 7px;border-radius:10px;margin-left:4px">${n.category.split(",")[0]}</span>` : ""}</span>
+              <span style="font-weight:600">${n.walk ? "🚶 " : ""}${n.name}${n.category ? ` <span style="font-size:11px;font-weight:500;color:var(--accent);background:var(--accent-soft,rgba(56,182,168,.12));padding:1px 7px;border-radius:10px;margin-left:4px">${n.category.split(",")[0]}</span>` : ""}${n.walk ? ` <span style="font-size:11px;font-weight:600;color:#2a7d4f;background:rgba(60,170,110,.14);padding:1px 7px;border-radius:10px;margin-left:2px">걷기 좋음</span>` : ""}</span>
               <a href="${n.mapUrl}" target="_blank" rel="noopener">지도 보기</a>
             </div>
             ${n.note ? `<div style="font-size:12px;color:var(--ink-soft)">${n.note}</div>` : ""}
