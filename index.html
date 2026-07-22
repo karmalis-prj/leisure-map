@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<script src="../gate.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>다이빙 투어 허브</title>
+<style>
+:root{
+  --bg:#f6f3ec;
+  --surface:#ffffff;
+  --ink:#2c3e42;
+  --ink-soft:#5c6f73;
+  --line:#e2ddd0;
+  --navy:#0a2e3d;
+  --navy-soft:#0f4c5c;
+  --amber:#e8b04b;
+  --amber-ink:#5c3f0a;
+  --level-beginner:#3f8f6b;
+  --level-mid:#c98a2c;
+  --level-advanced:#c14f3d;
+  --radius:14px;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0d1b20;
+    --surface:#132a31;
+    --ink:#e8ede9;
+    --ink-soft:#9db0b3;
+    --line:#20393f;
+    --navy:#0a2e3d;
+    --navy-soft:#123946;
+    --amber:#f0c169;
+    --amber-ink:#2a1c04;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0d1b20;
+  --surface:#132a31;
+  --ink:#e8ede9;
+  --ink-soft:#9db0b3;
+  --line:#20393f;
+  --navy:#0a2e3d;
+  --navy-soft:#123946;
+  --amber:#f0c169;
+  --amber-ink:#2a1c04;
+}
+:root[data-theme="light"]{
+  --bg:#f6f3ec;
+  --surface:#ffffff;
+  --ink:#2c3e42;
+  --ink-soft:#5c6f73;
+  --line:#e2ddd0;
+  --navy:#0a2e3d;
+  --navy-soft:#0f4c5c;
+  --amber:#e8b04b;
+  --amber-ink:#5c3f0a;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:'Pretendard','Apple SD Gothic Neo',-apple-system,BlinkMacSystemFont,sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  min-height:100vh;
+  padding-bottom:60px;
+}
+header.top{
+  background:var(--navy);
+  color:#fff;
+  padding:28px 20px 22px;
+}
+.top-inner{max-width:720px;margin:0 auto}
+header.top h1{font-size:20px;font-weight:700;letter-spacing:-.2px}
+header.top p{font-size:13px;color:rgba(255,255,255,.6);margin-top:5px}
+
+main{max-width:720px;margin:0 auto;padding:20px}
+
+.filters{display:flex;gap:8px;margin-bottom:18px;flex-wrap:wrap}
+.filter-chip{
+  padding:7px 14px;border-radius:20px;font-size:13px;font-weight:600;
+  border:1px solid var(--line);background:var(--surface);color:var(--ink-soft);
+  cursor:pointer;transition:.15s;
+}
+.filter-chip.active{background:var(--navy);color:#fff;border-color:var(--navy)}
+
+.grid{display:flex;flex-direction:column;gap:12px}
+
+.site-card{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:18px 20px;
+  cursor:pointer;
+  transition:.15s;
+}
+.site-card:hover{border-color:var(--navy-soft)}
+.card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.card-name{font-size:16px;font-weight:700}
+.card-region{font-size:12.5px;color:var(--ink-soft);margin-top:3px}
+.level-badge{
+  flex-shrink:0;font-size:11px;font-weight:700;padding:4px 10px;border-radius:20px;color:#fff;
+  white-space:nowrap;
+}
+.level-입문{background:var(--level-beginner)}
+.level-중급{background:var(--level-mid)}
+.level-상급{background:var(--level-advanced)}
+
+.card-meta{display:flex;gap:14px;margin-top:12px;font-size:12.5px;color:var(--ink-soft);font-variant-numeric:tabular-nums}
+.card-meta span b{color:var(--ink);font-weight:600}
+.card-tags{display:flex;gap:6px;margin-top:10px;flex-wrap:wrap}
+.tag{font-size:11.5px;background:var(--bg);border:1px solid var(--line);padding:3px 9px;border-radius:8px;color:var(--ink-soft)}
+
+/* 샵 특성 필터 (2차 고도화) */
+.trait-filters{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}
+.trait-chip{font-size:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink-soft);
+  border-radius:99px;padding:5px 12px;cursor:pointer;transition:.15s;font-family:inherit}
+.trait-chip:hover{border-color:var(--navy-soft);color:var(--ink)}
+.trait-chip.active{background:var(--navy);border-color:var(--navy);color:#fff}
+.trait-chip .c{opacity:.65;font-variant-numeric:tabular-nums}
+
+/* 샵 특성 배지 (상세 뷰) */
+.trait-badges{display:flex;gap:5px;flex-wrap:wrap}
+.tb{font-size:10.5px;padding:2px 8px;border-radius:99px;letter-spacing:.02em;white-space:nowrap;border:1px solid transparent}
+.tb.svc{background:var(--bg);border-color:var(--line);color:var(--ink)}
+.tb.feat{border-color:var(--navy-soft);color:var(--navy-soft)}
+.tb.ag{background:var(--navy);color:#fff;font-weight:600}
+:root[data-theme="dark"] .tb.feat,@media (prefers-color-scheme:dark){.tb.feat{color:var(--amber);border-color:var(--amber)}}
+
+/* 검증등급 배지 */
+.vbadge{font-size:11px;padding:2px 8px;border-radius:6px;font-weight:600;align-self:flex-start}
+.vbadge.ok{background:color-mix(in srgb,var(--level-beginner) 20%,transparent);color:var(--level-beginner)}
+.vbadge.warn{background:color-mix(in srgb,var(--amber) 26%,transparent);color:var(--amber-ink)}
+.vbadge.bad{background:color-mix(in srgb,var(--level-advanced) 20%,transparent);color:var(--level-advanced)}
+
+/* detail panel */
+.overlay{
+  position:fixed;inset:0;background:rgba(10,20,24,.5);
+  display:none;align-items:flex-end;justify-content:center;z-index:50;
+}
+.overlay.on{display:flex}
+.detail{
+  background:var(--surface);
+  width:100%;max-width:720px;
+  max-height:88vh;overflow-y:auto;
+  border-radius:20px 20px 0 0;
+  padding:24px 22px 40px;
+}
+.detail-handle{width:36px;height:4px;background:var(--line);border-radius:4px;margin:0 auto 18px}
+.detail h2{font-size:20px;font-weight:700}
+.detail .region{font-size:13px;color:var(--ink-soft);margin-top:4px}
+.detail-section{margin-top:22px}
+.detail-section h3{font-size:12.5px;font-weight:700;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.4px;margin-bottom:10px}
+.detail-row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--line);font-size:14px}
+.detail-row:last-child{border:none}
+.link-btn{
+  display:block;width:100%;text-align:center;padding:13px;margin-top:6px;
+  background:var(--navy);color:#fff;border-radius:10px;font-weight:700;font-size:14.5px;
+  text-decoration:none;
+}
+.sub-list{display:flex;flex-direction:column;gap:8px}
+.sub-item{
+  display:flex;justify-content:space-between;align-items:center;gap:10px;
+  padding:11px 14px;background:var(--bg);border-radius:10px;font-size:13.5px;
+}
+.sub-item a{color:var(--navy-soft);font-weight:600;text-decoration:none;font-size:12.5px}
+:root[data-theme="dark"] .sub-item a, body:not([data-theme]) .sub-item a{color:var(--amber)}
+.travel-note{
+  font-size:13px;color:var(--amber-ink);background:color-mix(in srgb, var(--amber) 25%, transparent);
+  border-left:3px solid var(--amber);padding:10px 12px;border-radius:0 8px 8px 0;margin-top:22px;line-height:1.6;
+}
+.close-btn{
+  position:absolute;top:18px;right:20px;background:none;border:none;font-size:20px;color:var(--ink-soft);cursor:pointer;
+}
+.detail{position:relative}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner" style="display:flex;justify-content:space-between;align-items:flex-end;gap:12px">
+    <div>
+      <h1>다이빙 투어 허브</h1>
+      <p>사이트 정보 · 스킬 체크 · 샵 연락처를 한 곳에서</p>
+    </div>
+    <button id="reportBtnTop" style="flex-shrink:0;padding:9px 14px;border-radius:9px;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.08);color:#fff;font-size:12.5px;font-weight:600;cursor:pointer;white-space:nowrap">📝 제보하기</button>
+  </div>
+</header>
+
+<main>
+  <div class="filters" id="filters"></div>
+  <div class="trait-filters" id="traitFilters"></div>
+  <div class="grid" id="grid"></div>
+</main>
+
+<div class="overlay" id="overlay">
+  <div class="detail" id="detail">
+    <button class="close-btn" id="closeBtn">✕</button>
+    <div class="detail-handle"></div>
+    <div id="detailBody"></div>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script>
+const LEVELS = ["전체","입문","중급","상급"];
+let activeLevel = "전체";
+
+/* ── 샵 특성(traits) 필터 (2차 고도화) ── */
+// 필터 키 정의: 서비스유형 + 시설특성 + 교육단체
+const SVC_KEYS = ["체험","교육","펀다이빙","프리다이빙"];
+const FEAT_KEYS = [["boat","보트"],["lodging","숙박겸업"],["pool","전용풀"],["beginner","초보친화"],["naverBooking","🎫예약가능"]];
+const AG_KEYS = ["PADI","SSI","SDI"];
+let activeTraits = new Set();
+
+const RT_KEYS = ["강습우수","시설우수","가성비","친절응대","리조트힐링"];
+function shopHasTrait(sh, key){
+  if(key==="naverBooking") return !!sh.naverBooking;
+  if(RT_KEYS.includes(key)) return !!(sh.reviewTraits && (sh.reviewTraits.tags||[]).includes(key));
+  const t = sh.traits; if(!t) return false;
+  if(SVC_KEYS.includes(key)) return (t.serviceType||[]).includes(key);
+  if(AG_KEYS.includes(key)) return (t.agency||[]).includes(key);
+  return !!t[key];
+}
+// 지역에 조건(모든 활성 특성)을 만족하는 샵이 하나라도 있으면 통과
+function siteMatchesTraits(site){
+  if(activeTraits.size===0) return true;
+  return site.shops.some(sh => [...activeTraits].every(k => shopHasTrait(sh, k)));
+}
+
+function renderTraitFilters(){
+  const el = document.getElementById("traitFilters");
+  const allShops = DIVE_SITES.flatMap(s=>s.shops);
+  const items = [...SVC_KEYS.map(k=>[k,k]), ...FEAT_KEYS, ...RT_KEYS.map(k=>[k,"⭐"+k]), ...AG_KEYS.map(k=>[k,k])];
+  el.innerHTML = items.map(([k,label])=>{
+    const n = allShops.filter(sh=>shopHasTrait(sh,k)).length;
+    if(!n) return "";
+    return `<button class="trait-chip ${activeTraits.has(k)?'active':''}" data-key="${k}">${label} <span class="c">${n}</span></button>`;
+  }).join("");
+  el.querySelectorAll(".trait-chip").forEach(btn=>{
+    btn.addEventListener("click",()=>{
+      const k = btn.dataset.key;
+      activeTraits.has(k) ? activeTraits.delete(k) : activeTraits.add(k);
+      renderTraitFilters();
+      renderGrid();
+    });
+  });
+}
+
+// 검증등급 → 배지 클래스/텍스트
+function vClass(v){ return /확인/.test(v)?"ok":/추정/.test(v)?"warn":"bad"; }
+function vText(v){ return /확인/.test(v)?"확인":/추정/.test(v)?"추정":"미확인"; }
+// 1박2일 추천 코스 생성: 샵+맛집+볼거리+숙박 조합. 리뷰 강점 샵 우선.
+function buildCourse(s){
+  const shops=s.shops||[], food=s.food||[], lodge=s.lodging||[], attr=s.attraction||[];
+  if(!shops.length || !food.length || !attr.length) return null;
+  // 대표 샵: reviewTraits 있고 리뷰 많은 순
+  const pickShop=[...shops].sort((a,b)=>((b.reviewTraits?2:0)+(b.reviewCount||0)/1000)-((a.reviewTraits?2:0)+(a.reviewCount||0)/1000))[0];
+  const A=attr.filter(a=>!/해수욕장|해변/.test(a.category||"")), beaches=attr.filter(a=>/해수욕장|해변/.test(a.category||""));
+  const day1=[
+    {ic:"🤿",label:"다이빙",v:pickShop.name+(pickShop.reviewTraits?.tags?.length?` (${pickShop.reviewTraits.tags[0]})`:"")},
+    food[0]&&{ic:"🍽",label:"점심",v:food[0].name},
+    (beaches[0]||attr[0])&&{ic:"📸",label:"볼거리",v:(beaches[0]||attr[0]).name},
+    lodge[0]&&{ic:"🏨",label:"숙박",v:lodge[0].name},
+  ].filter(Boolean);
+  const day2=[
+    (A[0]||attr[1])&&{ic:"🏝",label:"오전",v:(A[0]||attr[1]).name},
+    food[1]&&{ic:"🍽",label:"점심",v:food[1].name},
+  ].filter(Boolean);
+  return {day1,day2,shop:pickShop.name};
+}
+// 현재 월 → 계절
+function curSeason(){ const m=new Date().getMonth()+1; return m<=2||m===12?"겨울":m<=5?"봄":m<=8?"여름":"가을"; }
+// 사이트 season 데이터 → 현재 적합도 {label,cls,note,best}
+function seasonNow(s){
+  if(!s || !s.byMonth) return null;
+  const cur=curSeason(); const d=s.byMonth[cur]; if(!d) return null;
+  const label = d.s===3?"성수기":d.s===2?"다이빙 가능":"비수기";
+  const cls = d.s===3?"ok":d.s===2?"warn":"bad";
+  return { season:cur, label, cls, note:d.n, best:(s.best||[]).join("·") };
+}
+// lastVerified("2026-07") → "N개월 전 확인" 신선도 라벨
+function freshness(ym){
+  const mm = /^(\d{4})-(\d{2})/.exec(ym); if(!mm) return ym;
+  const then = new Date(+mm[1], +mm[2]-1, 1), now = new Date();
+  const months = (now.getFullYear()-then.getFullYear())*12 + (now.getMonth()-then.getMonth());
+  if(months<=0) return "이번 달 확인";
+  if(months<=2) return months+"개월 전 확인";
+  return ym+" 확인";
+}
+
+// 샵 traits → 배지 HTML
+function traitBadges(sh){
+  const t = sh.traits; if(!t) return "";
+  const svc = (t.serviceType||[]).filter(x=>x!=="미상").map(x=>`<span class="tb svc">${x}</span>`).join("");
+  const feat = FEAT_KEYS.filter(([k])=>t[k]).map(([,l])=>`<span class="tb feat">${l}</span>`).join("");
+  const ag = (t.agency||[]).map(a=>`<span class="tb ag">${a}</span>`).join("");
+  return (svc||feat||ag) ? `<div class="trait-badges">${svc}${feat}${ag}</div>` : "";
+}
+
+function renderFilters(){
+  const el = document.getElementById("filters");
+  el.innerHTML = LEVELS.map(l =>
+    `<button class="filter-chip ${l===activeLevel?'active':''}" data-level="${l}">${l}</button>`
+  ).join("");
+  el.querySelectorAll(".filter-chip").forEach(btn=>{
+    btn.addEventListener("click",()=>{
+      activeLevel = btn.dataset.level;
+      renderFilters();
+      renderGrid();
+    });
+  });
+}
+
+function renderGrid(){
+  const el = document.getElementById("grid");
+  const list = DIVE_SITES
+    .filter(s => activeLevel==="전체" || s.level===activeLevel)
+    .filter(siteMatchesTraits);
+  if(!list.length){
+    el.innerHTML = `<div style="grid-column:1/-1;padding:32px;text-align:center;color:var(--ink-soft)">선택한 조건에 맞는 지역이 없습니다.</div>`;
+    return;
+  }
+  el.innerHTML = list.map(s => `
+    <div class="site-card" data-id="${s.id}">
+      <div class="card-top">
+        <div>
+          <div class="card-name">${s.name}</div>
+          <div class="card-region">${s.region}</div>
+        </div>
+        <span class="level-badge level-${s.level}">${s.level}</span>
+      </div>
+      <div class="card-meta">
+        ${s.depth!=="미확인" ? `<span>수심 <b>${s.depth}</b></span>` : ""}
+        ${s.current!=="미확인" ? `<span>조류 <b>${s.current}</b></span>` : ""}
+      </div>
+      ${s.highlights.length ? `<div class="card-tags">${s.highlights.map(h=>`<span class="tag">${h}</span>`).join("")}</div>` : ""}
+    </div>
+  `).join("");
+  el.querySelectorAll(".site-card").forEach(card=>{
+    card.addEventListener("click",()=>openDetail(card.dataset.id));
+  });
+}
+
+function openDetail(id){
+  const s = DIVE_SITES.find(x=>x.id===id);
+  const body = document.getElementById("detailBody");
+  body.innerHTML = `
+    <h2>${s.name}</h2>
+    <div class="region">${[s.region, s.depth!=="미확인"?`수심 ${s.depth}`:null, s.current!=="미확인"?s.current:null].filter(Boolean).join(" · ")}</div>
+
+    <a class="link-btn" href="${s.mapUrl}" target="_blank" rel="noopener">네이버 지도에서 보기</a>
+
+    ${(()=>{ const c=buildCourse(s); if(!c) return "";
+      const row=(x)=>`<div style="display:flex;align-items:baseline;gap:8px;padding:5px 0"><span style="font-size:15px">${x.ic}</span><span style="font-size:11px;color:var(--ink-soft);min-width:34px">${x.label}</span><span style="font-size:13px;font-weight:600">${x.v}</span></div>`;
+      return `<div class="detail-section">
+      <h3>🗺 추천 1박 2일 코스</h3>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px">
+        <div style="background:color-mix(in srgb,var(--navy) 5%,transparent);border:1px solid var(--line,rgba(0,0,0,.08));border-radius:11px;padding:13px 15px">
+          <div style="font-weight:700;font-size:13px;margin-bottom:6px;color:var(--navy,#1a3a5c)">DAY 1</div>
+          ${c.day1.map(row).join("")}
+        </div>
+        <div style="background:color-mix(in srgb,var(--navy) 5%,transparent);border:1px solid var(--line,rgba(0,0,0,.08));border-radius:11px;padding:13px 15px">
+          <div style="font-weight:700;font-size:13px;margin-bottom:6px;color:var(--navy,#1a3a5c)">DAY 2</div>
+          ${c.day2.length?c.day2.map(row).join(""):'<div style="font-size:12px;color:var(--ink-soft)">여유롭게 귀가</div>'}
+        </div>
+      </div>
+      <div style="font-size:11px;color:var(--ink-soft);margin-top:7px">아래 상세 정보로 자유롭게 구성하세요. 대표 샵은 리뷰 평판 기준 추천.</div>
+    </div>`; })()}
+
+    ${s.underwater ? `
+    <div class="detail-section">
+      <h3>수중 환경</h3>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:9px">
+        ${[["시야","👁",s.underwater.visibility],["조류","🌊",s.underwater.current],["수온","🌡",s.underwater.temp],["수심","⬇",s.underwater.depth]].filter(x=>x[2]).map(([k,ic,v])=>`
+          <div style="background:var(--surface-2,rgba(56,182,168,.06));border:1px solid var(--line,rgba(0,0,0,.08));border-radius:9px;padding:9px 11px">
+            <div style="font-size:11px;color:var(--ink-soft);margin-bottom:3px">${ic} ${k}</div>
+            <div style="font-size:12.5px;font-weight:600;line-height:1.35">${v}</div>
+          </div>`).join("")}
+      </div>
+      ${s.underwater.features&&s.underwater.features.length ? `<div class="card-tags" style="margin-top:9px">${s.underwater.features.map(f=>`<span class="tag">${f}</span>`).join("")}</div>` : ""}
+      <div style="font-size:11px;color:var(--ink-soft);margin-top:8px">
+        ${s.underwater._confidence==="해역일반" ? "ℹ 해역(" + (s.underwater._sea||"") + ") 일반 특성 — 개별 포인트는 샵에 확인" : "✓ 일부 현장 확인 + 해역 일반 특성"}
+      </div>
+      ${(()=>{ const sn=seasonNow(s.season); if(!sn) return "";
+        const bg = sn.cls==="ok"?"var(--level-beginner)":sn.cls==="warn"?"var(--level-mid)":"var(--level-advanced)";
+        return `<div style="margin-top:11px;padding:11px 13px;border-radius:10px;background:color-mix(in srgb,${bg} 12%,transparent);border:1px solid color-mix(in srgb,${bg} 35%,transparent)">
+          <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+            <span style="font-weight:700;font-size:13px">지금(${sn.season}) </span>
+            <span style="font-size:12px;font-weight:700;color:${bg};background:color-mix(in srgb,${bg} 18%,transparent);padding:2px 10px;border-radius:12px">${sn.label}</span>
+          </div>
+          <div style="font-size:12px;color:var(--ink-soft);margin-top:5px">${sn.note}</div>
+          ${sn.best?`<div style="font-size:11.5px;color:var(--ink-soft);margin-top:4px">🏆 베스트 시즌: <b style="color:var(--ink)">${sn.best}</b></div>`:""}
+        </div>`; })()}
+    </div>` : ""}
+
+    <div class="detail-section">
+      <h3>연계 다이빙샵</h3>
+      <div class="sub-list">
+        ${s.shops.length ? s.shops.map(sh=>`
+          <div class="sub-item" style="flex-direction:column;align-items:stretch;gap:6px">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px">
+              <div>
+                <div style="font-weight:700">${sh.name}${sh.naverBooking ? ` <span style="font-size:10.5px;font-weight:700;color:#fff;background:var(--level-beginner);padding:1px 7px;border-radius:10px;vertical-align:middle">🎫 예약가능</span>` : ""}</div>
+                ${sh.address ? `<div style="color:var(--ink-soft);font-size:12px;margin-top:2px">${sh.address}</div>` : ""}
+                ${sh.note ? `<div style="color:var(--ink-soft);font-size:12px;margin-top:4px">${sh.note}</div>` : ""}
+                ${sh.hours ? `<div style="font-size:12px;margin-top:4px;color:var(--ink)">🕐 ${sh.hours}${sh.dayOff ? ` <span style="color:var(--level-advanced)">· ${sh.dayOff}</span>` : ""}</div>` : ""}
+              </div>
+              ${sh.phone ? `<a href="tel:${sh.phone}">${sh.phone}</a>` : ""}
+            </div>
+            ${traitBadges(sh)}
+            ${sh.reviewTraits && sh.reviewTraits.tags && sh.reviewTraits.tags.length ? `<div style="display:flex;gap:5px;flex-wrap:wrap;align-items:center">
+              <span style="font-size:11px;color:var(--ink-soft)">⭐ 리뷰 강점</span>
+              ${sh.reviewTraits.tags.map(t=>`<span style="font-size:11px;font-weight:600;color:var(--level-mid);background:color-mix(in srgb,var(--level-mid) 15%,transparent);padding:2px 8px;border-radius:10px">${t}</span>`).join("")}
+            </div>` : ""}
+            ${sh.phoneStatus && sh.phoneStatus!=="확인" ? `<div style="font-size:11.5px;color:var(--amber-ink);background:color-mix(in srgb, var(--amber) 22%, transparent);padding:6px 9px;border-radius:6px">${sh.phone?"ℹ":"⚠"} 전화 ${sh.phoneStatus}${sh.phoneNote?` — ${sh.phoneNote}`:""}</div>` : ""}
+            ${sh.verified ? `<div style="display:flex;align-items:center;gap:7px;flex-wrap:wrap;font-size:11px;color:var(--ink-soft)"><span class="vbadge ${vClass(sh.verified)}">${vText(sh.verified)}</span><span>${sh.verified}</span>${sh.lastVerified ? ` · <span title="마지막 확인">🔄 ${freshness(sh.lastVerified)}</span>` : ""}${sh.source ? ` · <a href="${sh.source}" target="_blank" rel="noopener">출처보기</a>` : ""}</div>` : ""}
+            ${sh.links && sh.links.length ? `<div style="display:flex;gap:8px;flex-wrap:wrap">${sh.links.map(l=>`<a href="${l.url}" target="_blank" rel="noopener" style="font-size:12px">${l.label} ↗</a>`).join("")}</div>` : ""}
+          </div>
+        `).join("") : `<div class="sub-item">등록된 샵 정보 없음</div>`}
+      </div>
+    </div>
+
+    <div class="detail-section">
+      <h3>주변 맛집</h3>
+      <div class="sub-list">
+        ${s.food.length ? s.food.map(f=>`
+          <div class="sub-item" style="flex-direction:column;align-items:stretch;gap:4px">
+            <div style="display:flex;justify-content:space-between;align-items:center;gap:10px">
+              <span style="font-weight:600">${f.name}</span>
+              <a href="${f.mapUrl}" target="_blank" rel="noopener">지도 보기</a>
+            </div>
+            ${f.note ? `<div style="font-size:12px;color:var(--ink-soft)">${f.note}</div>` : ""}
+          </div>
+        `).join("") : `<div class="sub-item">등록된 맛집 정보 없음</div>`}
+      </div>
+    </div>
+
+    <div class="detail-section">
+      <h3>숙소</h3>
+      <div class="sub-list">
+        ${s.lodging.length ? s.lodging.map(l=>`
+          <div class="sub-item" style="flex-direction:column;align-items:stretch;gap:4px">
+            <div style="display:flex;justify-content:space-between;align-items:center;gap:10px">
+              <span style="font-weight:600">${l.name}</span>
+              <a href="${l.mapUrl}" target="_blank" rel="noopener">지도 보기</a>
+            </div>
+            ${l.note ? `<div style="font-size:12px;color:var(--ink-soft)">${l.note}</div>` : ""}
+          </div>
+        `).join("") : `<div class="sub-item">등록된 숙소 정보 없음</div>`}
+      </div>
+    </div>
+
+    <div class="detail-section">
+      <h3>볼거리 · 가까운 여행지</h3>
+      <div class="sub-list">
+        ${(() => { const spots = (s.attraction&&s.attraction.length) ? s.attraction : (s.nearby||[]);
+          return spots.length ? spots.map(n=>`
+          <div class="sub-item" style="flex-direction:column;align-items:stretch;gap:4px">
+            <div style="display:flex;justify-content:space-between;align-items:center;gap:10px">
+              <span style="font-weight:600">${n.name}${n.category ? ` <span style="font-size:11px;font-weight:500;color:var(--accent);background:var(--accent-soft,rgba(56,182,168,.12));padding:1px 7px;border-radius:10px;margin-left:4px">${n.category.split(",")[0]}</span>` : ""}</span>
+              <a href="${n.mapUrl}" target="_blank" rel="noopener">지도 보기</a>
+            </div>
+            ${n.note ? `<div style="font-size:12px;color:var(--ink-soft)">${n.note}</div>` : ""}
+          </div>
+        `).join("") : `<div class="sub-item">등록된 여행지 정보 없음</div>`; })()}
+      </div>
+    </div>
+
+    <div class="travel-note">${s.travelNote}</div>
+
+    <button class="link-btn" id="reportBtnDetail" style="background:var(--surface);color:var(--navy-soft);border:1px solid var(--navy-soft);margin-top:14px">📝 이 사이트 정보 제보/수정하기</button>
+  `;
+  document.getElementById("overlay").classList.add("on");
+  document.getElementById("reportBtnDetail").addEventListener("click", ()=>openReport(s.name));
+}
+
+function openReport(siteName){
+  if(!REPORT_FORM_URL){
+    alert("제보 폼이 아직 연결되지 않았습니다.\n관리자에게 알려주세요 (data.js의 REPORT_FORM_URL 설정 필요).");
+    return;
+  }
+  const url = siteName ? `${REPORT_FORM_URL}${REPORT_FORM_URL.includes("?")?"&":"?"}entry.site=${encodeURIComponent(siteName)}` : REPORT_FORM_URL;
+  window.open(url, "_blank", "noopener");
+}
+
+document.getElementById("closeBtn").addEventListener("click",()=>{
+  document.getElementById("overlay").classList.remove("on");
+});
+document.getElementById("overlay").addEventListener("click",(e)=>{
+  if(e.target.id==="overlay") document.getElementById("overlay").classList.remove("on");
+});
+document.getElementById("reportBtnTop").addEventListener("click", ()=>openReport());
+
+renderFilters();
+renderTraitFilters();
+renderGrid();
+</script>
+</body>
+</html>
