@@ -20,6 +20,7 @@ const DIVE_SITES = [
     shops: [
       {
         name: "그랑블루 다이브 리조트",
+        naverCategory: "수상,해양레저",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1919509836",
         reviewCount: 8,
@@ -41,6 +42,7 @@ const DIVE_SITES = [
       },
       {
         name: "남애스쿠버리조트",
+        naverCategory: "스킨스쿠버",
         placeId: "32863492",
         reviewCount: 396,
         pricing: ["펀다이빙1일 145000", "1박2일 260000"],
@@ -66,6 +68,7 @@ const DIVE_SITES = [
       },
       {
         name: "양파다이브 (YANGPADIVE)",
+        naverCategory: "스킨스쿠버",
         placeId: "1763139732",
         reviewCount: 295,
         pricing: ["펀1박2일 320000", "당일펀 200000", "보트체험 120000", "오픈워터 690000", "어드밴스 650000", "다이브마스터 1400000"],
@@ -105,8 +108,8 @@ const DIVE_SITES = [
         address: "강원도 양양군 현남면 매바위길 83 (남애항 인근 추정)",
         note: "오픈워터 교육·펀다이빙·클린다이빙(해양정화) [2026-07 카카오 미등재 — 폐업 가능성, 재조사 권장]",
         links: [{ label: "홈페이지", url: "https://utsdive.com/" }],
-        verified: "추정",
-        source: "https://utsdive.com/205",
+        verified: "확인 (홈페이지 utsdive.com 활동 확인 2026-07 — 네이버 플레이스 미등재)",
+        source: "https://utsdive.com/",
         traits: { serviceType: ["교육", "펀다이빙"], _src: "note" },
       },
       {
@@ -119,7 +122,7 @@ const DIVE_SITES = [
         address: "강원도 양양군 현북면 기사문리 138-32",
         note: "운영 여부 불확실 [2026-07 폐업 확정 — 네이버·카카오 지도 양쪽 미등재로 실측 확인]",
         links: [],
-        verified: "미확인",
+        verified: "추정 (ScubaNet 기사 근거 실존 — 2026-07 네이버 미등재, 최근 활동 미확인)",
         source: null,
         traits: { serviceType: ["미상"], _src: "note" },
       },
@@ -139,6 +142,7 @@ const DIVE_SITES = [
       },
       {
         name: "팍스 스쿠버 하우스",
+        naverCategory: "스킨스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         lastVerified: "2026-07",
         placeId: "37361929",
@@ -192,6 +196,7 @@ const DIVE_SITES = [
     shops: [
       {
         name: "서귀포다이브센터 (PADI)",
+        naverCategory: "스킨스쿠버",
         placeId: "35244118",
         reviewCount: 492,
         pricing: ["스노클링 50000", "해녀체험 59000", "스쿠버체험 80000", "보트체험 150000", "섬체험 150000", "PADI오픈워터 650000", "펀다이빙2회 150000"],
@@ -213,6 +218,7 @@ const DIVE_SITES = [
       },
       {
         name: "쿨다이브 (COOL DIVE)",
+        naverCategory: "스킨스쿠버",
         placeId: "1931001790",
         reviewCount: 116,
         pricing: ["스노클링 65000", "PADI오픈워터 700000", "PADI어드밴스 700000", "오픈어드패키지 1300000", "나이트록스 200000"],
@@ -237,6 +243,7 @@ const DIVE_SITES = [
       },
       {
         name: "마코다이브 (Mako Dive Jeju)",
+        naverCategory: "스킨스쿠버",
         placeId: "1309343449",
         reviewCount: 416,
         pricing: ["PADI오픈워터 550000", "PADI어드밴스 500000", "어드밴스패키지 900000", "EFR 200000", "레스큐 600000"],
@@ -258,6 +265,7 @@ const DIVE_SITES = [
       },
       {
         name: "V DIVE (브이다이브)",
+        naverCategory: "스킨스쿠버",
         placeId: "1665098286",
         reviewCount: 29,
         pricing: ["비치체험 100000", "보트체험 120000", "PADI오픈워터 600000", "PADI어드밴스 600000", "EFR 700000"],
@@ -282,6 +290,7 @@ const DIVE_SITES = [
       },
       {
         name: "제주 버블탱크 (Bubble Tank)",
+        naverCategory: "스킨스쿠버",
         placeId: "38015278",
         reviewCount: 658,
         pricing: ["펀다이빙 120000", "체험다이빙 100000", "오픈워터 450000", "어드밴스 450000", "레스큐 600000", "다이브마스터 1400000", "스페셜티 250000"],
@@ -305,6 +314,7 @@ const DIVE_SITES = [
       },
       {
         name: "Scubee Dive",
+        naverCategory: "스킨스쿠버",
         placeId: "1218508820",
         reviewCount: 80,
         pricing: ["PADI오픈워터 500000", "PADI어드밴스 500000", "EFR 700000", "다이브마스터 2000000", "DSD체험 120000"],
@@ -325,6 +335,7 @@ const DIVE_SITES = [
       },
       {
         name: "Seaflow (씨플로우 다이브 센터)",
+        naverCategory: "스킨스쿠버",
         placeId: "1003942345",
         reviewCount: 419,
         pricing: ["스쿠버체험 80000", "프리다이빙체험 80000", "펀다이빙 50000", "PADI오픈워터 500000", "PADI어드밴스 500000", "프리다이버 450000"],
@@ -342,10 +353,11 @@ const DIVE_SITES = [
         hours: "24시간 운영",
         source: "https://travel.padi.com/dive-center/south-korea/seaflow/",
         amenities: ["예약", "주차", "무선인터넷"],
-        traits: { serviceType: ["미상"], _src: "note" },
+        traits: { serviceType: ["교육", "체험", "펀다이빙", "프리다이빙"], _src: "inferred-2026-07 (note·가격·상호·리뷰 근거)" },
       },
       {
         name: "Haevit Dive",
+        naverCategory: "스킨스쿠버",
         placeId: "1362299733",
         reviewCount: 179,
         pricing: ["체험다이빙 100000", "PADI오픈워터 550000", "PADI어드밴스 500000", "레스큐 500000", "EFR 800000", "다이브마스터 1500000"],
@@ -366,6 +378,7 @@ const DIVE_SITES = [
       },
       {
         name: "Badadive (바다다이브)",
+        naverCategory: "스킨스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1908434305",
         reviewCount: 498,
@@ -387,6 +400,7 @@ const DIVE_SITES = [
       },
       {
         name: "Nautilus Dive Jeju",
+        naverCategory: "스쿠버장비",
         placeId: "1391873965",
         reviewCount: 103,
         pricing: ["방파제다이빙2회 120000"],
@@ -404,10 +418,11 @@ const DIVE_SITES = [
         hours: "매일 08:00~18:00",
         source: "https://www.jejuscubadiving.com/en/",
         amenities: ["예약", "주차"],
-        traits: { serviceType: ["미상"], boat: true, _src: "note" },
+        traits: { serviceType: ["장비판매"], boat: true, _src: "naver-category 2026-07" },
       },
       {
         name: "굿다이버 (Good Diver)",
+        naverCategory: "스킨스쿠버",
         placeId: "11681311",
         reviewCount: 120,
         pricing: ["체험2인이상 120000", "체험1인 150000", "PADI오픈워터 750000", "PADI어드밴스 690000", "펀다이빙1회 70000"],
@@ -428,6 +443,7 @@ const DIVE_SITES = [
       },
       {
         name: "블루인 다이브",
+        naverCategory: "스킨스쿠버",
         placeId: "219710570",
         reviewCount: 136,
         pricing: ["비치체험 80000", "보트체험 120000", "PADI오픈워터 500000", "PADI어드밴스 500000", "레스큐 500000"],
@@ -448,6 +464,7 @@ const DIVE_SITES = [
       },
       {
         name: "더퍼플 스쿠버다이빙",
+        naverCategory: "스킨스쿠버",
         placeId: "1091314991",
         reviewCount: 1052,
         pricing: ["섬보트체험1인 98000", "펀2탱크 120000~140000", "펀싱글추가 30000"],
@@ -469,6 +486,7 @@ const DIVE_SITES = [
       },
       {
         name: "누디다이브 (NudiDive)",
+        naverCategory: "스쿠버장비",
         placeId: "1543597880",
         reviewCount: 100,
         pricing: ["범섬보트체험 100000", "펀2회 120000~160000"],
@@ -489,6 +507,7 @@ const DIVE_SITES = [
       },
       {
         name: "모비딕다이브",
+        naverCategory: "스킨스쿠버",
         placeId: "37653149",
         reviewCount: 77,
         pricing: ["체험 150000", "요트펀다이빙 160000", "오픈워터 990000", "어드밴스 990000", "다이브마스터 1500000", "강사교육 3500000"],
@@ -509,7 +528,8 @@ const DIVE_SITES = [
         traits: { serviceType: ["펀다이빙"], boat: true, _src: "note" },
       },
       {
-        name: "다이브카페",
+        name: "율랜드다이브센터 (구 다이브카페)",
+        naverCategory: "스킨스쿠버",
         lastVerified: "2026-07",
         placeId: "1828754477",
         reviewCount: 98,
@@ -520,12 +540,12 @@ const DIVE_SITES = [
         phoneStatus: "미확인",
         address: null,
         note: "1:1 또는 최대 2인 소규모 맞춤 다이빙, 문섬·새끼섬·섶섬·범섬",
-        links: [{ label: "홈페이지", url: "https://www.dive.cafe/" }],
+        links: [],
         reviewTraits: { tags: ["강습우수", "시설우수", "가성비", "주차편리"], topKeywords: ["선생님이 열정적이에요", "맞춤 지도를 잘해줘요", "학생과 소통을 잘해요"], _src: "naver-review-agg" },
         naverBooking: true,
-        verified: "미확인",
-        source: "https://www.dive.cafe/",
-        traits: { serviceType: ["미상"], _src: "note" },
+        verified: "확인 (플레이스 실측 2026-07 — 상호 변경 감지: 다이브카페→율랜드다이브센터, 동일 placeId)",
+        source: "https://m.place.naver.com/place/1828754477/home",
+        traits: { serviceType: ["체험", "펀다이빙"], _src: "pricing" },
       }
     ],
     food: [
@@ -575,6 +595,7 @@ const DIVE_SITES = [
     shops: [
       {
         name: "Marine Fun Dive (마린펀다이브)",
+        naverCategory: "스킨스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1224838359",
         reviewCount: 2,
@@ -596,6 +617,7 @@ const DIVE_SITES = [
       },
       {
         name: "고니스쿠버 / 퍼스트다이브",
+        naverCategory: "스킨스쿠버",
         placeId: "1855818152",
         reviewCount: 12,
         priceSource: "naver-place 2026-07",
@@ -623,8 +645,8 @@ const DIVE_SITES = [
         address: "울산광역시 남구 문수로 44 (문수실내수영장 내)",
         note: "실내수영장 기반 강습(교육 전문으로 추정) [2026-07 카카오 미등재 — 폐업 가능성, 재조사 권장]",
         links: [],
-        verified: "추정",
-        source: null,
+        verified: "확인 (문수경기장 공식 안내에 전화 공개 2026-07)",
+        source: "https://www.uic.or.kr/munsu/guide/guide01.do",
         traits: { serviceType: ["교육"], pool: true, _src: "note" },
       }
     ],
@@ -666,6 +688,7 @@ const DIVE_SITES = [
     shops: [
       {
         name: "백상어 다이빙리조트",
+        naverCategory: "콘도,리조트",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "13100613",
         reviewCount: 65,
@@ -684,6 +707,7 @@ const DIVE_SITES = [
       },
       {
         name: "OK다이브 & 스킨스쿠버",
+        naverCategory: "스킨스쿠버",
         placeId: "34761912",
         reviewCount: 341,
         pricing: ["어드밴스 통합 2박3일 패키지 890,000원", "오픈워터 1박2일 패키지 500,000원", "프리다이빙 기초과정 lv1 200,000원", "어드밴스 1박2일 패키지 500,000원", "프리미엄 패키지 990,000원", "체험다이빙 1회 150,000원", "박2일 다이빙 패키지 400,000원", "당일 다이빙 패키지 200,000원"],
@@ -696,7 +720,7 @@ const DIVE_SITES = [
         links: [{ label: "홈페이지", url: "https://www.okdive.kr/" }, { label: "Instagram", url: "https://www.instagram.com/okdive_skinscuba" }],
         lastVerified: "2026-07",
         reviewTraits: { tags: ["강습우수", "프로그램다양", "시설우수"], topKeywords: ["선생님이 열정적이에요", "맞춤 지도를 잘해줘요", "학생과 소통을 잘해요"], _src: "naver-review-agg" },
-        verified: "추정",
+        verified: "확인 (네이버 플레이스 실측 2026-07, 리뷰 344)",
         hours: "매일 08:00~21:00",
         source: "https://okdiveresort.modoo.at/?pc=1",
         amenities: ["예약", "무선 인터넷", "주차"],
@@ -704,6 +728,7 @@ const DIVE_SITES = [
       },
       {
         name: "LF문암다이브리조트",
+        naverCategory: "스킨스쿠버",
         placeId: "21398900",
         reviewCount: 123,
         pricing: ["싱글탱크 비치다이빙 50,000원", "싱글탱크 보트다이빙 60,000원", "더블탱크 비치다이빙 50,000원", "더블탱크 보트다이빙 70,000원", "풀 세트 50,000원", "스쿠버 세트 45,000원", "스킨 세트 40,000원", "호흡기 30,000원", "BCD 30,000원", "슈트 25,000원"],
@@ -727,6 +752,7 @@ const DIVE_SITES = [
       },
       {
         name: "아야진다이브리조트",
+        naverCategory: "스킨스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "35451987",
         reviewCount: 98,
@@ -746,6 +772,7 @@ const DIVE_SITES = [
       },
       {
         name: "로맨틱다이브센터&리조트",
+        naverCategory: "스킨스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "37546703",
         reviewCount: 65,
@@ -768,6 +795,7 @@ const DIVE_SITES = [
       },
       {
         name: "바다야놀자 청간정스쿠버리조트",
+        naverCategory: "스킨스쿠버",
         lastVerified: "2026-07",
         placeId: "1210842355",
         reviewCount: 32,
@@ -826,6 +854,7 @@ const DIVE_SITES = [
     shops: [
       {
         name: "다이브11 (Dive11)",
+        naverCategory: "스킨스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "33351929",
         reviewCount: 56,
@@ -844,6 +873,7 @@ const DIVE_SITES = [
       },
       {
         name: "아쿠아벨 다이빙 리조트",
+        naverCategory: "수상,해양레저",
         placeId: "1037062231",
         reviewCount: 49,
         pricing: ["기본 2회 다이빙 80,000원"],
@@ -864,6 +894,7 @@ const DIVE_SITES = [
       },
       {
         name: "델타다이빙리조트&펜션",
+        naverCategory: "펜션",
         lastVerified: "2026-07",
         placeId: "1286749661",
         reviewCount: 73,
@@ -921,6 +952,7 @@ const DIVE_SITES = [
     shops: [
       {
         name: "조이풀다이브리조트",
+        naverCategory: "스킨스쿠버",
         placeId: "1066396729",
         reviewCount: 42,
         pricing: ["오픈워터 교육 500,000원"],
@@ -939,6 +971,7 @@ const DIVE_SITES = [
       },
       {
         name: "통영스쿠바캠프",
+        naverCategory: "스킨스쿠버",
         pricing: ["안내 복사 가격표 내만다이빙투어(2회기준) 120,000원", "근거리 다이빙투어(2회기준중식써비스) 150,000원", "중식 써비) 170,000원", "수영복세면도구지참) 130,000원", "수영장2회포함) 700,000원"],
         priceSource: "naver-place-deep 2026-07 (home탭)",
         placeId: "1078392909",
@@ -959,6 +992,7 @@ const DIVE_SITES = [
       },
       {
         name: "갈매기 리조트",
+        naverCategory: "스쿠버장비",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1549936549",
         reviewCount: 9,
@@ -978,6 +1012,7 @@ const DIVE_SITES = [
       },
       {
         name: "TJ DIVE 리조트/민박",
+        naverCategory: "콘도,리조트",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "2047926541",
         priceSource: "naver-place 2026-07",
@@ -995,6 +1030,7 @@ const DIVE_SITES = [
       },
       {
         name: "사량도다이빙센타",
+        naverCategory: "스킨스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1246232122",
         reviewCount: 6,
@@ -1013,6 +1049,7 @@ const DIVE_SITES = [
       },
       {
         name: "해양대국 스쿠버샵",
+        naverCategory: "스쿠버장비",
         placeId: "15429051",
         reviewCount: 3,
         pricing: ["펜션1 150,000원", "펜션2 100,000원"],
@@ -1032,6 +1069,7 @@ const DIVE_SITES = [
       },
       {
         name: "에니멀파이브호",
+        naverCategory: "스킨스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "32862862",
         priceSource: "naver-place 2026-07",
@@ -1041,13 +1079,14 @@ const DIVE_SITES = [
         note: "스킨스쿠버, 예약·단체 이용 가능, 정보량 적어 소규모 운영 추정 [2026-07 카카오 미등재 — 폐업 가능성, 재조사 권장]",
         links: [{ label: "블로그", url: "https://blog.naver.com/cnsgb5" }],
         lastVerified: "2026-07",
-        verified: "추정",
+        verified: "확인 (네이버 플레이스 생존 실측 2026-07)",
         source: "https://map.naver.com/p/search/통영%20산양%20다이빙/place/32862862",
         amenities: ["예약", "주차"],
         traits: { serviceType: ["미상"], _src: "note" },
       },
       {
         name: "매물도 다이빙 리조트",
+        naverCategory: "민박",
         lastVerified: "2026-07",
         placeId: "11382600",
         reviewCount: 7,
@@ -1105,6 +1144,7 @@ const DIVE_SITES = [
     shops: [
       {
         name: "해원다이브리조트",
+        naverCategory: "스킨스쿠버",
         placeId: "20322765",
         reviewCount: 89,
         pricing: ["비치다이빙 1회 40,000원", "보트 다이빙 1회 50,000원", "더블탱크 1회 60,000원", "사이드탱크 1회 60,000원", "나이트록스 1개 20,000원", "비치체험다이빙 1회 120,000원", "장비렌탈 1일 60,000원"],
@@ -1125,6 +1165,7 @@ const DIVE_SITES = [
       },
       {
         name: "주문진스쿠버",
+        naverCategory: "스킨스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1400420924",
         reviewCount: 14,
@@ -1140,10 +1181,11 @@ const DIVE_SITES = [
         verified: "확인",
         source: "https://map.naver.com/p/search/강릉%20스쿠버다이빙/place/1400420924",
         amenities: ["예약", "포장", "주차"],
-        traits: { serviceType: ["미상"], _src: "note" },
+        traits: { serviceType: ["교육"], _src: "inferred-2026-07 (note·가격·상호·리뷰 근거)" },
       },
       {
         name: "주문진스쿠버다이빙",
+        naverCategory: "수상,해양레저",
         placeId: "10979542",
         reviewCount: 26,
         pricing: ["한종목 250,000원"],
@@ -1164,6 +1206,7 @@ const DIVE_SITES = [
       },
       {
         name: "감자프리다이빙",
+        naverCategory: "스킨스쿠버",
         placeId: "1804896151",
         reviewCount: 23,
         pricing: ["체험 2인등록 동반 추가할인 10,000원", "LV1 과정 2인등록 동반 추가할인 10,000원", "과정 2인등록 동반추가할인 20,000원", "패키지과정 2인등록 동반 추가 할인 50,000원", "체험 70,000원", "LV1 150,000원", "LV2 400,000원", "LV3 600,000원", "LV4 800,000원", "LV2 패키지1 500,000원"],
@@ -1175,7 +1218,7 @@ const DIVE_SITES = [
         links: [{ label: "Instagram", url: "https://www.instagram.com/freediver_gamja" }],
         lastVerified: "2026-07",
         reviewTraits: { tags: ["강습우수", "초보친화", "프로그램다양", "시설우수"], topKeywords: ["맞춤 지도를 잘해줘요", "선생님이 열정적이에요", "수업이 체계적이에요"], _src: "naver-review-agg" },
-        verified: "미확인",
+        verified: "확인 (네이버 플레이스 실측 2026-07, 리뷰 23)",
         hours: "매일 08:00~20:00",
         source: null,
         amenities: ["예약"],
@@ -1183,6 +1226,7 @@ const DIVE_SITES = [
       },
       {
         name: "인투더씨",
+        naverCategory: "스킨스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "36813028",
         reviewCount: 29,
@@ -1202,6 +1246,7 @@ const DIVE_SITES = [
       },
       {
         name: "샤라웃 리조트&스쿠버",
+        naverCategory: "스킨스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1300427524",
         reviewCount: 33,
@@ -1221,6 +1266,7 @@ const DIVE_SITES = [
       },
       {
         name: "마린플래닛",
+        naverCategory: "스킨스쿠버",
         placeId: "1376403017",
         reviewCount: 32,
         pricing: ["비치 체험다이빙 1회 150,000원", "비치 체험다이빙 2회 250,000원", "보트1 스텐다드체험 300,000원", "중식 140,000원", "중식 280,000원"],
@@ -1237,10 +1283,11 @@ const DIVE_SITES = [
         hours: "매일 08:00~18:00",
         source: null,
         amenities: ["예약", "무선 인터넷", "주차"],
-        traits: { serviceType: ["미상"], _src: "note" },
+        traits: { serviceType: ["체험"], _src: "inferred-2026-07 (note·가격·상호·리뷰 근거)" },
       },
       {
         name: "안인다이빙리조트",
+        naverCategory: "스킨스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1454951245",
         reviewCount: 12,
@@ -1252,14 +1299,15 @@ const DIVE_SITES = [
         links: [{ label: "Instagram", url: "https://www.instagram.com/kimyangkyu1" }],
         lastVerified: "2026-07",
         reviewTraits: { tags: ["강습우수", "주차편리", "프로그램다양"], topKeywords: ["맞춤 지도를 잘해줘요", "주차하기 편해요", "프로그램이 다양해요"], _src: "naver-review-agg" },
-        verified: "미확인",
+        verified: "확인 (네이버 플레이스 실측 2026-07, 리뷰 12)",
         hours: "매일 10:00~17:00",
         source: null,
         amenities: ["주차"],
-        traits: { serviceType: ["미상"], lodging: true, _src: "note" },
+        traits: { serviceType: ["교육"], lodging: true, _src: "inferred-2026-07 (note·가격·상호·리뷰 근거)" },
       },
       {
         name: "영진아쿠아존",
+        naverCategory: "스킨스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         lastVerified: "2026-07",
         placeId: "21074790",
@@ -1317,6 +1365,7 @@ const DIVE_SITES = [
     shops: [
       {
         name: "에브리데이다이브",
+        naverCategory: "스킨스쿠버",
         placeId: "1286872289",
         reviewCount: 103,
         pricing: ["체험다이빙 150,000원", "오픈워터 교육 600,000원", "어드밴스드 오픈워터 과정 400,000원", "과정 800,000원", "SSI 강사과정 3,500,000원", "SSI 강사크로스오버 과정 1,500,000원"],
@@ -1338,6 +1387,7 @@ const DIVE_SITES = [
       },
       {
         name: "다이버스라운지",
+        naverCategory: "스킨스쿠버",
         placeId: "2029969744",
         reviewCount: 16,
         pricing: ["체험다이빙 150,000원", "하계 샤워실 이용 5,000원", "SNSI오픈워터 과정 500,000원", "SNSI오픈워터 풀 패키지 1,200,000원", "SNSI어드벤스드 오픈워터 과정 600,000원", "어드벤스드 패키지 900,000원", "어드벤스드 풀패키지 1,500,000원", "SNSI레스큐 과정 700,000원", "SNSI마스터과정 1,000,000원"],
@@ -1359,6 +1409,7 @@ const DIVE_SITES = [
       },
       {
         name: "스마일다이빙",
+        naverCategory: "스킨스쿠버",
         placeId: "1345434674",
         reviewCount: 16,
         pricing: ["오픈워터교육 800000", "어드밴스 450000", "레스큐 500000"],
@@ -1379,6 +1430,7 @@ const DIVE_SITES = [
       },
       {
         name: "파아란 스쿠버 다이빙",
+        naverCategory: "스킨스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         lastVerified: "2026-07",
         placeId: "1488420395",
@@ -1433,6 +1485,7 @@ const DIVE_SITES = [
     shops: [
       {
         name: "거제덕포스쿠버리조트",
+        naverCategory: "스킨스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "36915230",
         reviewCount: 6,
@@ -1451,6 +1504,7 @@ const DIVE_SITES = [
       },
       {
         name: "다이빙스토리 소풍",
+        naverCategory: "스킨스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1740113052",
         reviewCount: 3,
@@ -1469,6 +1523,7 @@ const DIVE_SITES = [
       },
       {
         name: "정인하우스",
+        naverCategory: "스킨스쿠버",
         placeId: "1511662409",
         reviewCount: 156,
         pricing: ["체험 다이빙 100,000원", "오픈워터 다이버 660,000원", "어드밴스드 오픈워터 다이버 660,000원", "레스큐 다이버 660,000원", "에머전시 퍼스트 리스폰스 150,000원", "다이브마스터 770,000원", "강사개발코스 2,500,000원", "EFR강사 500,000원"],
@@ -1486,10 +1541,11 @@ const DIVE_SITES = [
         hours: "매일 09:00~22:00",
         source: null,
         amenities: ["예약", "무선 인터넷", "주차"],
-        traits: { serviceType: ["미상"], _src: "note" },
+        traits: { serviceType: ["교육", "체험"], _src: "inferred-2026-07 (note·가격·상호·리뷰 근거)" },
       },
       {
         name: "다이브이모션",
+        naverCategory: "스킨스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1217493683",
         reviewCount: 3,
@@ -1509,6 +1565,7 @@ const DIVE_SITES = [
       },
       {
         name: "마린보이리조트",
+        naverCategory: "스킨스쿠버",
         placeId: "1501077106",
         reviewCount: 15,
         pricing: ["공기통2개 150,000원", "공기통 2개 150,000원"],
@@ -1528,6 +1585,7 @@ const DIVE_SITES = [
       },
       {
         name: "7000스쿠버 풀",
+        naverCategory: "스킨스쿠버",
         placeId: "1983323619",
         reviewCount: 6,
         pricing: ["풀장 이용 30,000원"],
@@ -1547,6 +1605,7 @@ const DIVE_SITES = [
       },
       {
         name: "G다이버스 스킨스쿠버",
+        naverCategory: "스킨스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "2081598562",
         priceSource: "naver-place 2026-07",
@@ -1564,6 +1623,7 @@ const DIVE_SITES = [
       },
       {
         name: "은하수3호",
+        naverCategory: "스킨스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         lastVerified: "2026-07",
         placeId: "1911699557",
@@ -1616,6 +1676,7 @@ const DIVE_SITES = [
     shops: [
       {
         name: "딥블루 프리&스쿠버다이빙",
+        naverCategory: "스킨스쿠버",
         placeId: "1120230307",
         reviewCount: 79,
         pricing: ["AIDA 레벨1 프리다이버 100,000원", "AIDA 레벨2 오픈워터프리다이버 300,000원", "AIDA 레벨3 어드벤스프리다이버 500,000원", "AIDA 레벨4 마스터프리다이버 700,000원", "PADI 오픈워터 스쿠버다이빙 650,000원", "PADI 어드밴스 스쿠버다이빙 600,000원", "예약 100,000원", "예약 650,000원"],
@@ -1636,6 +1697,7 @@ const DIVE_SITES = [
       },
       {
         name: "거문도다이브리조트",
+        naverCategory: "스킨스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1031338992",
         priceSource: "naver-place 2026-07",
@@ -1653,6 +1715,7 @@ const DIVE_SITES = [
       },
       {
         name: "수프리다이빙",
+        naverCategory: "스킨스쿠버",
         placeId: "1607020385",
         reviewCount: 6,
         pricing: ["스노쿨 SET 구매시 최저가 50,000원"],
@@ -1672,6 +1735,7 @@ const DIVE_SITES = [
       },
       {
         name: "씨월드 (스킨스쿠버)",
+        naverCategory: "스킨스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1455825155",
         reviewCount: 3,
@@ -1690,6 +1754,7 @@ const DIVE_SITES = [
       },
       {
         name: "거문도스킨스쿠바",
+        naverCategory: "스킨스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         lastVerified: "2026-07",
         placeId: "1078915113",
@@ -1747,6 +1812,7 @@ const DIVE_SITES = [
     shops: [
       {
         name: "고고다이브 부산지점",
+        naverCategory: "스킨스쿠버",
         placeId: "1443080112",
         pricing: ["오픈워터 350000", "프리레벨1 130000", "스쿠버체험 100000", "프리체험 30000", "프리레벨3 490000"],
         priceSource: "naver-place 2026-07",
@@ -1765,6 +1831,7 @@ const DIVE_SITES = [
       },
       {
         name: "씨월드다이브센터",
+        naverCategory: "스킨스쿠버",
         placeId: "1693829617",
         reviewCount: 47,
         pricing: ["어드밴스 700000", "레스큐 600000", "다이브마스터 1300000", "강사과정 2500000", "EFR 200000"],
@@ -1784,6 +1851,7 @@ const DIVE_SITES = [
       },
       {
         name: "워터붐",
+        naverCategory: "스킨스쿠버",
         placeId: "1161966837",
         reviewCount: 215,
         pricing: ["프리체험 100000", "AIDA프리레벨1 250000", "스쿠버체험 100000", "오픈워터 690000"],
@@ -1800,10 +1868,11 @@ const DIVE_SITES = [
         hours: "24시간 운영",
         source: "https://map.naver.com",
         amenities: ["포장", "반려동물", "주차"],
-        traits: { serviceType: ["미상"], _src: "note" },
+        traits: { serviceType: ["교육", "체험"], _src: "inferred-2026-07 (note·가격·상호·리뷰 근거)" },
       },
       {
         name: "부산 북항 마리나 다이빙풀&수영장",
+        naverCategory: "스킨스쿠버",
         placeId: "1612922930",
         reviewCount: 1036,
         pricing: ["자유수영성인 3600", "다이빙풀평일입장 33000", "주말입장 55000"],
@@ -1824,6 +1893,7 @@ const DIVE_SITES = [
       },
       {
         name: "DIT 서면풀장",
+        naverCategory: "스킨스쿠버",
         placeId: "1719044921",
         reviewCount: 633,
         priceSource: "naver-place 2026-07",
@@ -1840,10 +1910,11 @@ const DIVE_SITES = [
         source: "https://map.naver.com",
         amenities: ["예약", "주차", "무선 인터넷"],
         pricing: ["청귤차3900원"],
-        traits: { serviceType: ["미상"], pool: true, _src: "note" },
+        traits: { serviceType: ["교육"], pool: true, _src: "inferred-2026-07 (note·가격·상호·리뷰 근거)" },
       },
       {
         name: "다이브온",
+        naverCategory: "스킨스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "2001320962",
         reviewCount: 21,
@@ -1861,10 +1932,11 @@ const DIVE_SITES = [
         hours: "24시간 운영",
         source: "https://map.naver.com",
         amenities: ["예약", "무선 인터넷", "주차"],
-        traits: { serviceType: ["미상"], _src: "note" },
+        traits: { serviceType: ["교육"], _src: "inferred-2026-07 (note·가격·상호·리뷰 근거)" },
       },
       {
         name: "다이브플래닛 스쿠버&프리다이빙",
+        naverCategory: "스킨스쿠버",
         placeId: "38309924",
         reviewCount: 104,
         pricing: ["AIDA1 120000", "AIDA2 350000", "AIDA3 550000", "AIDA4 750000", "PADI프리다이버 350000"],
@@ -1886,6 +1958,7 @@ const DIVE_SITES = [
       },
       {
         name: "이지다이빙 (종합도소매)",
+        naverCategory: "종합도소매",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "37162860",
         reviewCount: 22,
@@ -1905,6 +1978,7 @@ const DIVE_SITES = [
       },
       {
         name: "오션어스다이브",
+        naverCategory: "스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "37641713",
         priceSource: "naver-place 2026-07",
@@ -1922,6 +1996,7 @@ const DIVE_SITES = [
       },
       {
         name: "오션스타 다이빙스쿨",
+        naverCategory: "스킨스쿠버",
         placeId: "1210481632",
         reviewCount: 69,
         pricing: ["프리다이빙 200000", "어린이프리 250000", "스쿠버 500000"],
@@ -1938,10 +2013,11 @@ const DIVE_SITES = [
         hours: "24시간 운영",
         source: "https://map.naver.com",
         amenities: ["주차"],
-        traits: { serviceType: ["미상"], _src: "note" },
+        traits: { serviceType: ["교육", "프리다이빙"], _src: "inferred-2026-07 (note·가격·상호·리뷰 근거)" },
       },
       {
         name: "마루스쿠버",
+        naverCategory: "스킨스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1618587651",
         reviewCount: 2,
@@ -1961,6 +2037,7 @@ const DIVE_SITES = [
       },
       {
         name: "킴스마린",
+        naverCategory: "스킨스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "11724004",
         reviewCount: 6,
@@ -1980,6 +2057,7 @@ const DIVE_SITES = [
       },
       {
         name: "오션스타 다이빙 스포츠센터",
+        naverCategory: "스킨스쿠버",
         placeId: "1096866958",
         reviewCount: 1,
         pricing: ["스쿠버재교육 55000", "프리다이빙 220000", "오픈워터 550000"],
@@ -2001,6 +2079,7 @@ const DIVE_SITES = [
       },
       {
         name: "다이브스토리",
+        naverCategory: "스킨스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1550133812",
         reviewCount: 1,
@@ -2020,6 +2099,7 @@ const DIVE_SITES = [
       },
       {
         name: "단디스쿠버샾",
+        naverCategory: "스킨스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1351872067",
         priceSource: "naver-place 2026-07",
@@ -2038,6 +2118,7 @@ const DIVE_SITES = [
       },
       {
         name: "부산스킨스쿠버교육아카데미",
+        naverCategory: "스킨스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1255382084",
         reviewCount: 4,
@@ -2057,6 +2138,7 @@ const DIVE_SITES = [
       },
       {
         name: "헬로우다이빙 (스쿠버장비)",
+        naverCategory: "스쿠버장비",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         lastVerified: "2026-07",
         placeId: "19585224",
@@ -2112,6 +2194,7 @@ const DIVE_SITES = [
     shops: [
       {
         name: "빅다이브 (BigDive)",
+        naverCategory: "스킨스쿠버",
         placeId: "2061111864",
         reviewCount: 15,
         pricing: ["체험다이빙 100000", "셔틀 편도20000/왕복40000"],
@@ -2132,6 +2215,7 @@ const DIVE_SITES = [
       },
       {
         name: "바다의꿈",
+        naverCategory: "스킨스쿠버",
         placeId: "1460971182",
         reviewCount: 24,
         pricing: ["체험다이빙 120000", "보트다이빙 50000", "스노클세트 30000"],
@@ -2149,10 +2233,11 @@ const DIVE_SITES = [
         hours: "매일 09:00~18:00",
         source: "https://map.naver.com/p/search/삼척스쿠버다이빙/place/1460971182",
         amenities: ["예약", "무선 인터넷", "반려동물", "주차"],
-        traits: { serviceType: ["미상"], _src: "note" },
+        traits: { serviceType: ["교육", "체험", "펀다이빙"], _src: "inferred-2026-07 (note·가격·상호·리뷰 근거)" },
       },
       {
         name: "추암다이브랜드",
+        naverCategory: "스킨스쿠버",
         placeId: "1283194761",
         reviewCount: 4,
         pricing: ["스킨스쿠버 100000", "슈트 10000", "온수샤워 4000"],
@@ -2166,10 +2251,11 @@ const DIVE_SITES = [
         lastVerified: "2026-07",
         verified: "확인",
         source: "https://map.naver.com/p/search/삼척스쿠버다이빙/place/1283194761",
-        traits: { serviceType: ["미상"], _src: "note" },
+        traits: { serviceType: ["체험"], _src: "naver-place 소개글 2026-07" },
       },
       {
         name: "우주프리다이빙 동해삼척점",
+        naverCategory: "스킨스쿠버",
         lastVerified: "2026-07",
         placeId: "2086323125",
         reviewCount: 14,
@@ -2226,6 +2312,7 @@ const DIVE_SITES = [
     shops: [
       {
         name: "울진해양레포츠센터",
+        naverCategory: "스킨스쿠버",
         placeId: "1043281200",
         reviewCount: 232,
         pricing: ["예약 15000", "예약 80000"],
@@ -2247,6 +2334,7 @@ const DIVE_SITES = [
       },
       {
         name: "씨워드스쿠바하우스",
+        naverCategory: "수상,해양레저",
         placeId: "11867039",
         reviewCount: 57,
         pricing: ["가이드다이빙 100000", "펀1회 100000", "펀2회 150000"],
@@ -2262,10 +2350,11 @@ const DIVE_SITES = [
         hours: "매일 08:00~20:00",
         source: "https://m.place.naver.com/place/11867039/home",
         amenities: ["예약", "무선 인터넷", "주차"],
-        traits: { serviceType: ["미상"], _src: "note" },
+        traits: { serviceType: ["펀다이빙"], _src: "inferred-2026-07 (note·가격·상호·리뷰 근거)" },
       },
       {
         name: "킹스톤스쿠버",
+        naverCategory: "스킨스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "2063867649",
         reviewCount: 2,
@@ -2285,6 +2374,7 @@ const DIVE_SITES = [
       },
       {
         name: "올덴 K10잠수풀",
+        naverCategory: "스킨스쿠버",
         placeId: "2086214002",
         pricing: ["초보자 체험코스 2시간 150,000원"],
         priceSource: "naver-place 2026-07",
@@ -2303,6 +2393,7 @@ const DIVE_SITES = [
       },
       {
         name: "H2O다이브리조트",
+        naverCategory: "스킨스쿠버",
         placeId: "1009574869",
         reviewCount: 19,
         pricing: ["비치다이빙 30,000원", "싱글 50,000원", "왕돌초 180,000원", "체험다이빙 150,000원", "인기준 1인당 510,000원", "버디할인 1인 30,000원"],
@@ -2318,10 +2409,11 @@ const DIVE_SITES = [
         hours: "매일 08:00~20:00",
         source: "https://m.place.naver.com/place/1009574869/home",
         amenities: ["주차", "예약"],
-        traits: { serviceType: ["미상"], lodging: true, _src: "note" },
+        traits: { serviceType: ["체험"], lodging: true, _src: "inferred-2026-07 (note·가격·상호·리뷰 근거)" },
       },
       {
         name: "씨스타 스쿠버 캠프",
+        naverCategory: "스킨스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1181152159",
         reviewCount: 16,
@@ -2337,10 +2429,11 @@ const DIVE_SITES = [
         verified: "확인",
         source: "https://m.place.naver.com/place/1181152159/home",
         amenities: ["주차", "무선 인터넷", "예약"],
-        traits: { serviceType: ["미상"], _src: "note" },
+        traits: { serviceType: ["교육"], _src: "inferred-2026-07 (note·가격·상호·리뷰 근거)" },
       },
       {
         name: "왕돌초스쿠버",
+        naverCategory: "스킨스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "2040447054",
         reviewCount: 11,
@@ -2360,6 +2453,7 @@ const DIVE_SITES = [
       },
       {
         name: "구산거북선스쿠버",
+        naverCategory: "스킨스쿠버",
         placeId: "37126715",
         reviewCount: 21,
         priceSource: "naver-place 2026-07",
@@ -2379,6 +2473,7 @@ const DIVE_SITES = [
       },
       {
         name: "넥톤스쿠버",
+        naverCategory: "스쿠버장비",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1892725325",
         priceSource: "naver-place 2026-07",
@@ -2397,6 +2492,7 @@ const DIVE_SITES = [
       },
       {
         name: "갈라파고스프리다이빙 울진",
+        naverCategory: "스킨스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1528061825",
         reviewCount: 1,
@@ -2416,6 +2512,7 @@ const DIVE_SITES = [
       },
       {
         name: "SAS마린",
+        naverCategory: "스킨스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1851465216",
         reviewCount: 2,
@@ -2433,6 +2530,7 @@ const DIVE_SITES = [
       },
       {
         name: "워터월드다이빙리조트",
+        naverCategory: "레져타운(리조트)",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         lastVerified: "2026-07",
         placeId: "15656333",
@@ -2482,6 +2580,7 @@ const DIVE_SITES = [
     shops: [
       {
         name: "목포잠수기술스킨스쿠버",
+        naverCategory: "스킨스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "21769854",
         priceSource: "naver-place 2026-07",
@@ -2499,6 +2598,7 @@ const DIVE_SITES = [
       },
       {
         name: "화이트샤크 (목포 화이트샤크 스킨스쿠버)",
+        naverCategory: "스킨스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         lastVerified: "2026-07",
         placeId: "1806622025",
@@ -2557,6 +2657,7 @@ const DIVE_SITES = [
     shops: [
       {
         name: "남해미조잠수",
+        naverCategory: "스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1611975448",
         reviewCount: 22,
@@ -2576,6 +2677,7 @@ const DIVE_SITES = [
       },
       {
         name: "남해다이브리조트",
+        naverCategory: "스킨스쿠버",
         placeId: "1138920079",
         reviewCount: 22,
         pricing: ["아이스아메리카노 5,000원"],
@@ -2593,10 +2695,11 @@ const DIVE_SITES = [
         hours: "24시간 운영",
         source: "https://m.place.naver.com/place/1138920079/home",
         amenities: ["예약", "무선 인터넷", "주차"],
-        traits: { serviceType: ["미상"], lodging: true, _src: "note" },
+        traits: { serviceType: ["교육"], lodging: true, _src: "inferred-2026-07 (note·가격·상호·리뷰 근거)" },
       },
       {
         name: "미조프로잠수",
+        naverCategory: "스쿠버",
         placeId: "38654024",
         reviewCount: 8,
         pricing: ["스쿠버장비 50,000원", "스킨장비 20,000원", "공기통 20,000원", "풀세트 50,000원", "체험다이빙 120,000원"],
@@ -2612,10 +2715,11 @@ const DIVE_SITES = [
         hours: "24시간 운영",
         source: "https://m.place.naver.com/place/38654024/home",
         amenities: ["주차"],
-        traits: { serviceType: ["미상"], _src: "note" },
+        traits: { serviceType: ["체험"], _src: "inferred-2026-07 (note·가격·상호·리뷰 근거)" },
       },
       {
         name: "남해다이브센터",
+        naverCategory: "전문건설업",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         placeId: "1222498068",
         reviewCount: 1,
@@ -2635,6 +2739,7 @@ const DIVE_SITES = [
       },
       {
         name: "남해종합레포츠센타",
+        naverCategory: "수상,해양레저",
         placeId: "1197684204",
         reviewCount: 1,
         pricing: ["스노클 50,000원", "한사람당 35,000원"],
@@ -2650,7 +2755,7 @@ const DIVE_SITES = [
         hours: "매일 07:00~19:00",
         source: "https://m.place.naver.com/place/1197684204/home",
         amenities: ["주차", "반려동물", "예약", "포장"],
-        traits: { serviceType: ["미상"], _src: "note" },
+        traits: { serviceType: ["체험"], _src: "naver-place 소개글 2026-07" },
       }
     ],
     food: [
@@ -2710,6 +2815,7 @@ const DIVE_SITES = [
       },
       {
         name: "울릉현포다이브",
+        naverCategory: "스킨스쿠버",
         placeId: "86358720",
         reviewCount: 153,
         pricing: ["펀다이빙 2회 130,000원", "펀다이빙2회 후 추가 1회 60,000원"],
@@ -2730,6 +2836,7 @@ const DIVE_SITES = [
       },
       {
         name: "학포다이버리조트",
+        naverCategory: "펜션",
         placeId: "20400934",
         reviewCount: 125,
         pricing: ["부터 400,000원", "부터 400,000원", "부터 500,000원", "라면을 사먹었어요 라면 하나에 무려 3,000원"],
@@ -2749,6 +2856,7 @@ const DIVE_SITES = [
       },
       {
         name: "울릉굿다이버스",
+        naverCategory: "스킨스쿠버",
         placeId: "1700442055",
         reviewCount: 46,
         pricing: ["보트다이빙2회 130,000원", "스노클포함 120,000원", "공기통 30,000원", "장비렌탈 50,000원", "패들보드 30,000원", "스노클링 30,000원", "패들보드 30,000원", "스노클링 30,000원", "보트다이빙 2회 130,000원", "스노클포함120,000원"],
@@ -2764,10 +2872,11 @@ const DIVE_SITES = [
         hours: "매일 08:00~18:00",
         source: "https://www.ulleung.go.kr/tour/page.do?mnu_uid=1656",
         amenities: ["주차", "예약"],
-        traits: { serviceType: ["미상"], _src: "note" },
+        traits: { serviceType: ["펀다이빙"], _src: "inferred-2026-07 (note·가격·상호·리뷰 근거)" },
       },
       {
         name: "추산다이브리조트",
+        naverCategory: "수상,해양레저",
         placeId: "15932745",
         reviewCount: 7,
         pricing: ["가격은 1인당 120,000원"],
@@ -2785,6 +2894,7 @@ const DIVE_SITES = [
       },
       {
         name: "울릉다이브리조트",
+        naverCategory: "스킨스쿠버",
         placeId: "1947736425",
         reviewCount: 35,
         pricing: ["스쿠버 장비 세트대여 50,000원", "스쿠버 장비 개별대여 20,000원", "스노클링 세트대여 30,000원", "스노클링 개별대여 10,000원", "울릉도약소 작년에는 1인분에 25,000원"],
@@ -2804,6 +2914,7 @@ const DIVE_SITES = [
       },
       {
         name: "캄인블루 프리다이빙 (서울/울릉도)",
+        naverCategory: "스킨스쿠버",
         lastVerified: "2026-07",
         placeId: "1308623849",
         reviewCount: 123,
@@ -2871,6 +2982,7 @@ const DIVE_SITES = [
     shops: [
       {
         name: "프로그다이빙 (Frog Diving)",
+        naverCategory: "스킨스쿠버",
         placeId: "833418293",
         reviewCount: 373,
         pricing: ["더블 실린더 30,000원", "사이드마운트 30,000원", "공기통 싱글 15,000원"],
@@ -2893,6 +3005,7 @@ const DIVE_SITES = [
       },
       {
         name: "마린버블다이브 (Marine Bubble Dive)",
+        naverCategory: "스킨스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         lastVerified: "2026-07",
         placeId: "1066718587",
@@ -2964,7 +3077,7 @@ const DIVE_SITES = [
         address: "충남 보령시 고잠2길 2-13 (신흑동 1775-96)",
         note: "대천 소재 스킨스쿠버 전문샵. 대천해수욕장·대천항 인근. [2026-07 네이버·카카오 지도 양쪽 미등재 — 폐업/상호변경/오정보 가능성, 현장 재확인 필요]",
         links: [{ label: "Instagram", url: "https://www.instagram.com/marine__bubble" }],
-        verified: "미확인 (2026-07 네이버·카카오 지도 미등재 — 재검증 필요)",
+        verified: "미확인 (2026-07 네이버·웹 재검색 모두 미노출 — 폐업 의심)",
         source: "DuckDuckGo 검색 노출 — 상호·주소·전화 일치. 그러나 지도 미등재로 신뢰도 하향",
         traits: { serviceType: ["미상"], _src: "note" },
       }
@@ -3007,6 +3120,7 @@ const DIVE_SITES = [
     shops: [
       {
         name: "오션팔레트 (Ocean Palette)",
+        naverCategory: "워터파크",
         placeId: "2038207956",
         reviewCount: 130,
         priceSource: "naver-place 2026-07",
@@ -3034,7 +3148,7 @@ const DIVE_SITES = [
         address: "미확인 — 서해권 활동으로 소개되나 군산 소재 여부 미검증",
         note: "서해 다이빙 관련 네이버 블로그에서 노출. 상세 검증 안 됨 [2026-07 카카오 미등재 — 폐업 가능성, 재조사 권장]",
         links: [],
-        verified: "미확인",
+        verified: "미확인 (2026-07 네이버·웹 재검색 모두 미노출 — 폐업 의심)",
         source: null,
         traits: { serviceType: ["미상"], _src: "note" },
       }
@@ -3095,6 +3209,7 @@ const DIVE_SITES = [
       },
       {
         name: "경주스쿠버센터",
+        naverCategory: "스킨스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         lastVerified: "2026-07",
         placeId: "1839933166",
@@ -3147,6 +3262,7 @@ const DIVE_SITES = [
     shops: [
       {
         name: "리라스킨스쿠버",
+        naverCategory: "스킨스쿠버",
         priceNote: "네이버 가격 미게시 (2026-07 확인)",
         lastVerified: "2026-07",
         placeId: "1697854452",
