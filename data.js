@@ -3518,6 +3518,19 @@ const DIVE_SITES = [
         traits: { serviceType: ["미상"], _src: "미상" },
       }
     ],
+    food: [
+      { name: "무의도데침쌈밥 본점", lat: 37.390795813215924, lng: 126.42712083136853, mapUrl: "http://place.map.kakao.com/21317768", category: "쌈밥", phone: "032-746-5010", verified: "카카오 좌표확정", note: "샵 기준 0.1km" },
+      { name: "착한식당", lat: 37.3923575129245, lng: 126.426614329759, mapUrl: "http://place.map.kakao.com/1367999438", category: "한식", phone: "032-752-7533", verified: "카카오 좌표확정", note: "샵 기준 0.2km" },
+      { name: "무의도시골밥상", lat: 37.3892782811772, lng: 126.426515827237, mapUrl: "http://place.map.kakao.com/1226673654", category: "한식", phone: "032-751-8261", verified: "카카오 좌표확정", note: "샵 기준 0.3km" },
+      { name: "아영이네", lat: 37.3890813832026, lng: 126.42660314728042, mapUrl: "http://place.map.kakao.com/803839939", category: "한식", verified: "카카오 좌표확정", note: "샵 기준 0.3km" },
+      { name: "황금손해물칼국수 무의점", lat: 37.3889343130821, lng: 126.426375037612, mapUrl: "http://place.map.kakao.com/478268473", category: "칼국수", phone: "032-752-0633", verified: "카카오 좌표확정", note: "샵 기준 0.3km" }
+    ],
+    lodging: [
+      { name: "팔도강산", lat: 37.389524956137, lng: 126.427403773279, mapUrl: "http://place.map.kakao.com/19833494", category: "펜션", verified: "카카오 좌표확정", note: "샵 기준 0.2km" },
+      { name: "효령펜션", lat: 37.3924860925776, lng: 126.426373946379, mapUrl: "http://place.map.kakao.com/20193527", category: "펜션", verified: "카카오 좌표확정", note: "샵 기준 0.3km" },
+      { name: "나리민박", lat: 37.3887596493606, lng: 126.426402340202, mapUrl: "http://place.map.kakao.com/25794298", category: "민박", verified: "카카오 좌표확정", note: "샵 기준 0.3km" },
+      { name: "해변의꿈펜션", lat: 37.3939378862053, lng: 126.426986248738, mapUrl: "http://place.map.kakao.com/11829460", category: "펜션", phone: "032-751-9939", verified: "카카오 좌표확정", note: "샵 기준 0.4km" }
+    ],
     verified: "샵: 네이버 플레이스 실측 2026-07 (지도검색→pid→상호·주소 교차확인). 음식·숙박·볼거리 미조사.",
     attraction: [
       { name: "무의도", lat: 37.3868071480195, lng: 126.418467797483, mapUrl: "http://place.map.kakao.com/18376755", category: "섬", verified: "카카오 관광명소", note: "다이빙 포인트 1km 반경" },
@@ -3572,6 +3585,19 @@ const DIVE_SITES = [
         traits: { serviceType: ["미상"], _src: "미상" },
       }
     ],
+    food: [
+      { name: "닭장수후라이드 태안점", lat: 36.746479376807, lng: 126.299714125545, mapUrl: "http://place.map.kakao.com/1179379221", category: "치킨", phone: "041-674-0504", verified: "카카오 좌표확정", note: "샵 기준 0km" },
+      { name: "도미노피자 태안점", lat: 36.7468035402172, lng: 126.299827631034, mapUrl: "http://place.map.kakao.com/1429382949", category: "도미노피자", phone: "041-920-0056", verified: "카카오 좌표확정", note: "샵 기준 0.1km" },
+      { name: "육미향", lat: 36.7467912680354, lng: 126.299885968084, mapUrl: "http://place.map.kakao.com/16829388", category: "육류,고기", phone: "041-673-5050", verified: "카카오 좌표확정", note: "샵 기준 0.1km" },
+      { name: "가마솥영양밥", lat: 36.7462734468049, lng: 126.300092220888, mapUrl: "http://place.map.kakao.com/271101744", category: "한식", phone: "041-673-6082", verified: "카카오 좌표확정", note: "샵 기준 0.1km" },
+      { name: "집밥", lat: 36.745642610493675, lng: 126.30008115435858, mapUrl: "http://place.map.kakao.com/1939746625", category: "한식", phone: "010-4114-2063", verified: "카카오 좌표확정", note: "샵 기준 0.1km" }
+    ],
+    lodging: [
+      { name: "그랜드파크모텔", lat: 36.7486141899771, lng: 126.300957802424, mapUrl: "http://place.map.kakao.com/26313818", category: "여관,모텔", phone: "041-675-1588", verified: "카카오 좌표확정", note: "샵 기준 0.3km" },
+      { name: "아미르모텔", lat: 36.7478541153352, lng: 126.302263592952, mapUrl: "http://place.map.kakao.com/9206171", category: "여관,모텔", verified: "카카오 좌표확정", note: "샵 기준 0.3km" },
+      { name: "호텔마리스테이 태안", lat: 36.7483807902198, lng: 126.302337206476, mapUrl: "http://place.map.kakao.com/1901664400", category: "호텔", verified: "카카오 좌표확정", note: "샵 기준 0.3km" },
+      { name: "태서모텔", lat: 36.7470972632313, lng: 126.303506623874, mapUrl: "http://place.map.kakao.com/9496080", category: "여관,모텔", phone: "041-675-1867", verified: "카카오 좌표확정", note: "샵 기준 0.4km" }
+    ],
     verified: "샵: 네이버 플레이스 실측 2026-07 (지도검색→pid→상호·주소 교차확인). 음식·숙박·볼거리 미조사."
   },
   {
@@ -3602,6 +3628,19 @@ const DIVE_SITES = [
         source: "https://m.place.naver.com/place/1173761857/home",
         traits: { serviceType: ["미상"], _src: "미상" },
       }
+    ],
+    food: [
+      { name: "돌핀스식당", lat: 34.3215576546029, lng: 126.746508216909, mapUrl: "http://place.map.kakao.com/1616708850", category: "닭요리", phone: "010-3619-6856", verified: "카카오 좌표확정", note: "샵 기준 0km" },
+      { name: "명동순대국밥", lat: 34.32152788967063, lng: 126.74693640169815, mapUrl: "http://place.map.kakao.com/11084050", category: "순대", phone: "061-552-2748", verified: "카카오 좌표확정", note: "샵 기준 0km" },
+      { name: "네네치킨 완도점", lat: 34.32116954815629, lng: 126.74671691135181, mapUrl: "http://place.map.kakao.com/13575784", category: "네네치킨", phone: "061-554-4492", verified: "카카오 좌표확정", note: "샵 기준 0km" },
+      { name: "남도복국 완도점", lat: 34.3217531305287, lng: 126.74687379287941, mapUrl: "http://place.map.kakao.com/1882412616", category: "복어", phone: "061-553-6600", verified: "카카오 좌표확정", note: "샵 기준 0km" },
+      { name: "고창풍천장어", lat: 34.32117940931563, lng: 126.74712650421485, mapUrl: "http://place.map.kakao.com/1248322533", category: "장어", phone: "061-555-3388", verified: "카카오 좌표확정", note: "샵 기준 0km" }
+    ],
+    lodging: [
+      { name: "로망스모텔", lat: 34.321709332940166, lng: 126.7474921648581, mapUrl: "http://place.map.kakao.com/9784512", category: "여관,모텔", phone: "061-555-2463", verified: "카카오 좌표확정", note: "샵 기준 0.1km" },
+      { name: "라메르호텔", lat: 34.3218648613491, lng: 126.747722045665, mapUrl: "http://place.map.kakao.com/1221626386", category: "여관,모텔", phone: "0502-5552-0160", verified: "카카오 좌표확정", note: "샵 기준 0.1km" },
+      { name: "해비치모텔", lat: 34.3209347089797, lng: 126.747807405079, mapUrl: "http://place.map.kakao.com/27004116", category: "여관,모텔", phone: "061-555-3380", verified: "카카오 좌표확정", note: "샵 기준 0.1km" },
+      { name: "코너레지던스호텔 완도", lat: 34.3204614133616, lng: 126.747361173483, mapUrl: "http://place.map.kakao.com/65699977", category: "호텔", phone: "061-555-0179", verified: "카카오 좌표확정", note: "샵 기준 0.1km" }
     ],
     verified: "샵: 네이버 플레이스 실측 2026-07 (지도검색→pid→상호·주소 교차확인). 음식·숙박·볼거리 미조사. 기존 '완도 확정 샵 없음' 결론을 뒤집는 실측(2026-07).",
     attraction: [
