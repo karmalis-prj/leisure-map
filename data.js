@@ -35,6 +35,7 @@ const DIVE_SITES = [
         lastVerified: "2026-07",
         verified: "확인",
         source: "http://www.scubanet.kr/article/view.php?category=1&article=3557",
+        amenities: ["포장"],
         traits: { serviceType: ["교육"], lodging: true, _src: "note" },
       },
       {
@@ -59,6 +60,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 07:00~21:00",
         source: "http://www.namaescuba.com/",
+        amenities: ["예약", "무선 인터넷", "반려동물", "주차"],
         traits: { serviceType: ["체험", "교육", "펀다이빙"], agency: ["PADI"], boat: true, lodging: true, beginner: true, _src: "note" },
       },
       {
@@ -77,6 +79,7 @@ const DIVE_SITES = [
         verified: "확인 (카카오 재검증 — 등재·카테고리 일치)",
         hours: "매일 08:00~23:00",
         source: "https://sweetit.co.kr/11078731",
+        amenities: ["예약", "무선 인터넷", "주차"],
         traits: { serviceType: ["체험", "교육"], agency: ["PADI"], boat: true, lodging: true, beginner: true, _src: "note" },
       },
       {
@@ -203,6 +206,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 08:00~20:00",
         source: "https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_000000000022353",
+        amenities: ["예약", "주차"],
         traits: { serviceType: ["체험", "교육", "펀다이빙"], agency: ["PADI"], boat: true, beginner: true, _src: "note" },
       },
       {
@@ -226,6 +230,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 08:30~18:00",
         source: "https://cooldive.co.kr/",
+        amenities: ["예약", "무선인터넷", "주차"],
         traits: { serviceType: ["펀다이빙"], boat: true, _src: "note" },
       },
       {
@@ -246,6 +251,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 08:00~20:00",
         source: "https://www.myrealtrip.com/offers/104973",
+        amenities: ["예약", "무선인터넷", "반려동물", "주차"],
         traits: { serviceType: ["교육"], agency: ["PADI"], _src: "note" },
       },
       {
@@ -269,6 +275,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 07:00~20:00",
         source: "https://vdive.co.kr/team",
+        amenities: ["예약", "주차", "반려동물", "무선인터넷"],
         traits: { serviceType: ["교육", "펀다이빙"], agency: ["PADI"], boat: true, _src: "note" },
       },
       {
@@ -291,6 +298,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 08:00~22:00",
         source: "https://www.bubbletank.co.kr/discovery",
+        amenities: ["예약", "무선인터넷", "반려동물", "주차"],
         traits: { serviceType: ["체험", "교육", "펀다이빙"], beginner: true, _src: "note" },
       },
       {
@@ -310,6 +318,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 07:00~20:00",
         source: "https://www.padi.com/dive-center/south-korea/scubee-dive/",
+        amenities: ["무선 인터넷", "예약", "반려동물", "주차"],
         traits: { serviceType: ["교육"], agency: ["PADI"], tech: true, _src: "note" },
       },
       {
@@ -330,6 +339,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "24시간 운영",
         source: "https://travel.padi.com/dive-center/south-korea/seaflow/",
+        amenities: ["예약", "주차", "무선인터넷"],
         traits: { serviceType: ["미상"], _src: "note" },
       },
       {
@@ -349,6 +359,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "24시간 운영",
         source: "https://www.padi.com/dive-center/south-korea/haevit-dive/",
+        amenities: ["주차", "예약", "무선 인터넷", "반려동물"],
         traits: { serviceType: ["교육"], agency: ["PADI"], _src: "note" },
       },
       {
@@ -368,6 +379,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 07:30~22:00",
         source: "https://www.padi.com/dive-center/south-korea/badadive/",
+        amenities: ["예약", "무선인터넷", "반려동물", "주차"],
         traits: { serviceType: ["교육"], _src: "note" },
       },
       {
@@ -388,6 +400,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 08:00~18:00",
         source: "https://www.jejuscubadiving.com/en/",
+        amenities: ["예약", "주차"],
         traits: { serviceType: ["미상"], boat: true, _src: "note" },
       },
       {
@@ -407,6 +420,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 09:00~18:00",
         source: "https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_200000000008211",
+        amenities: ["주차"],
         traits: { serviceType: ["체험", "교육"], beginner: true, _src: "note" },
       },
       {
@@ -426,6 +440,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 06:00~23:00",
         source: "https://www.blueinskinscuba.com/point",
+        amenities: ["예약", "무선 인터넷", "주차"],
         traits: { serviceType: ["교육", "펀다이빙"], agency: ["PADI"], _src: "note" },
       },
       {
@@ -446,6 +461,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 08:00~22:00",
         source: "https://experiences.myrealtrip.com/products/3827729",
+        amenities: ["예약", "무선 인터넷", "주차"],
         traits: { serviceType: ["체험", "펀다이빙"], beginner: true, _src: "note" },
       },
       {
@@ -465,6 +481,7 @@ const DIVE_SITES = [
         verified: "확인 (카카오 재검증 — 등재·카테고리 일치)",
         hours: "매일 09:00~17:00", dayOff: "매달 4,5번째 수요일 휴무",
         source: "https://experiences.myrealtrip.com/products/3827507",
+        amenities: ["예약", "무선인터넷", "반려동물", "주차"],
         traits: { serviceType: ["체험", "교육", "펀다이빙"], beginner: true, _src: "note" },
       },
       {
@@ -485,6 +502,7 @@ const DIVE_SITES = [
         verified: "확인 (카카오 재검증 — 등재·카테고리 일치)",
         hours: "매일 09:00~21:00",
         source: "http://www.mobydickdive.co.kr/diving-point.php",
+        amenities: ["예약", "무선 인터넷", "주차", "반려동물"],
         traits: { serviceType: ["펀다이빙"], boat: true, _src: "note" },
       },
       {
@@ -569,6 +587,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 09:00~18:00",
         source: "https://www.padi.com/ko/dive-center/south-korea/marine-fun-dive/",
+        amenities: ["주차", "무선 인터넷", "예약"],
         traits: { serviceType: ["교육", "펀다이빙"], agency: ["PADI"], _src: "note" },
       },
       {
@@ -585,6 +604,9 @@ const DIVE_SITES = [
         lastVerified: "2026-07",
         verified: "확인 (네이버 플레이스 운영중 — 전화·리뷰 확인)",
         source: "https://experiences.myrealtrip.com/products/3827830",
+        amenities: ["예약", "주차"],
+        hours: "매일 00:00 - 23:59 ☎️ 전화번",
+        pricing: ["교육비 10000원"],
         traits: { serviceType: ["교육"], agency: ["PADI", "SSI", "CMAS"], _src: "note" },
       },
       {
@@ -652,6 +674,7 @@ const DIVE_SITES = [
         lastVerified: "2026-07",
         verified: "확인 (카카오 재검증 — 등재·카테고리 일치)",
         source: "https://divingholic.com/whitesharkreview",
+        amenities: ["주차"],
         traits: { serviceType: ["미상"], boat: true, lodging: true, _src: "note" },
       },
       {
@@ -671,6 +694,7 @@ const DIVE_SITES = [
         verified: "추정",
         hours: "매일 08:00~21:00",
         source: "https://okdiveresort.modoo.at/?pc=1",
+        amenities: ["예약", "무선 인터넷", "주차"],
         traits: { serviceType: ["교육", "펀다이빙"], boat: true, _src: "note" },
       },
       {
@@ -693,6 +717,7 @@ const DIVE_SITES = [
         verified: "확인 (카카오 재검증 — 등재·카테고리 일치)",
         hours: "매일 07:00~22:00",
         source: "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=a2f5e57e-8790-4d7e-b121-94d58bbfbc6d",
+        amenities: ["주차", "예약", "무선 인터넷", "반려동물"],
         traits: { serviceType: ["체험", "펀다이빙"], lodging: true, beginner: true, _src: "note" },
       },
       {
@@ -710,6 +735,7 @@ const DIVE_SITES = [
         verified: "확인 (카카오 재검증 — 등재·카테고리 일치)",
         hours: "매일 07:00~18:00",
         source: "http://www.yeyakwang.co.kr/reservation/intro.php?ps_code=141009012",
+        amenities: ["예약", "주차"],
         traits: { serviceType: ["교육"], lodging: true, _src: "note" },
       },
       {
@@ -730,6 +756,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "24시간 운영",
         source: "https://www.padi.com/ko/dive-center/south-korea/romantic-dive-center-resort/",
+        amenities: ["예약", "포장", "무선 인터넷", "반려동물", "주차"],
         traits: { serviceType: ["교육", "펀다이빙"], agency: ["PADI"], lodging: true, _src: "note" },
       },
       {
@@ -748,6 +775,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 07:00~19:00",
         source: "https://badaon.or.kr/seantour_map/travel/destination/detail.do?destId=DEST023311",
+        amenities: ["무선 인터넷", "예약", "반려동물"],
         traits: { serviceType: ["체험", "펀다이빙"], boat: true, lodging: true, beginner: true, _src: "note" },
       }
     ],
@@ -803,6 +831,7 @@ const DIVE_SITES = [
         lastVerified: "2026-07",
         verified: "확인 (카카오 재검증 — 등재·카테고리 일치)",
         source: "http://www.dive11.co.kr/default/",
+        amenities: ["예약", "무선 인터넷", "반려동물", "주차"],
         traits: { serviceType: ["체험", "교육", "펀다이빙"], boat: true, lodging: true, beginner: true, _src: "note" },
       },
       {
@@ -822,6 +851,7 @@ const DIVE_SITES = [
         verified: "확인 (카카오 재검증 — 등재·카테고리 일치)",
         hours: "매일 07:00~22:00",
         source: null,
+        amenities: ["주차", "예약", "무선 인터넷"],
         traits: { serviceType: ["펀다이빙"], boat: true, lodging: true, _src: "note" },
       },
       {
@@ -840,6 +870,7 @@ const DIVE_SITES = [
         naverBooking: true,
         verified: "확인 (2026-07 네이버 지도 실측)",
         source: null,
+        amenities: ["예약"],
         traits: { serviceType: ["미상"], lodging: true, _src: "note" },
       }
     ],
@@ -895,6 +926,7 @@ const DIVE_SITES = [
         lastVerified: "2026-07",
         verified: "확인",
         source: "https://map.naver.com/p/search/통영%20산양%20다이빙/place/1066396729",
+        amenities: ["포장"],
         traits: { serviceType: ["체험", "교육", "펀다이빙"], boat: true, lodging: true, beginner: true, _src: "note" },
       },
       {
@@ -912,6 +944,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "24시간 운영",
         source: "https://map.naver.com/p/search/통영%20산양%20다이빙/place/1078392909",
+        amenities: ["예약", "무선 인터넷", "주차"],
         traits: { serviceType: ["체험", "교육", "펀다이빙"], beginner: true, _src: "note" },
       },
       {
@@ -929,6 +962,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "24시간 운영",
         source: "https://map.naver.com/p/search/통영%20산양%20다이빙/place/1549936549",
+        amenities: ["예약", "무선 인터넷", "주차"],
         traits: { serviceType: ["장비점"], lodging: true, _src: "note" },
       },
       {
@@ -944,6 +978,7 @@ const DIVE_SITES = [
         lastVerified: "2026-07",
         verified: "확인",
         source: "https://tjdive.com/",
+        amenities: ["예약", "무선 인터넷", "주차"],
         traits: { serviceType: ["펀다이빙"], lodging: true, _src: "note" },
       },
       {
@@ -956,10 +991,11 @@ const DIVE_SITES = [
         phoneStatus: null,
         address: "경상남도 통영시 사량면 능양길 56",
         note: "보트다이빙 11만원, 섬다이빙 10만원. 샤워실·탈의실 청결도 호평, 숙소·배편 예약 대행, 왕돌초 안내",
-        links: [],
+        links: [{ label: "홈페이지", url: "https://place.naver.co.kr/event/rsv-list4" }],
         lastVerified: "2026-07",
         verified: "확인",
         source: "https://map.naver.com/p/search/통영%20사량도%20다이빙/place/1246232122",
+        amenities: ["예약"],
         traits: { serviceType: ["펀다이빙"], boat: true, lodging: true, _src: "note" },
       },
       {
@@ -973,11 +1009,12 @@ const DIVE_SITES = [
         phoneStatus: "미확인", phoneNote: "미확인 — 블로그 원문에 마스킹 처리됨",
         address: "경남 통영시 욕지면 옥동로 383 (욕지도)",
         note: "욕지도 유일 스쿠버다이빙샵, 캠핑장 병행. 보트다이빙 2회 12만원, 비치다이빙 2회 8만원, 체험다이빙 15만원",
-        links: [],
+        links: [{ label: "홈페이지", url: "https://place.naver.co.kr/event/rsv-list4" }],
         lastVerified: "2026-07",
         verified: "확인",
         hours: "24시간 운영",
         source: "https://map.naver.com/p/search/통영%20다이빙샵/place/15429051",
+        amenities: ["주차", "예약"],
         traits: { serviceType: ["체험", "펀다이빙"], boat: true, beginner: true, _src: "note" },
       },
       {
@@ -992,6 +1029,7 @@ const DIVE_SITES = [
         lastVerified: "2026-07",
         verified: "추정",
         source: "https://map.naver.com/p/search/통영%20산양%20다이빙/place/32862862",
+        amenities: ["예약", "주차"],
         traits: { serviceType: ["미상"], _src: "note" },
       },
       {
@@ -1009,6 +1047,7 @@ const DIVE_SITES = [
         links: [{ label: "홈페이지", url: "http://www.maemuldo.com/" }],
         verified: "확인 (카카오 재검증 — 등재·카테고리 일치)",
         source: "https://map.naver.com/p/search/통영%20저구항%20다이빙/place/11382600",
+        amenities: ["주차"],
         traits: { serviceType: ["펀다이빙"], lodging: true, _src: "note" },
       }
     ],
@@ -1067,6 +1106,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "24시간 운영",
         source: "https://map.naver.com/p/search/강릉%20스쿠버다이빙/place/20322765",
+        amenities: ["예약", "무선 인터넷", "주차"],
         traits: { serviceType: ["펀다이빙"], boat: true, lodging: true, _src: "note" },
       },
       {
@@ -1079,11 +1119,12 @@ const DIVE_SITES = [
         phoneStatus: null,
         address: "강원 강릉시 주문진읍 신리제방2길 30 (JMJ 스쿠버)",
         note: "네이버플레이스 리뷰 14건",
-        links: [],
+        links: [{ label: "홈페이지", url: "https://place.naver.co.kr/event/rsv-list4" }],
         lastVerified: "2026-07",
         reviewTraits: { tags: ["시설우수", "가성비", "강습우수", "주차편리"], topKeywords: ["최신 장비를 사용해요", "가격이 합리적이에요", "학생과 소통을 잘해요"], _src: "naver-review-agg" },
         verified: "확인",
         source: "https://map.naver.com/p/search/강릉%20스쿠버다이빙/place/1400420924",
+        amenities: ["예약", "포장", "주차"],
         traits: { serviceType: ["미상"], _src: "note" },
       },
       {
@@ -1097,12 +1138,13 @@ const DIVE_SITES = [
         phoneStatus: null,
         address: "강원 강릉시 주문진읍 (상세주소 미확인)",
         note: "네이버플레이스 리뷰 26건, 영업 중(20:00 종료)",
-        links: [],
+        links: [{ label: "홈페이지", url: "https://place.naver.co.kr/event/rsv-list4" }],
         lastVerified: "2026-07",
         reviewTraits: { tags: ["친절응대"], topKeywords: ["친절해요"], _src: "naver-review-agg" },
         verified: "확인",
         hours: "매일 06:00~20:00",
         source: "https://map.naver.com/p/search/강릉%20스쿠버다이빙/place/10979542",
+        amenities: ["예약", "주차"],
         traits: { serviceType: ["미상"], _src: "note" },
       },
       {
@@ -1121,6 +1163,7 @@ const DIVE_SITES = [
         verified: "미확인",
         hours: "매일 08:00~20:00",
         source: null,
+        amenities: ["예약"],
         traits: { serviceType: ["펀다이빙", "프리다이빙"], lodging: true, freedive: true, _src: "note" },
       },
       {
@@ -1133,11 +1176,12 @@ const DIVE_SITES = [
         phoneStatus: "확인", phoneNote: "카카오 등재번호로 보강",
         address: "강원 강릉시 연곡면 (상세주소 미확인)",
         note: "운영 중, 상세 미조회",
-        links: [],
+        links: [{ label: "홈페이지", url: "https://www.intothesea.co.kr/" }],
         lastVerified: "2026-07",
         verified: "확인 (카카오 재검증 — 등재·카테고리 일치)",
         hours: "매일 07:00~20:00",
         source: null,
+        amenities: ["무선 인터넷", "예약", "주차"],
         traits: { serviceType: ["미상"], _src: "note" },
       },
       {
@@ -1155,6 +1199,7 @@ const DIVE_SITES = [
         verified: "확인 (카카오 재검증 — 등재·카테고리 일치)",
         hours: "매일 08:00~23:00",
         source: null,
+        amenities: ["예약", "무선 인터넷", "주차"],
         traits: { serviceType: ["미상"], lodging: true, _src: "note" },
       },
       {
@@ -1174,6 +1219,7 @@ const DIVE_SITES = [
         verified: "확인 (카카오 재검증 — 등재·카테고리 일치)",
         hours: "매일 08:00~18:00",
         source: null,
+        amenities: ["예약", "무선 인터넷", "주차"],
         traits: { serviceType: ["미상"], _src: "note" },
       },
       {
@@ -1191,6 +1237,7 @@ const DIVE_SITES = [
         verified: "미확인",
         hours: "매일 10:00~17:00",
         source: null,
+        amenities: ["주차"],
         traits: { serviceType: ["미상"], lodging: true, _src: "note" },
       },
       {
@@ -1204,7 +1251,7 @@ const DIVE_SITES = [
         phoneStatus: "확인", phoneNote: "카카오 등재번호로 보강",
         address: "강원 강릉시 연곡면 (상세주소 미확인)",
         note: "리뷰 1건, 참고용",
-        links: [],
+        links: [{ label: "홈페이지", url: "https://place.naver.co.kr/event/rsv-list4" }],
         verified: "확인 (카카오 재검증 — 등재·카테고리 일치)",
         source: null,
         traits: { serviceType: ["미상"], _src: "note" },
@@ -1267,6 +1314,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 09:00~19:00",
         source: "https://pcmap.place.naver.com/place/2029969744/home",
+        amenities: ["예약", "무선 인터넷", "주차"],
         traits: { serviceType: ["체험"], beginner: true, _src: "note" },
       },
       {
@@ -1287,6 +1335,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 08:00~19:00",
         source: "https://pcmap.place.naver.com/place/2029969744/home",
+        amenities: ["예약", "주차", "반려동물", "무선 인터넷"],
         traits: { serviceType: ["체험", "교육"], beginner: true, _src: "note" },
       },
       {
@@ -1306,6 +1355,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "24시간 운영",
         source: "https://pcmap.place.naver.com/place/1345434674/home",
+        amenities: ["주차", "예약", "무선 인터넷"],
         traits: { serviceType: ["교육", "펀다이빙"], _src: "note" },
       },
       {
@@ -1319,9 +1369,10 @@ const DIVE_SITES = [
         phoneStatus: "확인", phoneNote: "네이버플레이스에서 비공개 처리",
         address: "강원 속초시 조양로142번길 7",
         note: "리뷰 1건, 신규/소규모 업체로 추정",
-        links: [],
+        links: [{ label: "홈페이지", url: "https://place.naver.co.kr/event/rsv-list4" }],
         verified: "확인",
         source: "https://pcmap.place.naver.com/place/1488420395/home",
+        amenities: ["주차"],
         traits: { serviceType: ["미상"], _src: "note" },
       }
     ],
@@ -1374,6 +1425,7 @@ const DIVE_SITES = [
         lastVerified: "2026-07",
         verified: "확인",
         source: "https://map.naver.com/p/search/거제%20스쿠버다이빙/place/36915230",
+        amenities: ["예약", "주차"],
         traits: { serviceType: ["체험"], lodging: true, beginner: true, _src: "note" },
       },
       {
@@ -1386,7 +1438,7 @@ const DIVE_SITES = [
         phoneStatus: null,
         address: "경남 거제시 사등면",
         note: "24시간 연중무휴, 네이버 톡톡 연동, 리뷰 3건",
-        links: [],
+        links: [{ label: "홈페이지", url: "https://place.naver.co.kr/event/rsv-list4" }, { label: "Instagram", url: "https://www.instagram.com/" }, { label: "Facebook", url: "https://www.facebook.com/" }],
         lastVerified: "2026-07",
         verified: "확인",
         hours: "24시간 운영",
@@ -1411,6 +1463,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 09:00~22:00",
         source: null,
+        amenities: ["예약", "무선 인터넷", "주차"],
         traits: { serviceType: ["미상"], _src: "note" },
       },
       {
@@ -1428,6 +1481,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 07:00~17:00",
         source: null,
+        amenities: ["무선 인터넷", "예약", "주차"],
         traits: { serviceType: ["미상"], _src: "note" },
       },
       {
@@ -1446,6 +1500,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "24시간 운영",
         source: null,
+        amenities: ["무선 인터넷", "예약", "주차", "반려동물"],
         traits: { serviceType: ["미상"], lodging: true, _src: "note" },
       },
       {
@@ -1464,6 +1519,7 @@ const DIVE_SITES = [
         naverBooking: true,
         verified: "확인",
         source: null,
+        amenities: ["예약"],
         traits: { serviceType: ["미상"], pool: true, _src: "note" },
       },
       {
@@ -1475,10 +1531,11 @@ const DIVE_SITES = [
         phoneStatus: "확인", phoneNote: "카카오 로컬 등재번호로 보강(2026-07)",
         address: "경남 거제시 사등면",
         note: null,
-        links: [],
+        links: [{ label: "홈페이지", url: "https://place.naver.co.kr/event/rsv-list4" }],
         lastVerified: "2026-07",
         verified: "확인",
         source: null,
+        amenities: ["주차"],
         traits: { serviceType: ["미상"], _src: "note" },
       },
       {
@@ -1495,6 +1552,7 @@ const DIVE_SITES = [
         links: [{ label: "Instagram", url: "https://www.instagram.com/iyeonju642" }],
         verified: "확인",
         source: null,
+        amenities: ["주차"],
         traits: { serviceType: ["미상"], _src: "note" },
       }
     ],
@@ -1538,7 +1596,7 @@ const DIVE_SITES = [
         pricing: ["AIDA 레벨1 프리다이버 100,000원", "AIDA 레벨2 오픈워터프리다이버 300,000원", "AIDA 레벨3 어드벤스프리다이버 500,000원", "AIDA 레벨4 마스터프리다이버 700,000원", "PADI 오픈워터 스쿠버다이빙 650,000원", "PADI 어드밴스 스쿠버다이빙 600,000원", "예약 100,000원", "예약 650,000원"],
         priceSource: "naver-place 2026-07",
         lat: 34.752765, lng: 127.709215,
-        phone: null,
+        phone: "055-633-1514",
         phoneStatus: "확인", phoneNote: "플레이스에 전화번호 항목 없음 — 예약/블로그 문의 방식",
         address: "전남 여수시 여서2로 55",
         note: "프리다이빙·스쿠버다이빙 교육 병행, AIDA·PADI 과정, 리뷰 79건",
@@ -1548,6 +1606,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 10:00~22:00",
         source: "https://map.naver.com/p/entry/place/1120230307",
+        amenities: ["예약", "주차"],
         traits: { serviceType: ["교육", "프리다이빙"], agency: ["PADI", "AIDA"], freedive: true, _src: "note" },
       },
       {
@@ -1559,10 +1618,11 @@ const DIVE_SITES = [
         phoneStatus: "확인", phoneNote: "카카오 로컬 등재번호로 보강(2026-07)",
         address: "전남 여수시 삼산면 거문길 100-1",
         note: "거문도 소재, 리조트형 숙박시설 겸업 추정, 리뷰 48건",
-        links: [],
+        links: [{ label: "홈페이지", url: "https://place.naver.co.kr/event/rsv-list4" }],
         lastVerified: "2026-07",
         verified: "확인",
         source: "https://map.naver.com/p/entry/place/1031338992",
+        amenities: ["주차"],
         traits: { serviceType: ["미상"], lodging: true, _src: "note" },
       },
       {
@@ -1581,6 +1641,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "24시간 운영",
         source: "https://map.naver.com/p/entry/place/1607020385",
+        amenities: ["예약", "주차"],
         traits: { serviceType: ["프리다이빙"], freedive: true, _src: "note" },
       },
       {
@@ -1597,6 +1658,7 @@ const DIVE_SITES = [
         lastVerified: "2026-07",
         verified: "확인",
         source: "https://map.naver.com/p/entry/place/1455825155",
+        amenities: ["예약", "주차"],
         traits: { serviceType: ["미상"], lodging: true, pickup: true, _src: "note" },
       },
       {
@@ -1610,7 +1672,7 @@ const DIVE_SITES = [
         phoneStatus: null,
         address: "전남 여수시 삼산면 장덕로 40-1",
         note: "주차·단체이용 가능, 리뷰 3건",
-        links: [],
+        links: [{ label: "홈페이지", url: "https://place.naver.co.kr/event/rsv-list4" }],
         verified: "확인",
         source: "https://map.naver.com/p/entry/place/1078915113",
         traits: { serviceType: ["미상"], _src: "note" },
@@ -1670,6 +1732,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "24시간 운영",
         source: "https://map.naver.com",
+        amenities: ["예약"],
         traits: { serviceType: ["프리다이빙"], freedive: true, _src: "note" },
       },
       {
@@ -1688,6 +1751,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 10:00~22:00",
         source: "https://map.naver.com",
+        amenities: ["무선 인터넷", "예약", "주차"],
         traits: { serviceType: ["체험", "교육"], agency: ["PADI"], pool: true, beginner: true, _src: "note" },
       },
       {
@@ -1707,6 +1771,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "24시간 운영",
         source: "https://map.naver.com",
+        amenities: ["포장", "반려동물", "주차"],
         traits: { serviceType: ["미상"], _src: "note" },
       },
       {
@@ -1726,6 +1791,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 09:00~18:00", dayOff: "매주 월요일 휴무",
         source: "https://map.naver.com",
+        amenities: ["예약", "주차"],
         traits: { serviceType: ["미상"], pool: true, _src: "note" },
       },
       {
@@ -1744,6 +1810,8 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "평일 09:30~22:00, 토 09:30~20:00, 일 09:30~17:00",
         source: "https://map.naver.com",
+        amenities: ["예약", "주차", "무선 인터넷"],
+        pricing: ["청귤차3900원"],
         traits: { serviceType: ["미상"], pool: true, _src: "note" },
       },
       {
@@ -1763,6 +1831,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "24시간 운영",
         source: "https://map.naver.com",
+        amenities: ["예약", "무선 인터넷", "주차"],
         traits: { serviceType: ["미상"], _src: "note" },
       },
       {
@@ -1783,6 +1852,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 00:00~23:00",
         source: "https://map.naver.com",
+        amenities: ["예약", "무선 인터넷", "주차"],
         traits: { serviceType: ["프리다이빙"], freedive: true, _src: "note" },
       },
       {
@@ -1795,11 +1865,12 @@ const DIVE_SITES = [
         phoneStatus: "확인", phoneNote: "카카오 로컬 등재번호로 보강(2026-07)",
         address: "부산 사하구 구평로 (상세 번지 미확인)",
         note: "장비 종합도소매, 리뷰 22건",
-        links: [],
+        links: [{ label: "홈페이지", url: "https://place.naver.co.kr/event/rsv-list4" }],
         lastVerified: "2026-07",
         reviewTraits: { tags: ["가성비", "친절응대", "시설우수"], topKeywords: ["가성비가 좋아요", "시설이 깔끔해요", "친절해요"], _src: "naver-review-agg" },
         verified: "확인",
         source: "https://map.naver.com",
+        amenities: ["주차"],
         traits: { serviceType: ["미상"], _src: "note" },
       },
       {
@@ -1815,6 +1886,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 08:00~21:00",
         source: "https://map.naver.com",
+        amenities: ["주차"],
         traits: { serviceType: ["미상"], _src: "note" },
       },
       {
@@ -1834,6 +1906,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "24시간 운영",
         source: "https://map.naver.com",
+        amenities: ["주차"],
         traits: { serviceType: ["미상"], _src: "note" },
       },
       {
@@ -1851,6 +1924,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 10:00~22:00",
         source: "https://map.naver.com",
+        amenities: ["주차"],
         traits: { serviceType: ["미상"], _src: "note" },
       },
       {
@@ -1863,11 +1937,12 @@ const DIVE_SITES = [
         phoneStatus: null,
         address: "부산 해운대구 해운대로 547- (번지 일부 미확인)",
         note: "리뷰 6건",
-        links: [],
+        links: [{ label: "홈페이지", url: "http://www.kimsmarine.co.kr/" }],
         lastVerified: "2026-07",
         reviewTraits: { tags: ["시설우수", "주차편리", "가성비", "프로그램다양"], topKeywords: ["시설이 깔끔해요", "주차하기 편해요", "가격이 합리적이에요"], _src: "naver-review-agg" },
         verified: "확인",
         source: "https://map.naver.com",
+        amenities: ["주차"],
         traits: { serviceType: ["미상"], _src: "note" },
       },
       {
@@ -1888,6 +1963,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "24시간 운영",
         source: "https://map.naver.com",
+        amenities: ["예약", "주차", "무선 인터넷"],
         traits: { serviceType: ["교육"], _src: "note" },
       },
       {
@@ -1905,6 +1981,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "24시간 운영",
         source: "https://map.naver.com",
+        amenities: ["무선 인터넷", "반려동물", "예약", "주차"],
         traits: { serviceType: ["미상"], _src: "note" },
       },
       {
@@ -1921,6 +1998,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "24시간 운영",
         source: "https://map.naver.com",
+        amenities: ["예약", "무선 인터넷", "반려동물", "주차"],
         traits: { serviceType: ["미상"], _src: "note" },
       },
       {
@@ -1938,6 +2016,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 09:00~18:30",
         source: "https://map.naver.com",
+        amenities: ["예약"],
         traits: { serviceType: ["교육"], _src: "note" },
       },
       {
@@ -2011,6 +2090,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 08:00~18:00",
         source: "https://map.naver.com/p/search/삼척스쿠버다이빙/place/2061111864",
+        amenities: ["예약", "무선 인터넷", "반려동물", "주차", "포장"],
         traits: { serviceType: ["체험"], lodging: true, beginner: true, _src: "note" },
       },
       {
@@ -2031,6 +2111,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 09:00~18:00",
         source: "https://map.naver.com/p/search/삼척스쿠버다이빙/place/1460971182",
+        amenities: ["예약", "무선 인터넷", "반려동물", "주차"],
         traits: { serviceType: ["미상"], _src: "note" },
       },
       {
@@ -2065,6 +2146,7 @@ const DIVE_SITES = [
         links: [{ label: "Instagram", url: "https://www.instagram.com/would_u_donghae" }],
         verified: "확인",
         source: "https://map.naver.com/p/search/삼척스쿠버다이빙/place/2086323125",
+        amenities: ["예약", "주차"],
         traits: { serviceType: ["프리다이빙"], freedive: true, _src: "note" },
       }
     ],
@@ -2123,6 +2205,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 09:00~18:00",
         source: "https://m.place.naver.com/place/1043281200/home",
+        amenities: ["예약", "무선 인터넷", "주차"],
         traits: { serviceType: ["미상"], _src: "note" },
       },
       {
@@ -2141,6 +2224,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 08:00~20:00",
         source: "https://m.place.naver.com/place/11867039/home",
+        amenities: ["예약", "무선 인터넷", "주차"],
         traits: { serviceType: ["미상"], _src: "note" },
       },
       {
@@ -2153,11 +2237,12 @@ const DIVE_SITES = [
         phoneStatus: null,
         address: "경북 울진군 매화면 망양정로 31-1 1층",
         note: "24시간 운영·연중무휴",
-        links: [],
+        links: [{ label: "홈페이지", url: "https://www.ikingstone.com/" }],
         lastVerified: "2026-07",
         verified: "확인",
         hours: "24시간 운영",
         source: "https://m.place.naver.com/place/2063867649/home",
+        amenities: ["예약", "무선 인터넷", "주차"],
         traits: { serviceType: ["미상"], _src: "note" },
       },
       {
@@ -2175,6 +2260,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "24시간 운영",
         source: "https://m.place.naver.com/place/2086214002/home",
+        amenities: ["예약", "반려동물", "무선 인터넷", "주차"],
         traits: { serviceType: ["교육"], pool: true, _src: "note" },
       },
       {
@@ -2193,6 +2279,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 08:00~20:00",
         source: "https://m.place.naver.com/place/1009574869/home",
+        amenities: ["주차", "예약"],
         traits: { serviceType: ["미상"], lodging: true, _src: "note" },
       },
       {
@@ -2205,11 +2292,12 @@ const DIVE_SITES = [
         phoneStatus: "확인", phoneNote: "네이버플레이스에 등록된 전화번호 없음",
         address: "경북 울진군 기성면 망양로 147",
         note: "리뷰 1건",
-        links: [],
+        links: [{ label: "홈페이지", url: "https://place.naver.co.kr/event/rsv-list4" }],
         lastVerified: "2026-07",
         reviewTraits: { tags: ["강습우수", "주차편리"], topKeywords: ["학생과 소통을 잘해요", "주차하기 편해요"], _src: "naver-review-agg" },
         verified: "확인",
         source: "https://m.place.naver.com/place/1181152159/home",
+        amenities: ["주차", "무선 인터넷", "예약"],
         traits: { serviceType: ["미상"], _src: "note" },
       },
       {
@@ -2227,6 +2315,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 07:00~22:00",
         source: "https://m.place.naver.com/place/2040447054/home",
+        amenities: ["예약", "반려동물", "무선 인터넷", "주차"],
         traits: { serviceType: ["펀다이빙"], _src: "note" },
       },
       {
@@ -2244,6 +2333,8 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 09:00~19:00",
         source: "https://m.place.naver.com/place/37126715/home",
+        amenities: ["예약"],
+        pricing: ["편도 20,000원", "왕복40,000원"],
         traits: { serviceType: ["미상"], _src: "note" },
       },
       {
@@ -2260,6 +2351,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 10:00~18:00",
         source: "https://m.place.naver.com/place/1892725325/home",
+        amenities: ["예약"],
         traits: { serviceType: ["장비점"], _src: "note" },
       },
       {
@@ -2277,6 +2369,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 10:00~20:00",
         source: "https://m.place.naver.com/place/1528061825/home",
+        amenities: ["주차", "예약", "무선 인터넷"],
         traits: { serviceType: ["프리다이빙"], freedive: true, _src: "note" },
       },
       {
@@ -2289,7 +2382,7 @@ const DIVE_SITES = [
         phoneStatus: "확인", phoneNote: "카카오 로컬 등재번호로 보강(2026-07)",
         address: "경북 울진군 평해읍 제장로 27",
         note: "리뷰 1건",
-        links: [],
+        links: [{ label: "홈페이지", url: "https://place.naver.co.kr/event/rsv-list4" }],
         lastVerified: "2026-07",
         verified: "확인",
         source: "https://m.place.naver.com/place/1851465216/home",
@@ -2306,9 +2399,10 @@ const DIVE_SITES = [
         phoneStatus: null,
         address: "경북 울진군 근남면 망양정로 463",
         note: "카테고리 '레져타운(리조트)', 블로그·카페 리뷰 9건",
-        links: [],
+        links: [{ label: "홈페이지", url: "https://place.naver.co.kr/event/rsv-list4" }],
         verified: "확인",
         source: "https://m.place.naver.com/place/15656333/home",
+        amenities: ["주차"],
         traits: { serviceType: ["미상"], lodging: true, _src: "note" },
       }
     ],
@@ -2351,10 +2445,11 @@ const DIVE_SITES = [
         phoneStatus: null,
         address: "전남 목포시 해안로148번길 7-1",
         note: "운영 중",
-        links: [],
+        links: [{ label: "홈페이지", url: "https://place.naver.co.kr/event/rsv-list4" }],
         lastVerified: "2026-07",
         verified: "확인",
         source: "https://m.place.naver.com/place/21769854/home",
+        amenities: ["주차"],
         traits: { serviceType: ["미상"], _src: "note" },
       },
       {
@@ -2372,6 +2467,7 @@ const DIVE_SITES = [
         naverBooking: true,
         verified: "확인",
         source: "https://m.place.naver.com/place/1806622025/home",
+        amenities: ["예약", "무선 인터넷"],
         traits: { serviceType: ["미상"], _src: "note" },
       }
     ],
@@ -2428,6 +2524,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 06:00~20:00",
         source: "https://m.place.naver.com/place/1611975448/home",
+        amenities: ["주차", "예약", "무선 인터넷"],
         traits: { serviceType: ["미상"], _src: "note" },
       },
       {
@@ -2441,13 +2538,14 @@ const DIVE_SITES = [
         phoneStatus: null,
         address: "경남 남해군 미조면 동부대로310번길 32-6",
         note: "리뷰 16건, 숙박+다이빙 겸업",
-        links: [],
+        links: [{ label: "홈페이지", url: "http://xn--hq1bqa626bf5ac73bhropoe.com/" }],
         lastVerified: "2026-07",
         naverBooking: true,
         reviewTraits: { tags: ["강습우수", "시설우수", "주차편리", "가성비"], topKeywords: ["주차하기 편해요", "선생님이 열정적이에요", "시설이 깔끔해요"], _src: "naver-review-agg" },
         verified: "확인",
         hours: "24시간 운영",
         source: "https://m.place.naver.com/place/1138920079/home",
+        amenities: ["예약", "무선 인터넷", "주차"],
         traits: { serviceType: ["미상"], lodging: true, _src: "note" },
       },
       {
@@ -2461,11 +2559,12 @@ const DIVE_SITES = [
         phoneStatus: "확인",
         address: "경남 남해군 미조면 남해대로 146",
         note: "리뷰 4건",
-        links: [],
+        links: [{ label: "홈페이지", url: "http://010-6511-3866.okqr.co.kr/" }],
         lastVerified: "2026-07",
         verified: "확인",
         hours: "24시간 운영",
         source: "https://m.place.naver.com/place/38654024/home",
+        amenities: ["주차"],
         traits: { serviceType: ["미상"], _src: "note" },
       },
       {
@@ -2483,6 +2582,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 08:00~22:00",
         source: "https://m.place.naver.com/place/1222498068/home",
+        amenities: ["예약", "주차"],
         traits: { serviceType: ["교육"], lodging: true, _src: "note" },
       },
       {
@@ -2501,6 +2601,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 07:00~19:00",
         source: "https://m.place.naver.com/place/1197684204/home",
+        amenities: ["주차", "반려동물", "예약", "포장"],
         traits: { serviceType: ["미상"], _src: "note" },
       }
     ],
@@ -2576,6 +2677,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 10:00~22:00",
         source: "https://www.ulleung.go.kr/tour/page.do?mnu_uid=1656",
+        amenities: ["예약", "무선 인터넷", "반려동물", "주차"],
         traits: { serviceType: ["체험", "교육", "프리다이빙"], agency: ["PADI", "AIDA", "PTRD"], boat: true, lodging: true, freedive: true, beginner: true, _src: "note" },
       },
       {
@@ -2594,6 +2696,7 @@ const DIVE_SITES = [
         naverBooking: true,
         verified: "확인",
         source: "https://www.ulleung.go.kr/tour/page.do?mnu_uid=1656",
+        amenities: ["예약", "주차"],
         traits: { serviceType: ["체험", "펀다이빙"], lodging: true, beginner: true, _src: "note" },
       },
       {
@@ -2612,6 +2715,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 08:00~18:00",
         source: "https://www.ulleung.go.kr/tour/page.do?mnu_uid=1656",
+        amenities: ["주차", "예약"],
         traits: { serviceType: ["미상"], _src: "note" },
       },
       {
@@ -2624,10 +2728,11 @@ const DIVE_SITES = [
         phoneStatus: null,
         address: "미확인 — 북면 추산 일대로 추정(상호 기준, 미검증)",
         note: "울릉군 공식 관광문화 페이지 등재. 자체 채널 미확인",
-        links: [],
+        links: [{ label: "홈페이지", url: "https://place.naver.co.kr/event/rsv-list4" }],
         lastVerified: "2026-07",
         verified: "확인",
         source: "https://www.ulleung.go.kr/tour/page.do?mnu_uid=1656",
+        amenities: ["예약", "주차"],
         traits: { serviceType: ["미상"], lodging: true, _src: "note" },
       },
       {
@@ -2641,11 +2746,12 @@ const DIVE_SITES = [
         phoneStatus: null,
         address: "미확인",
         note: "울릉군 공식 관광문화 페이지 등재. 자체 채널 미확인",
-        links: [],
+        links: [{ label: "홈페이지", url: "https://place.naver.co.kr/event/rsv-list4" }],
         lastVerified: "2026-07",
         verified: "확인",
         hours: "매일 08:00~18:00",
         source: "https://www.ulleung.go.kr/tour/page.do?mnu_uid=1656",
+        amenities: ["예약", "무선 인터넷", "주차"],
         traits: { serviceType: ["미상"], lodging: true, _src: "note" },
       },
       {
@@ -2665,6 +2771,7 @@ const DIVE_SITES = [
         naverBooking: true,
         verified: "확인",
         source: "https://www.ulleung.go.kr/tour/page.do?mnu_uid=1656",
+        amenities: ["예약", "무선 인터넷", "주차"],
         traits: { serviceType: ["프리다이빙"], freedive: true, _src: "note" },
       }
     ],
@@ -2733,6 +2840,7 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 06:00~22:00",
         source: "http://www.frogdiving.co.kr/",
+        amenities: ["무선 인터넷", "포장", "예약", "주차"],
         traits: { serviceType: ["교육"], pool: true, _src: "note" },
       },
       {
@@ -2752,6 +2860,7 @@ const DIVE_SITES = [
         reviewTraits: { tags: ["강습우수", "프로그램다양", "초보친화"], topKeywords: ["맞춤 지도를 잘해줘요", "선생님이 열정적이에요", "수업이 체계적이에요"], _src: "naver-review-agg" },
         verified: "확인 (카카오 재검증 — 등재·카테고리 일치)",
         source: "PADI/인스타 노출 정보 및 검색 결과(주소는 의창구로 확인, 진해 소재 여부는 미검증)",
+        amenities: ["예약", "무선 인터넷", "주차"],
         traits: { serviceType: ["교육", "프리다이빙"], agency: ["PADI"], freedive: true, _src: "note" },
       }
     ],
@@ -2863,6 +2972,8 @@ const DIVE_SITES = [
         verified: "확인",
         hours: "매일 10:00~18:00",
         source: "https://oceanpalette.kr",
+        amenities: ["예약", "무선 인터넷", "포장", "주차"],
+        pricing: ["예약 28,000원", "달려서 기분좋게 왔어요 2시간 아이16000원", "씩이고 보호자9000원"],
         traits: { serviceType: ["프리다이빙"], pool: true, freedive: true, _src: "note" },
       },
       {

@@ -412,6 +412,10 @@ function openDetail(id){
               <span style="font-size:11px;color:var(--ink-soft)">⭐ 리뷰 강점</span>
               ${sh.reviewTraits.tags.map(t=>`<span style="font-size:11px;font-weight:600;color:var(--level-mid);background:color-mix(in srgb,var(--level-mid) 15%,transparent);padding:2px 8px;border-radius:10px">${t}</span>`).join("")}
             </div>` : ""}
+            ${sh.amenities && sh.amenities.length ? `<div style="display:flex;gap:5px;flex-wrap:wrap;align-items:center">
+              <span style="font-size:11px;color:var(--ink-soft)">🏷 편의</span>
+              ${sh.amenities.map(a=>`<span style="font-size:11px;color:var(--ink-soft);background:color-mix(in srgb,var(--ink-soft) 12%,transparent);padding:2px 8px;border-radius:10px">${a}</span>`).join("")}
+            </div>` : ""}
             ${sh.phoneStatus && sh.phoneStatus!=="확인" ? `<div style="font-size:11.5px;color:var(--amber-ink);background:color-mix(in srgb, var(--amber) 22%, transparent);padding:6px 9px;border-radius:6px">${sh.phone?"ℹ":"⚠"} 전화 ${sh.phoneStatus}${sh.phoneNote?` — ${sh.phoneNote}`:""}</div>` : ""}
             ${sh.verified ? `<div style="display:flex;align-items:center;gap:7px;flex-wrap:wrap;font-size:11px;color:var(--ink-soft)"><span class="vbadge ${vClass(sh.verified)}">${vText(sh.verified)}</span><span>${sh.verified}</span>${sh.lastVerified ? ` · <span title="마지막 확인">🔄 ${freshness(sh.lastVerified)}</span>` : ""}${sh.source ? ` · <a href="${sh.source}" target="_blank" rel="noopener">출처보기</a>` : ""}</div>` : ""}
             ${sh.links && sh.links.length ? `<div style="display:flex;gap:8px;flex-wrap:wrap">${sh.links.map(l=>`<a href="${l.url}" target="_blank" rel="noopener" style="font-size:12px">${l.label} ↗</a>`).join("")}</div>` : ""}
