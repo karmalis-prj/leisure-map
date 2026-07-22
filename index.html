@@ -297,14 +297,24 @@ function traitBadges(sh){
   return (svc||feat||ag) ? `<div class="trait-badges">${svc}${feat}${ag}</div>` : "";
 }
 
+// 종목(activity) 필터 — 레저지도 확장 1보. 필드 없으면 diving으로 간주.
+const ACT_LABEL = { diving: "🤿 다이빙", surfing: "🏄 서핑", "freediving-pool": "🏊 프리다이빙풀" };
+let activeActivity = "전체";
+function activityOf(s){ return s.activity || "diving"; }
+
 function renderFilters(){
   const el = document.getElementById("filters");
-  el.innerHTML = LEVELS.map(l =>
+  const acts = ["전체", ...new Set(DIVE_SITES.map(activityOf))];
+  const actChips = acts.length > 2 ? acts.map(a =>
+    `<button class="filter-chip ${a===activeActivity?'active':''}" data-act="${a}">${a==="전체"?"전체 종목":(ACT_LABEL[a]||a)}</button>`
+  ).join("") + `<span style="width:1px;align-self:stretch;background:var(--line);margin:0 4px"></span>` : "";
+  el.innerHTML = actChips + LEVELS.map(l =>
     `<button class="filter-chip ${l===activeLevel?'active':''}" data-level="${l}">${l}</button>`
   ).join("");
   el.querySelectorAll(".filter-chip").forEach(btn=>{
     btn.addEventListener("click",()=>{
-      activeLevel = btn.dataset.level;
+      if(btn.dataset.act) activeActivity = btn.dataset.act;
+      else activeLevel = btn.dataset.level;
       renderFilters();
       renderGrid();
     });
@@ -314,6 +324,7 @@ function renderFilters(){
 function renderGrid(){
   const el = document.getElementById("grid");
   const list = DIVE_SITES
+    .filter(s => activeActivity==="전체" || activityOf(s)===activeActivity)
     .filter(s => activeLevel==="전체" || s.level===activeLevel)
     .filter(siteMatchesTraits);
   if(!list.length){
@@ -324,7 +335,7 @@ function renderGrid(){
     <div class="site-card" data-id="${s.id}">
       <div class="card-top">
         <div>
-          <div class="card-name">${s.name}</div>
+          <div class="card-name">${s.name}${activityOf(s)!=="diving" ? ` <span style="font-size:11px;font-weight:600;vertical-align:middle;color:var(--ink-soft)">${ACT_LABEL[activityOf(s)]||activityOf(s)}</span>` : ""}</div>
           <div class="card-region">${s.region}</div>
         </div>
         <span class="level-badge level-${s.level}">${s.level}</span>
