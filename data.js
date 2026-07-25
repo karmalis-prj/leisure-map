@@ -1618,6 +1618,7 @@ const DIVE_SITES = [
       },
       {
         name: "7000스쿠버 풀",
+        facility: "pool",
         naverCategory: "스킨스쿠버",
         placeId: "1983323619",
         reviewCount: 6,
@@ -1915,6 +1916,7 @@ const DIVE_SITES = [
       },
       {
         name: "부산 북항 마리나 다이빙풀&수영장",
+        facility: "pool",
         naverCategory: "스킨스쿠버",
         placeId: "1612922930",
         reviewCount: 1036,
@@ -1936,6 +1938,7 @@ const DIVE_SITES = [
       },
       {
         name: "DIT 서면풀장",
+        facility: "pool",
         naverCategory: "스킨스쿠버",
         placeId: "1719044921",
         reviewCount: 633,
@@ -2427,6 +2430,7 @@ const DIVE_SITES = [
       },
       {
         name: "올덴 K10잠수풀",
+        facility: "pool",
         naverCategory: "스킨스쿠버",
         placeId: "2086214002",
         pricing: ["초보자 체험코스 2시간 150,000원"],
