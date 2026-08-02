@@ -494,6 +494,20 @@ function openDetail(id){
   `;
   document.getElementById("overlay").classList.add("on");
   document.getElementById("reportBtnDetail").addEventListener("click", ()=>openReport(s.name));
+  // 이 사이트는 URL을 바꾸지 않고 오버레이로 상세를 띄운다. 그래서 기본 집계로는
+  // "어느 지역이 인기인가"가 안 잡히는데, 그게 샵에게 보여줄 유일한 근거다.
+  // 지역명을 가상 페이지뷰로 한 번 더 보내 지역별 조회수를 남긴다.
+  trackView("/site/" + s.name);
+}
+
+// 가상 페이지뷰 — 네이버 애널리틱스가 로드된 경우에만 동작한다(없으면 조용히 무시).
+function trackView(path){
+  try {
+    if (window.wcs && window.wcs_add && window.wcs_add.wa) {
+      window.wcs.inflow();
+      window.wcs_do({ url: location.origin + location.pathname + "#" + path });
+    }
+  } catch (e) { /* 집계 실패가 화면을 막아선 안 된다 */ }
 }
 
 function openReport(siteName){
@@ -534,19 +548,25 @@ renderFilters();
 renderTraitFilters();
 renderGrid();
 </script>
-<!-- 방문자 측정 — Cloudflare Web Analytics.
-     쿠키를 쓰지 않으므로 동의 배너 없이 합법적으로 집계된다(GA4는 행태정보 수집에
-     해당해 사전 동의+처리방침 고지 의무가 붙는다 — 2026-08 실측 후 이쪽으로 결정).
-     TOKEN은 Cloudflare 대시보드 → Web Analytics → Add a site 에서 발급받아 넣는다.
-     토큰이 비어 있으면 스크립트는 로드되지 않는다(무해). -->
+<!-- 방문자 측정 — 네이버 애널리틱스(analytics.naver.com).
+     가입·설치·리포트가 전 과정 한국어라 이걸로 정했다(2026-08 실측:
+     Cloudflare는 가입 경로가 영어, GA4는 번역돼도 개념어 장벽, Clarity는
+     한국어 페이지에 설치 안내가 없고 쿠키 동의 의무까지 붙는다).
+     ID는 analytics.naver.com → 바로 시작하기 → 사이트 등록 시 발급된다.
+     비어 있으면 로드하지 않는다(무해).
+     ★src는 반드시 "//" 로 시작해야 한다 — "http://"로 쓰면 이 사이트가
+     HTTPS라 차단돼 수집이 통째로 안 된다. -->
 <script>
 (function(){
-  var TOKEN = ""; // ← 발급 후 여기에 붙여넣기
-  if (!TOKEN) return;
+  var NAVER_ID = ""; // ← 발급받은 ID를 따옴표 안에 붙여넣기
+  if (!NAVER_ID) return;
   var s = document.createElement("script");
-  s.defer = true;
-  s.src = "https://static.cloudflareinsights.com/beacon.min.js";
-  s.setAttribute("data-cf-beacon", JSON.stringify({ token: TOKEN }));
+  s.src = "//wcs.naver.net/wcslog.js";
+  s.onload = function(){
+    if (!window.wcs_add) window.wcs_add = {};
+    window.wcs_add.wa = NAVER_ID;
+    if (window.wcs) window.wcs_do();
+  };
   document.body.appendChild(s);
 })();
 </script>
