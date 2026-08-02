@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://karmalis-prj.github.io/leisure-map/sitemap.xml
