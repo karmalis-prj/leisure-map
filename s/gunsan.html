@@ -107,5 +107,17 @@ footer{margin-top:36px;padding-top:16px;border-top:1px solid var(--line);color:v
 <br><a href="https://karmalis-prj.github.io/leisure-map/">전체 지역 보기</a>
 </footer>
 </main>
+<script>
+(function(){
+  var s=document.createElement("script");
+  s.src="//wcs.naver.net/wcslog.js";
+  s.onload=function(){
+    if(!window.wcs_add) window.wcs_add={};
+    window.wcs_add.wa="29e0c2e864fc04";
+    if(window.wcs) window.wcs_do();
+  };
+  document.body.appendChild(s);
+})();
+</script>
 </body>
 </html>
