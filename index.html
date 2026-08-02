@@ -107,6 +107,11 @@ main{max-width:720px;margin:0 auto;padding:20px}
 .card-meta{display:flex;gap:14px;margin-top:12px;font-size:12.5px;color:var(--ink-soft);font-variant-numeric:tabular-nums}
 .card-meta span b{color:var(--ink);font-weight:600}
 .card-tags{display:flex;gap:6px;margin-top:10px;flex-wrap:wrap}
+/* 지역 상세 페이지로 가는 실제 링크. 크롤러가 따라갈 경로이자 사용자가 주소를
+   복사·공유할 수 있는 수단이다(카드 전체 클릭은 기존대로 오버레이를 연다). */
+.card-permalink{display:inline-block;margin-top:11px;font-size:12.5px;color:var(--navy-soft);text-decoration:none;border-bottom:1px solid transparent}
+.card-permalink:hover{border-bottom-color:currentColor}
+@media(prefers-color-scheme:dark){.card-permalink{color:var(--amber)}}
 .tag{font-size:11.5px;background:var(--bg);border:1px solid var(--line);padding:3px 9px;border-radius:8px;color:var(--ink-soft)}
 
 /* 샵 특성 필터 (2차 고도화) */
@@ -345,10 +350,15 @@ function renderGrid(){
         ${s.current!=="미확인" ? `<span>조류 <b>${s.current}</b></span>` : ""}
       </div>
       ${s.highlights.length ? `<div class="card-tags">${s.highlights.map(h=>`<span class="tag">${h}</span>`).join("")}</div>` : ""}
+      <a class="card-permalink" href="s/${s.id}.html">${s.name} 상세 정보</a>
     </div>
   `).join("");
   el.querySelectorAll(".site-card").forEach(card=>{
-    card.addEventListener("click",()=>openDetail(card.dataset.id));
+    card.addEventListener("click",(e)=>{
+      // 링크를 직접 눌렀을 땐 그 페이지로 보낸다(새 탭·주소 복사도 가능해야 한다).
+      if(e.target.closest("a")) return;
+      openDetail(card.dataset.id);
+    });
   });
 }
 
