@@ -305,6 +305,8 @@ function traitBadges(sh){
 // 종목(activity) 필터 — 레저지도 확장 1보. 필드 없으면 diving으로 간주.
 const ACT_LABEL = { diving: "🤿 다이빙", surfing: "🏄 서핑", "freediving-pool": "🏊 프리다이빙풀" };
 let activeActivity = "전체";
+// 딥링크: ?act=freediving-pool 등으로 진입 시 해당 종목 필터 자동 적용 (블로그 연결용, 08-13)
+{ const _a = new URLSearchParams(location.search).get("act"); if (_a && ACT_LABEL[_a]) activeActivity = _a; }
 function activityOf(s){ return s.activity || "diving"; }
 
 function renderFilters(){
@@ -400,7 +402,7 @@ function openDetail(id){
       </div>
       ${s.underwater.features&&s.underwater.features.length ? `<div class="card-tags" style="margin-top:9px">${s.underwater.features.map(f=>`<span class="tag">${f}</span>`).join("")}</div>` : ""}
       <div style="font-size:11px;color:var(--ink-soft);margin-top:8px">
-        ${s.underwater._confidence==="해역일반" ? "ℹ 해역(" + (s.underwater._sea||"") + ") 일반 특성 — 개별 포인트는 샵에 확인" : "✓ 일부 현장 확인 + 해역 일반 특성"}
+        ${s.underwater._confidence==="시설공식" ? "✓ 시설 공식 정보 기준 (홈페이지·공지 확인)" : s.underwater._confidence==="해역일반" ? "ℹ 해역(" + (s.underwater._sea||"") + ") 일반 특성 — 개별 포인트는 샵에 확인" : "✓ 일부 현장 확인 + 해역 일반 특성"}
       </div>
     </div>` : ""}
 
